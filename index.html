@@ -1,0 +1,1777 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>JAPANESE IDOL STUDY｜Learn real Japanese with short videos</title>
+<meta name="description" content="Learn the Japanese people actually speak with short video clips. Tap any word for its meaning in English, 繁體中文, 简体中文, हिन्दी, ไทย, Tiếng Việt, Français, Português, Español, 한국어 or العربية.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JAPANESE IDOL STUDY">
+<meta property="og:title" content="JAPANESE IDOL STUDY｜Learn real Japanese with short videos">
+<meta property="og:description" content="Short clips, tap-to-translate words and quizzes. English / 繁體中文 / 简体中文 / हिन्दी / ไทย / Tiếng Việt / Français / Português / Español / 한국어 / العربية">
+<meta property="og:url" content="https://shimizukatsuyoshi-web.github.io/japanese-idol-study/">
+<meta property="og:image" content="https://shimizukatsuyoshi-web.github.io/japanese-idol-study/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#24407c">
+<link rel="icon" href="icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="JP Idol Study">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;padding:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head><body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Zen+Maru+Gothic:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&family=Noto+Sans+Thai:wght@400;700&family=Noto+Sans+Arabic:wght@400;700&display=swap">
+<style>
+/* Same layout as Slang Clip Note (JAPANESE IDOL STUDY): top page, then one phrase at a time — video stage, the lines, word list; a Learn/Quiz switch above.
+   The page itself is in the learner's language (html lang); every piece of Japanese is marked lang="ja". */
+:root{
+  --bg:#f5f3ee; --surface:#ffffff; --ink:#1b1f2e; --muted:#636878; --line:#e3e0d8;
+  --accent:#d2452b; --on-accent:#ffffff; --ai:#24407c; --stage:#17223f; --stage-ink:#eef1ff;
+  --hl:#ffe27a; --hl-ink:#1b1f2e; --bub-a:#eaeef8; --bub-b:#fde9e3; --ok:#1b8455; --ng:#cc3434;
+  --en:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --ja:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic","Noto Sans JP",sans-serif;
+  --ui:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#11141c; --surface:#1a1f2b; --ink:#eceef4; --muted:#9ea4b6; --line:#2d3342;
+  --accent:#ff7a5c; --on-accent:#230a04; --ai:#9fb6ff; --stage:#0b0f1a; --stage-ink:#e3e8ff;
+  --hl:#6a5414; --hl-ink:#fff4c9; --bub-a:#232a3c; --bub-b:#3a2420; --ok:#4cc38a; --ng:#ff7d7d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11141c; --surface:#1a1f2b; --ink:#eceef4; --muted:#9ea4b6; --line:#2d3342;
+  --accent:#ff7a5c; --on-accent:#230a04; --ai:#9fb6ff; --stage:#0b0f1a; --stage-ink:#e3e8ff;
+  --hl:#6a5414; --hl-ink:#fff4c9; --bub-a:#232a3c; --bub-b:#3a2420; --ok:#4cc38a; --ng:#ff7d7d; color-scheme:dark}
+
+body{background:var(--bg);color:var(--ink);font-family:var(--ui);font-size:15px;line-height:1.75}
+:lang(ja){font-family:var(--ja)}
+:lang(hi){font-family:"Noto Sans Devanagari",var(--ui)}
+:lang(th){font-family:"Noto Sans Thai",var(--ui)}
+:lang(zh-Hant){font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",var(--ui)}
+:lang(zh-Hans){font-family:"PingFang SC","Microsoft YaHei","Noto Sans SC",var(--ui)}
+:lang(vi){font-family:var(--ui)}
+:lang(ko){font-family:"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",var(--ui)}
+:lang(ar){font-family:"Noto Sans Arabic","Segoe UI","Geeza Pro",Tahoma,sans-serif}
+/* Arabic turns the page right-to-left; Japanese, romaji and the brand stay left-to-right */
+[dir="rtl"] [lang="ja"],[dir="rtl"] .ro,[dir="rtl"] .htitle,[dir="rtl"] .tlogo,[dir="rtl"] .brand h1,[dir="rtl"] .kicker,[dir="rtl"] .qhead .tag{direction:ltr;unicode-bidi:isolate}
+[dir="rtl"] .opt,[dir="rtl"] .sheet .box{text-align:right}
+[dir="rtl"] .sheet ol{padding-left:0;padding-right:1.3em}
+[dir="rtl"] .top::after{right:auto;left:-.08em}
+.wrap{max-width:720px;margin:0 auto;padding-inline:16px;padding-block:24px 56px;display:flex;flex-direction:column;gap:18px}
+button,select{font:inherit;color:inherit}
+button:focus-visible,input:focus-visible,select:focus-visible,label:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+
+ruby rt{font-size:.5em;color:var(--muted);font-weight:400;letter-spacing:0}
+body.nofuri rt{display:none}
+body.noro .ro{display:none}
+
+header{display:flex;flex-direction:column;gap:12px}
+.brand h1{font-family:var(--en);font-weight:800;font-size:1.9rem;line-height:1.1;margin:0;letter-spacing:-.01em;cursor:pointer}
+.brand h1 span{color:var(--accent)}
+.beta{font-family:var(--en);font-style:normal;font-size:.75rem;font-weight:700;vertical-align:middle;border:1.5px solid var(--accent);color:var(--accent);border-radius:999px;padding:1px 10px;margin-left:6px;letter-spacing:.06em}
+.brand p{margin:4px 0 0;color:var(--muted);font-size:.88rem}
+.tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.tools .seg{margin-left:auto}
+.sel{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 12px;cursor:pointer}
+.langpick{display:inline-flex;align-items:center;gap:6px}
+.langpick span{font-family:var(--en);font-size:.8rem;font-weight:700;color:var(--muted);letter-spacing:.02em}
+.tog{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font-size:.82rem;cursor:pointer}
+.tog[aria-pressed="true"]{border-color:var(--ai);color:var(--ai);font-weight:700}
+.seg{display:inline-flex;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px}
+.seg button{border:0;background:transparent;border-radius:999px;padding:6px 18px;cursor:pointer;font-weight:700}
+.seg button[aria-pressed="true"]{background:var(--ai);color:var(--surface)}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px 5px 6px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-weight:700}
+.chip i{font-style:normal;font-family:var(--en);font-size:.72rem;font-weight:700;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--bub-a);color:var(--ai);font-variant-numeric:tabular-nums}
+.chip[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+.chip[aria-pressed="true"] i{background:var(--accent);color:var(--on-accent)}
+.chip .dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.stage{position:relative;background:var(--stage);color:var(--stage-ink);aspect-ratio:16/9;max-width:100%;display:grid}
+.stage video{width:100%;height:100%;display:block;background:#000;object-fit:contain}
+.empty{padding:18px 20px;display:flex;flex-direction:column;gap:10px;justify-content:center;min-width:0}
+.empty .lab{font-size:.72rem;letter-spacing:.12em;opacity:.75;font-weight:700}
+.empty h3{margin:0;font-size:1.02rem}
+.script{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:4px;font-size:1.05rem}
+.script b{display:inline-block;width:1.6em;color:var(--hl);font-family:var(--en)}
+.pick{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;border:1px solid currentColor;border-radius:999px;padding:4px 14px;font-size:.85rem;cursor:pointer;position:relative}
+.pick input{position:absolute;opacity:0;width:1px;height:1px}
+.note{font-size:.78rem;opacity:.8;margin:0}
+
+.body{padding:20px;display:flex;flex-direction:column;gap:18px}
+.tag{font-size:.72rem;letter-spacing:.08em;color:var(--muted);font-weight:700}
+.phrase{display:flex;flex-direction:column;gap:2px}
+.phrase .ttl{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.phrase h2{font-weight:700;font-size:clamp(2rem,7vw,2.7rem);line-height:1.35;margin:0;text-wrap:balance}
+.phrase .ro{font-family:var(--en);color:var(--muted);font-size:1rem}
+.phrase .mean{font-size:1.15rem;font-weight:700;color:var(--ai)}
+.phrase .scene{display:inline-block;margin-top:6px;font-size:.82rem;color:var(--accent);font-weight:700}
+.nuance{margin:0;color:var(--muted);max-width:62ch}
+
+.say{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:0 9px;font-size:.8rem;cursor:pointer;line-height:1.8}
+.chat{display:flex;flex-direction:column;gap:12px}
+.line{display:flex;gap:10px;align-items:flex-start;max-width:94%}
+.line.b{flex-direction:row-reverse;align-self:flex-end}
+.who{flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-family:var(--en);font-weight:700;font-size:.85rem;background:var(--ai);color:var(--surface)}
+.line.b .who{background:var(--accent);color:var(--on-accent)}
+.bub{background:var(--bub-a);border-radius:16px;padding:10px 14px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.line.b .bub{background:var(--bub-b)}
+.jp{font-size:1.3rem;font-weight:700;line-height:2;margin:0}
+.ro{margin:0;font-family:var(--en);font-size:.85rem;color:var(--muted)}
+.w{background:none;border:0;padding:0 1px;cursor:pointer;border-radius:4px;border-bottom:2px dotted var(--ai);font-weight:inherit;line-height:inherit}
+.w.slang{background:var(--hl);color:var(--hl-ink);border-bottom:0;padding:0 4px}
+.w.on{outline:2px solid var(--accent)}
+.tr{margin:0;font-size:.95rem;color:var(--ink)}
+.tr.hid{cursor:pointer;color:var(--muted)}
+.tr.hid.hide{filter:blur(5px);user-select:none}
+.chat.solo .line{max-width:100%}
+.mini{display:flex;flex-wrap:wrap;gap:6px}
+.mini button{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:1px 10px;font-size:.78rem;cursor:pointer}
+.examples{display:flex;flex-direction:column;gap:10px}
+.ex{background:var(--bg);border-radius:12px;padding:10px 14px;display:flex;flex-direction:column;gap:2px}
+.ex .jp{font-size:1.12rem}
+.exw{margin:4px 0 0;display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.8rem;color:var(--muted)}
+.exw b{color:var(--ink);margin-right:4px}
+.pop{min-height:3.2em;border-radius:12px;background:var(--bg);padding:10px 14px;font-size:.95rem;color:var(--muted)}
+.pop b{color:var(--ink);font-size:1.1rem;margin-right:6px}
+.pop small{border:1px solid var(--line);border-radius:6px;padding:0 6px;margin-right:6px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn{border:1px solid var(--line);background:transparent;border-radius:10px;padding:5px 12px;font-size:.85rem;cursor:pointer}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--on-accent);font-weight:700;padding:8px 18px}
+.btn:disabled{opacity:.45;cursor:default}
+
+.words{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+td{padding:7px 6px;border-top:1px solid var(--line);vertical-align:top}
+td.wd{white-space:nowrap}
+td.wd b{font-size:1.02rem}
+td.wd small{display:block;color:var(--muted);font-size:.75rem}
+td.pos{color:var(--muted);font-size:.78rem;white-space:nowrap}
+.tip{background:var(--bub-a);border-radius:14px;padding:12px 16px}
+.tip p{margin:2px 0 0}
+.nav{display:flex;justify-content:space-between;gap:8px}
+
+/* edit mode (?edit): line timings for the owner */
+.admin{padding:14px 16px;border:1px dashed var(--ai);border-radius:12px;background:var(--bg);display:flex;flex-direction:column;gap:8px}
+.help{margin:0;font-size:.85rem}
+.admin textarea{width:100%;box-sizing:border-box;min-height:7em;font:12px/1.5 ui-monospace,Consolas,monospace;border:1px solid var(--line);border-radius:8px;padding:8px;background:var(--surface);color:var(--ink)}
+.timing{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.78rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:6px}
+.timing b{color:var(--ink);font-variant-numeric:tabular-nums}
+.timing button{border:1px solid var(--ai);color:var(--ai);background:var(--surface);border-radius:999px;padding:0 10px;cursor:pointer}
+
+/* quiz */
+.qhead{display:flex;justify-content:space-between;align-items:center;gap:12px;font-variant-numeric:tabular-nums}
+.bar{height:6px;background:var(--line);border-radius:6px;overflow:hidden;flex:1}
+.bar span{display:block;height:100%;background:var(--accent);transition:width .3s}
+.qtext{font-size:1.1rem;font-weight:700;margin:0}
+.qbig{font-weight:700;font-size:2.3rem;line-height:1.5;margin:0}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:520px){.opts{grid-template-columns:1fr}}
+.opt{border:1.5px solid var(--line);background:var(--surface);border-radius:12px;padding:12px 14px;text-align:left;cursor:pointer;min-width:0}
+.opt.ja{font-weight:700;font-size:1.1rem}
+.opt:hover:not(:disabled){border-color:var(--ai)}
+.opt.right{border-color:var(--ok);box-shadow:0 0 0 1px var(--ok) inset}
+.opt.wrong{border-color:var(--ng);box-shadow:0 0 0 1px var(--ng) inset}
+.opt:disabled{cursor:default}
+.fb{border-radius:12px;padding:12px 16px;background:var(--bg)}
+.fb strong.ok{color:var(--ok)} .fb strong.ng{color:var(--ng)}
+.result{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.score{font-family:var(--en);font-weight:800;font-size:3.4rem;line-height:1;font-variant-numeric:tabular-nums}
+.score small{font-size:1.2rem;color:var(--muted)}
+.miss{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;width:100%}
+.miss li{display:flex;justify-content:space-between;align-items:center;gap:10px;border-top:1px solid var(--line);padding-top:6px}
+.miss span{font-weight:700}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* ---------- top page ---------- */
+.top{position:relative;min-height:100svh;background:#0f1630;color:#f2f4ff;overflow:hidden;display:flex;flex-direction:column}
+.top .bgv{position:absolute;top:0;left:0;width:100%;height:100svh;object-fit:cover;object-position:50% 30%;opacity:.5}
+.top::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(120% 80% at 85% 10%,rgba(210,69,43,.5),transparent 55%),
+  radial-gradient(90% 70% at 0% 100%,rgba(52,90,190,.6),transparent 60%),
+  linear-gradient(180deg,rgba(15,22,48,.3) 0%,rgba(15,22,48,.55) 45%,#0f1630 100%);z-index:1}
+.top::after{content:"日本語";position:absolute;right:-.08em;top:50%;transform:translateY(-50%);writing-mode:vertical-rl;font-family:var(--ja);font-weight:700;font-size:min(34vw,16rem);line-height:1;color:rgba(255,255,255,.05);z-index:1;pointer-events:none}
+.top > *{position:relative;z-index:2}
+.tbar{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:18px 20px;max-width:1080px;width:100%;margin:0 auto;box-sizing:border-box}
+.tlogo{font-family:var(--en);font-weight:800;font-size:clamp(.82rem,3.6vw,1.05rem);letter-spacing:.02em;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.tpill{white-space:nowrap}
+.tlogo i{width:26px;height:26px;border-radius:8px;background:#d2452b;display:grid;place-items:center;font-style:normal;font-family:var(--ja);font-size:.85rem}
+.tpill{font-family:var(--en);font-size:.72rem;font-weight:700;border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:3px 10px;letter-spacing:.08em}
+.hero{flex:1;display:flex;flex-direction:column;justify-content:center;gap:22px;padding:16px 20px 36px;max-width:1080px;width:100%;margin:0 auto;box-sizing:border-box}
+.kicker{font-size:.78rem;font-weight:700;letter-spacing:.2em;color:#ffb8a6;font-family:var(--en)}
+.kicker span{font-family:var(--ja);letter-spacing:.1em}
+.htitle{font-family:var(--en);font-weight:800;font-size:clamp(3rem,13vw,7.5rem);line-height:.9;letter-spacing:-.045em;margin:0}
+.htitle span{display:block}
+.htitle .c{color:transparent;background:linear-gradient(95deg,#ff6a4d,#ffd36e);-webkit-background-clip:text;background-clip:text}
+.hlead{font-size:clamp(1.05rem,3.6vw,1.35rem);font-weight:700;margin:0;max-width:32em;line-height:1.6}
+.hlead small{display:block;font-weight:400;font-size:.88em;color:#cdd3ee;margin-top:4px}
+.langs{display:flex;flex-direction:column;gap:8px}
+.langs > span{font-size:.75rem;color:#cdd3ee;font-weight:700;letter-spacing:.06em}
+.langs div{display:flex;flex-wrap:wrap;gap:8px}
+.lg{border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.06);color:#fff;border-radius:999px;padding:6px 14px;cursor:pointer}
+.lg[aria-pressed="true"]{background:#fff;color:#0f1630;border-color:#fff;font-weight:700}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.cta button{font:inherit;font-weight:700;border-radius:999px;padding:14px 28px;font-size:1.02rem;cursor:pointer;border:0;transition:transform .15s}
+.cta button:hover{transform:translateY(-2px)}
+.cta .go{background:#d2452b;color:#fff;box-shadow:0 10px 30px -8px rgba(210,69,43,.8)}
+.cta .ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(6px)}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:6px;align-items:center}
+.stats div{display:flex;flex-direction:column}
+.stats b{font-family:var(--en);font-size:1.9rem;font-weight:800;line-height:1}
+.stats span{font-size:.75rem;color:#cdd3ee;margin-top:4px}
+.ticker{overflow:hidden;border-block:1px solid rgba(255,255,255,.14);background:rgba(15,22,48,.6);padding:14px 0;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.ticker .track{display:flex;gap:12px;width:max-content;animation:tick 40s linear infinite}
+.ticker:hover .track{animation-play-state:paused}
+@keyframes tick{to{transform:translateX(-50%)}}
+.tk{flex:none;display:flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:#fff;border-radius:999px;padding:8px 16px 8px 8px;cursor:pointer;font:inherit}
+.tk i{font-style:normal;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.14);display:grid;place-items:center;font-family:var(--en);font-size:.75rem;font-weight:700}
+.tk.v i{background:#d2452b}
+.tk b{font-weight:700}
+.tk small{color:#cdd3ee;font-size:.78rem}
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:34px 20px 44px;max-width:1080px;width:100%;margin:0 auto;box-sizing:border-box}
+@media (max-width:640px){.how{grid-template-columns:1fr}}
+.how div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:18px}
+.how em{font-style:normal;font-family:var(--en);font-weight:800;font-size:.8rem;color:#ff9c86;letter-spacing:.16em}
+.how h3{margin:6px 0 4px;font-size:1.1rem}
+.how p{margin:0;font-size:.88rem;color:#cdd3ee}
+.tfoot{text-align:center;font-size:.75rem;color:#98a1c8;padding:0 20px 28px}
+.fdl{display:inline-flex;align-items:center;gap:12px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.08);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-radius:18px;padding:8px 16px 8px 8px;color:#fff;font:inherit;cursor:pointer;text-align:left;transition:transform .15s,background .15s}
+.fdl:hover{transform:translateY(-2px);background:rgba(255,255,255,.14)}
+.fdl .ic{position:relative;width:44px;height:44px;border-radius:13px;background:linear-gradient(140deg,#ff6a4d 0%,#d2452b 45%,#ffb04a 100%);display:grid;place-items:center;box-shadow:0 8px 20px -6px rgba(210,69,43,.9),inset 0 1px 0 rgba(255,255,255,.45);flex:none}
+.fdl .ic svg{width:22px;height:22px}
+.fdl .ic::after{content:"";position:absolute;inset:-4px;border-radius:16px;border:1.5px solid rgba(255,106,77,.6);animation:fpulse 2.4s ease-out infinite}
+@keyframes fpulse{0%{opacity:.9;transform:scale(.92)}100%{opacity:0;transform:scale(1.18)}}
+.fdl .tx{display:flex;flex-direction:column;line-height:1.15}
+.fdl .tx b{font-family:var(--en);font-weight:800;font-size:1.25rem;letter-spacing:.02em}
+.fdl .tx b em{font-style:normal;background:linear-gradient(95deg,#ff9c86,#ffd36e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.fdl .tx span{font-size:.72rem;color:#cdd3ee;margin-top:3px}
+.sheet{position:fixed;inset:0;z-index:50;background:rgba(6,10,24,.7);display:flex;align-items:flex-end;justify-content:center;padding:16px}
+.sheet .box{background:#fff;color:#1b1f2e;border-radius:20px;max-width:420px;width:100%;padding:22px 20px;display:flex;flex-direction:column;gap:12px;margin-bottom:env(safe-area-inset-bottom,0px)}
+.sheet h3{margin:0;font-size:1.15rem}.sheet p{margin:0;font-size:.92rem;color:#565c70}
+.sheet ol{margin:0;padding-left:1.3em;display:flex;flex-direction:column;gap:6px;font-size:.95rem}
+.sheet b{color:#d2452b}.sheet .close{border:0;border-radius:12px;padding:11px;background:#24407c;color:#fff;font:inherit;font-weight:700;cursor:pointer}
+@media (prefers-reduced-motion:reduce){.fdl .ic::after{animation:none;opacity:0}.ticker .track{animation:none;flex-wrap:wrap;width:auto;padding:0 16px}.top .bgv{display:none}}
+</style>
+
+<section class="top" id="top" aria-label="JAPANESE IDOL STUDY">
+  <video class="bgv" id="bgv" muted playsinline autoplay preload="auto" aria-hidden="true"></video>
+  <div class="tbar">
+    <div class="tlogo"><i lang="ja">あ</i>JAPANESE IDOL STUDY</div>
+    <span class="tpill">TEST VERSION</span>
+  </div>
+  <div class="hero">
+    <span class="kicker"><span lang="ja">本物の日本語</span> · REAL JAPANESE, REAL CLIPS</span>
+    <h1 class="htitle"><span>Japanese</span><span class="c">Idol</span><span>Study.</span></h1>
+    <p class="hlead"><span data-u="lead"></span><small data-u="leadSub"></small></p>
+    <div class="langs"><span data-u="chooseLang"></span><div id="t-langs"></div></div>
+    <div class="cta">
+      <button type="button" class="go" id="t-start" data-u="start"></button>
+      <button type="button" class="ghost" id="t-quiz" data-u="tryQuiz"></button>
+    </div>
+    <div class="stats">
+      <div><b id="t-np">10</b><span data-u="nPhrases"></span></div>
+      <div><b id="t-nv">0</b><span data-u="nClips"></span></div>
+      <button type="button" class="fdl" id="t-dl">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 19.5h14"/></svg></span>
+        <span class="tx"><b><em>FREE</em> Download</b><span data-u="dl"></span></span>
+      </button>
+    </div>
+  </div>
+  <div class="ticker"><div class="track" id="t-track"></div></div>
+  <div class="how">
+    <div><em>01 / WATCH</em><h3 data-u="how1h"></h3><p data-u="how1p"></p></div>
+    <div><em>02 / TAP</em><h3 data-u="how2h"></h3><p data-u="how2p"></p></div>
+    <div><em>03 / QUIZ</em><h3 data-u="how3h"></h3><p data-u="how3p"></p></div>
+  </div>
+  <p class="tfoot" data-u="tfoot"></p>
+  <div class="sheet" id="t-sheet" hidden role="dialog" aria-modal="true" aria-labelledby="t-sheet-h">
+    <div class="box">
+      <h3 id="t-sheet-h" data-u="sheetH"></h3>
+      <p data-u="sheetP"></p>
+      <div id="t-steps"></div>
+      <button type="button" class="close" id="t-sheet-x" data-u="close"></button>
+    </div>
+  </div>
+</section>
+
+<div class="wrap" id="app" hidden>
+  <header>
+    <div class="brand">
+      <h1 id="tohome">Japanese <span>Idol</span> Study<em class="beta">TEST</em></h1>
+      <p data-u="brandSub"></p>
+    </div>
+    <div class="tools">
+      <label class="langpick" for="langsel"><span lang="en">🌐 Language</span><select class="sel" id="langsel"></select></label>
+      <button type="button" class="tog" id="tg-furi" aria-pressed="true" data-u="furi"></button>
+      <button type="button" class="tog" id="tg-ro" aria-pressed="true" data-u="romaji"></button>
+      <div class="seg" role="group">
+        <button type="button" id="m-learn" aria-pressed="true" data-u="learn"></button>
+        <button type="button" id="m-quiz" aria-pressed="false" data-u="quiz"></button>
+      </div>
+    </div>
+  </header>
+
+  <section id="learn">
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <nav class="chips" id="chips"></nav>
+      <article class="card" id="card"><div id="stagebox"></div><div class="body" id="cardbody"></div></article>
+    </div>
+  </section>
+
+  <section id="quiz" hidden>
+    <article class="card"><div class="body" id="qbody"></div></article>
+  </section>
+</div>
+
+<script>
+/* ---------- languages ---------- */
+const LANGS = [["en","English","en"],["tw","繁體中文","zh-Hant"],["cn","简体中文","zh-Hans"],["hi","हिन्दी","hi"],["th","ไทย","th"],["vi","Tiếng Việt","vi"],["fr","Français","fr"],["pt","Português","pt-BR"],["es","Español","es"],["ko","한국어","ko"],["ar","العربية","ar"]];
+const L = (en, tw, cn, hi, th, vi) => ({ en, tw, cn, hi, th, vi });
+
+/* ---------- UI text ---------- */
+const U = {
+ lead: L("Learn the Japanese people actually speak.","學習日本人真正在說的日語。","学习日本人真正在说的日语。","वह जापानी सीखें जो लोग सच में बोलते हैं।","เรียนภาษาญี่ปุ่นแบบที่คนญี่ปุ่นพูดจริง","Học tiếng Nhật mà người Nhật thực sự nói."),
+ leadSub: L("Watch short clips, tap any word for its meaning, and lock it in with quizzes.","看短片、點單字看意思，再用測驗加深記憶。","看短视频、点单词看意思，再用测验加深记忆。","छोटे वीडियो देखें, किसी भी शब्द पर टैप करके अर्थ जानें, और क्विज़ से याद पक्का करें।","ดูคลิปสั้น แตะคำเพื่อดูความหมาย แล้วจำให้แม่นด้วยควิซ","Xem video ngắn, chạm vào từ để xem nghĩa, và ghi nhớ bằng bài kiểm tra."),
+ chooseLang: L("Choose your language","選擇語言","选择语言","अपनी भाषा चुनें","เลือกภาษา","Chọn ngôn ngữ"),
+ start: L("Start →","開始學習 →","开始学习 →","शुरू करें →","เริ่มเลย →","Bắt đầu →"),
+ tryQuiz: L("Take the quiz","挑戰測驗","挑战测验","क्विज़ खेलें","ลองทำควิซ","Làm bài kiểm tra"),
+ nPhrases: L("phrases","句短語","句短语","वाक्यांश","วลี","cụm từ"),
+ nClips: L("video clips","支影片","个视频","वीडियो क्लिप","คลิปวิดีโอ","video"),
+ dl: L("Install the app for free","免費安裝App","免费安装App","ऐप मुफ़्त में इंस्टॉल करें","ติดตั้งแอปฟรี","Cài ứng dụng miễn phí"),
+ how1h: L("Watch","觀看","观看","देखें","ดู","Xem"),
+ how1p: L("See how Japanese people really talk in short clips. Replay any line, or slow it down.","用短片看看日本人實際怎麼說話。每一句都能重播、放慢。","用短视频看看日本人实际怎么说话。每一句都能重播、放慢。","छोटे वीडियो में देखें कि जापानी लोग असल में कैसे बात करते हैं। कोई भी लाइन दोबारा या धीरे चलाएँ।","ดูคลิปสั้นว่าคนญี่ปุ่นพูดกันจริงๆ อย่างไร เล่นซ้ำหรือเล่นช้าทีละประโยคได้","Xem người Nhật nói chuyện thật qua video ngắn. Có thể phát lại hoặc phát chậm từng câu."),
+ how2h: L("Tap","點一下","点一下","टैप करें","แตะ","Chạm"),
+ how2p: L("Tap any word to see its reading and meaning in your language.","點任何單字，就能看到讀音和你的母語翻譯。","点任何单词，就能看到读音和你的母语翻译。","किसी भी शब्द पर टैप करें और उसका उच्चारण व आपकी भाषा में अर्थ देखें।","แตะคำไหนก็ได้ เพื่อดูคำอ่านและความหมายในภาษาของคุณ","Chạm vào bất kỳ từ nào để xem cách đọc và nghĩa bằng ngôn ngữ của bạn."),
+ how3h: L("Quiz","測驗","测验","क्विज़","ควิซ","Kiểm tra"),
+ how3p: L("Check what you learned with quick 4-choice quizzes.","用四選一的小測驗確認學習成果。","用四选一的小测验确认学习成果。","4-विकल्प वाले छोटे क्विज़ से जाँचें कि आपने क्या सीखा।","ทบทวนสิ่งที่เรียนด้วยควิซ 4 ตัวเลือก","Kiểm tra những gì đã học bằng câu hỏi 4 lựa chọn."),
+ tfoot: L("Add it to your home screen to use it like an app.","加到主畫面，就能像App一樣使用。","添加到主屏幕，就能像App一样使用。","होम स्क्रीन पर जोड़ें और ऐप की तरह इस्तेमाल करें।","เพิ่มลงหน้าจอโฮม ใช้งานได้เหมือนแอป","Thêm vào màn hình chính để dùng như ứng dụng."),
+ brandSub: L("Watch, tap and quiz your way to real Japanese","看影片、點單字、做測驗，學會真正的日語","看视频、点单词、做测验，学会真正的日语","देखें, टैप करें, क्विज़ खेलें — असली जापानी सीखें","ดู แตะ ทำควิซ — เรียนภาษาญี่ปุ่นของจริง","Xem, chạm, kiểm tra — học tiếng Nhật thực tế"),
+ furi: L("Furigana","假名標音","假名注音","फ़ुरिगाना","ฟุริงานะ","Furigana"),
+ romaji: L("Romaji","羅馬拼音","罗马音","रोमाजी","โรมาจิ","Romaji"),
+ learn: L("Learn","學習","学习","सीखें","เรียน","Học"),
+ quiz: L("Quiz","測驗","测验","क्विज़","ควิซ","Kiểm tra"),
+ scene: L("When to use: ","使用場合：","使用场合：","कब बोलें: ","ใช้เมื่อ: ","Khi nào dùng: "),
+ tagV: L("Video lines & translation · tap a word for its meaning","影片台詞與翻譯・點單字看意思","视频台词与翻译・点单词看意思","वीडियो की लाइनें और अनुवाद · अर्थ के लिए शब्द पर टैप करें","บทพูดในคลิปและคำแปล · แตะคำเพื่อดูความหมาย","Lời thoại và bản dịch · chạm vào từ để xem nghĩa"),
+ tagN: L("Example dialogue · tap a word for its meaning","會話範例・點單字看意思","会话示例・点单词看意思","उदाहरण संवाद · अर्थ के लिए शब्द पर टैप करें","ตัวอย่างบทสนทนา · แตะคำเพื่อดูความหมาย","Hội thoại mẫu · chạm vào từ để xem nghĩa"),
+ popV: L("Tap the yellow phrase or a dotted word to see its meaning here.","點黃色短語或虛線單字，這裡會顯示意思。","点黄色短语或虚线单词，这里会显示意思。","पीले वाक्यांश या बिंदीदार शब्द पर टैप करें, अर्थ यहाँ दिखेगा।","แตะวลีสีเหลืองหรือคำที่มีเส้นประ ความหมายจะแสดงที่นี่","Chạm vào cụm từ màu vàng hoặc từ có gạch chấm để xem nghĩa ở đây."),
+ popN: L("Tap the yellow phrase or a dotted word. Tap the blurred text to reveal the translation.","點黃色短語或虛線單字。點模糊的文字可顯示翻譯。","点黄色短语或虚线单词。点模糊的文字可显示翻译。","पीले वाक्यांश या बिंदीदार शब्द पर टैप करें। अनुवाद देखने के लिए धुंधले टेक्स्ट पर टैप करें।","แตะวลีสีเหลืองหรือคำที่มีเส้นประ แตะข้อความที่เบลอเพื่อดูคำแปล","Chạm vào cụm từ màu vàng hoặc từ có gạch chấm. Chạm vào chữ bị mờ để xem bản dịch."),
+ slowAll: L("▶ Play all slowly","▶ 全部慢速播放","▶ 全部慢速播放","▶ पूरा धीरे चलाएँ","▶ เล่นทั้งหมดแบบช้า","▶ Phát chậm toàn bộ"),
+ showAll: L("Show all translations","顯示全部翻譯","显示全部翻译","सारे अनुवाद दिखाएँ","แสดงคำแปลทั้งหมด","Hiện tất cả bản dịch"),
+ line: L("▶ Line","▶ 這句","▶ 这句","▶ यह लाइन","▶ ประโยคนี้","▶ Câu này"),
+ slow: L("▶ Slow","▶ 慢速","▶ 慢速","▶ धीरे","▶ ช้า","▶ Chậm"),
+ listen: L("🔊 Listen","🔊 聆聽","🔊 听","🔊 सुनें","🔊 ฟัง","🔊 Nghe"),
+ listenSlow: L("🐢 Slowly","🐢 慢慢聽","🐢 慢慢听","🐢 धीरे","🐢 ช้าๆ","🐢 Chậm"),
+ key: L("Key phrase","重點短語","重点短语","मुख्य वाक्यांश","วลีสำคัญ","Cụm từ chính"),
+ words: L("Words","單字","单词","शब्द","คำศัพท์","Từ vựng"),
+ examples: L("More examples · tap a word","更多例句・點單字看意思","更多例句・点单词看意思","और उदाहरण · शब्द पर टैप करें","ตัวอย่างเพิ่มเติม · แตะคำ","Thêm ví dụ · chạm vào từ"),
+ exPop: L("Tap a word in the examples to see its meaning here.","點例句裡的單字，這裡會顯示意思。","点例句里的单词，这里会显示意思。","उदाहरणों में किसी शब्द पर टैप करें, अर्थ यहाँ दिखेगा।","แตะคำในตัวอย่าง ความหมายจะแสดงที่นี่","Chạm vào từ trong ví dụ để xem nghĩa ở đây."),
+ tip: L("Tip","小提醒","小贴士","टिप","เคล็ดลับ","Mẹo"),
+ prev: L("← Previous","← 上一個","← 上一个","← पिछला","← ก่อนหน้า","← Trước"),
+ next: L("Next →","下一個 →","下一个 →","अगला →","ถัดไป →","Tiếp →"),
+ novLab: L("VIDEO · coming soon","影片・準備中","视频・准备中","वीडियो · जल्द आ रहा है","วิดีโอ · เร็วๆ นี้","VIDEO · sắp có"),
+ novH: L("The video is on its way. Here's the script:","影片準備中，先看看台詞：","视频准备中，先看看台词：","वीडियो जल्द आएगा। तब तक स्क्रिप्ट देखें:","วิดีโอกำลังมา ดูบทพูดก่อนนะ:","Video sắp có. Xem trước kịch bản nhé:"),
+ tryLocal: L("Try with a video on this device","用手機裡的影片試試","用手机里的视频试试","इस डिवाइस के वीडियो से आज़माएँ","ลองใช้วิดีโอในเครื่องนี้","Thử bằng video trong máy"),
+ localNote: L("The video only plays on this device. It is not uploaded or saved.","影片只在這台裝置上播放，不會上傳或儲存。","视频只在这台设备上播放，不会上传或保存。","वीडियो सिर्फ़ इसी डिवाइस पर चलेगा। यह अपलोड या सेव नहीं होगा।","วิดีโอจะเล่นในเครื่องนี้เท่านั้น ไม่มีการอัปโหลดหรือบันทึก","Video chỉ phát trên máy này, không được tải lên hay lưu lại."),
+ qMean: L("What does this phrase mean?","這句話是什麼意思？","这句话是什么意思？","इस वाक्यांश का अर्थ क्या है?","วลีนี้หมายความว่าอะไร?","Cụm từ này nghĩa là gì?"),
+ qFill: L("Which phrase fits the blank?","空格裡應該填哪一句？","空格里应该填哪一句？","खाली जगह में कौन-सा वाक्यांश आएगा?","วลีไหนเติมในช่องว่างได้?","Cụm từ nào điền vào chỗ trống?"),
+ correct: L("Correct","答對","答对","सही","ถูก","Đúng"),
+ ok: L("Correct!","答對了！","答对了！","सही जवाब!","ถูกต้อง!","Chính xác!"),
+ ng: L("Not quite!","可惜！","可惜！","लगभग!","เกือบแล้ว!","Tiếc quá!"),
+ ansIs: L("The answer is","正確答案是","正确答案是","सही उत्तर है","คำตอบคือ","Đáp án là"),
+ nextQ: L("Next question","下一題","下一题","अगला सवाल","ข้อต่อไป","Câu tiếp theo"),
+ seeRes: L("See results","看結果","看结果","नतीजा देखें","ดูผลลัพธ์","Xem kết quả"),
+ perfect: L("Perfect score! You've got all the phrases down.","全部答對！所有短語都學會了。","全部答对！所有短语都学会了。","सारे जवाब सही! आपने सभी वाक्यांश सीख लिए।","ถูกทุกข้อ! จำได้ครบทุกวลีแล้ว","Đúng hết! Bạn đã nắm vững tất cả cụm từ."),
+ retry: L("Review the ones you missed and try again.","複習答錯的短語，再挑戰一次吧。","复习答错的短语，再挑战一次吧。","गलत वाले वाक्यांश दोहराएँ और फिर से कोशिश करें।","ทบทวนวลีที่ตอบผิดแล้วลองใหม่อีกครั้ง","Ôn lại những câu sai rồi thử lại nhé."),
+ best: L("Best score: ","最佳紀錄：","最佳记录：","सर्वश्रेष्ठ स्कोर: ","คะแนนสูงสุด: ","Điểm cao nhất: "),
+ review: L("Phrases to review","要複習的短語","要复习的短语","दोहराने वाले वाक्यांश","วลีที่ควรทบทวน","Cụm từ cần ôn lại"),
+ study: L("Study this","學這句","学这句","इसे सीखें","เรียนวลีนี้","Học câu này"),
+ again: L("Try again","再挑戰一次","再挑战一次","फिर से खेलें","ลองอีกครั้ง","Thử lại"),
+ sheetH: L("Add to your home screen","加到主畫面","添加到主屏幕","होम स्क्रीन पर जोड़ें","เพิ่มลงหน้าจอโฮม","Thêm vào màn hình chính"),
+ sheetP: L("It's free. Open it from the icon anytime — it works offline, too.","完全免費。之後點圖示就能開啟，沒網路也能用。","完全免费。之后点图标就能打开，没网络也能用。","यह मुफ़्त है। आइकन से कभी भी खोलें — ऑफ़लाइन भी चलता है।","ฟรี เปิดจากไอคอนได้ทุกเมื่อ ใช้ออฟไลน์ได้ด้วย","Miễn phí. Mở từ biểu tượng bất cứ lúc nào — dùng được cả khi offline."),
+ close: L("Close","關閉","关闭","बंद करें","ปิด","Đóng"),
+ ios: L(["Open this page in <b>Safari</b>","Tap the <b>Share</b> button (square with an up arrow)","Choose <b>Add to Home Screen</b>, then tap Add"],
+        ["用 <b>Safari</b> 開啟此頁","點 <b>分享</b> 按鈕（方框加向上箭頭）","選擇 <b>加入主畫面</b>，再點「新增」"],
+        ["用 <b>Safari</b> 打开此页","点 <b>分享</b> 按钮（方框加向上箭头）","选择 <b>添加到主屏幕</b>，再点“添加”"],
+        ["यह पेज <b>Safari</b> में खोलें","<b>शेयर</b> बटन (ऊपर तीर वाला चौकोर) दबाएँ","<b>Add to Home Screen</b> चुनें, फिर Add दबाएँ"],
+        ["เปิดหน้านี้ใน <b>Safari</b>","แตะปุ่ม <b>แชร์</b> (สี่เหลี่ยมมีลูกศรชี้ขึ้น)","เลือก <b>เพิ่มไปยังหน้าจอโฮม</b> แล้วแตะ เพิ่ม"],
+        ["Mở trang này bằng <b>Safari</b>","Nhấn nút <b>Chia sẻ</b> (hình vuông có mũi tên lên)","Chọn <b>Thêm vào MH chính</b> rồi nhấn Thêm"]),
+ android: L(["Open this page in <b>Chrome</b>","Tap the <b>⋮</b> menu at the top right","Choose <b>Install app</b> or <b>Add to Home screen</b>"],
+        ["用 <b>Chrome</b> 開啟此頁","點右上角的 <b>⋮</b> 選單","選擇 <b>安裝應用程式</b> 或 <b>加到主畫面</b>"],
+        ["用 <b>Chrome</b> 打开此页","点右上角的 <b>⋮</b> 菜单","选择 <b>安装应用</b> 或 <b>添加到主屏幕</b>"],
+        ["यह पेज <b>Chrome</b> में खोलें","ऊपर दाईं ओर <b>⋮</b> मेन्यू दबाएँ","<b>Install app</b> या <b>Add to Home screen</b> चुनें"],
+        ["เปิดหน้านี้ใน <b>Chrome</b>","แตะเมนู <b>⋮</b> มุมขวาบน","เลือก <b>ติดตั้งแอป</b> หรือ <b>เพิ่มลงในหน้าจอหลัก</b>"],
+        ["Mở trang này bằng <b>Chrome</b>","Nhấn menu <b>⋮</b> ở góc trên bên phải","Chọn <b>Cài đặt ứng dụng</b> hoặc <b>Thêm vào màn hình chính</b>"]),
+ desktop: L(["Open this page in <b>Chrome</b> or <b>Edge</b>","Click the <b>install icon</b> at the right of the address bar","Click <b>Install</b>"],
+        ["用 <b>Chrome</b> 或 <b>Edge</b> 開啟此頁","點網址列右側的 <b>安裝圖示</b>","點 <b>安裝</b>"],
+        ["用 <b>Chrome</b> 或 <b>Edge</b> 打开此页","点地址栏右侧的 <b>安装图标</b>","点 <b>安装</b>"],
+        ["यह पेज <b>Chrome</b> या <b>Edge</b> में खोलें","एड्रेस बार के दाईं ओर <b>इंस्टॉल आइकन</b> दबाएँ","<b>Install</b> दबाएँ"],
+        ["เปิดหน้านี้ใน <b>Chrome</b> หรือ <b>Edge</b>","คลิก <b>ไอคอนติดตั้ง</b> ทางขวาของแถบที่อยู่","คลิก <b>ติดตั้ง</b>"],
+        ["Mở trang này bằng <b>Chrome</b> hoặc <b>Edge</b>","Nhấn <b>biểu tượng cài đặt</b> bên phải thanh địa chỉ","Nhấn <b>Cài đặt</b>"])
+};
+const POS = {
+ n: L("Noun","名詞","名词","संज्ञा","คำนาม","Danh từ"),
+ v: L("Verb","動詞","动词","क्रिया","คำกริยา","Động từ"),
+ adj: L("Adjective","形容詞","形容词","विशेषण","คำคุณศัพท์","Tính từ"),
+ adv: L("Adverb","副詞","副词","क्रियाविशेषण","คำวิเศษณ์","Trạng từ"),
+ exp: L("Expression","慣用語","惯用语","अभिव्यक्ति","สำนวน","Cụm từ"),
+ det: L("Demonstrative","連體詞","连体词","संकेतवाचक","คำชี้เฉพาะ","Từ chỉ định"),
+ pron: L("Pronoun","代名詞","代词","सर्वनाम","คำสรรพนาม","Đại từ"),
+ int: L("Interjection","感嘆詞","感叹词","विस्मयादिबोधक","คำอุทาน","Thán từ"),
+ part: L("Particle","助詞","助词","निपात (कण)","คำช่วย","Trợ từ")
+};
+
+/* French, Portuguese (Brazil) and Spanish: keyed by the English text, so every L(…) above and below gets them without changes.
+   Value = [fr, pt, es]. A string missing here falls back to English. */
+const XL = {
+ "Learn the Japanese people actually speak.":["Apprenez le japonais que les gens parlent vraiment.","Aprenda o japonês que as pessoas realmente falam.","Aprende el japonés que la gente habla de verdad."],
+ "Watch short clips, tap any word for its meaning, and lock it in with quizzes.":["Regardez de courtes vidéos, touchez un mot pour voir son sens, puis retenez-le grâce aux quiz.","Assista a vídeos curtos, toque em qualquer palavra para ver o significado e fixe tudo com quizzes.","Mira videos cortos, toca cualquier palabra para ver su significado y afiánzalo con cuestionarios."],
+ "Choose your language":["Choisissez votre langue","Escolha seu idioma","Elige tu idioma"],
+ "Start →":["Commencer →","Começar →","Empezar →"],
+ "Take the quiz":["Faire le quiz","Fazer o quiz","Hacer el quiz"],
+ "phrases":["expressions","expressões","expresiones"],
+ "video clips":["vidéos","vídeos","videos"],
+ "Install the app for free":["Installer l'appli gratuitement","Instale o app de graça","Instala la app gratis"],
+ "Watch":["Regarder","Assistir","Mirar"],
+ "See how Japanese people really talk in short clips. Replay any line, or slow it down.":["Voyez comment les Japonais parlent vraiment, en courtes vidéos. Réécoutez chaque réplique, ou ralentissez-la.","Veja como os japoneses falam de verdade em vídeos curtos. Repita qualquer fala ou ouça mais devagar.","Mira cómo hablan de verdad los japoneses en videos cortos. Repite cualquier frase o escúchala más despacio."],
+ "Tap":["Toucher","Tocar","Tocar"],
+ "Tap any word to see its reading and meaning in your language.":["Touchez un mot pour voir sa lecture et son sens dans votre langue.","Toque em qualquer palavra para ver a leitura e o significado no seu idioma.","Toca cualquier palabra para ver su lectura y su significado en tu idioma."],
+ "Quiz":["Quiz","Quiz","Quiz"],
+ "Check what you learned with quick 4-choice quizzes.":["Vérifiez vos acquis avec des quiz rapides à 4 choix.","Confira o que aprendeu com quizzes rápidos de 4 alternativas.","Comprueba lo que aprendiste con cuestionarios rápidos de 4 opciones."],
+ "Add it to your home screen to use it like an app.":["Ajoutez-la à l'écran d'accueil pour l'utiliser comme une appli.","Adicione à tela inicial para usar como um app.","Añádela a la pantalla de inicio para usarla como una app."],
+ "Watch, tap and quiz your way to real Japanese":["Regardez, touchez, testez-vous : le vrai japonais","Assista, toque e faça quizzes: japonês de verdade","Mira, toca y ponte a prueba: japonés real"],
+ "Furigana":["Furigana","Furigana","Furigana"],
+ "Romaji":["Romaji","Romaji","Romaji"],
+ "Learn":["Apprendre","Aprender","Aprender"],
+ "When to use: ":["Quand l'utiliser : ","Quando usar: ","Cuándo usarla: "],
+ "Video lines & translation · tap a word for its meaning":["Répliques de la vidéo et traduction · touchez un mot pour son sens","Falas do vídeo e tradução · toque em uma palavra para ver o significado","Frases del video y traducción · toca una palabra para ver su significado"],
+ "Example dialogue · tap a word for its meaning":["Dialogue d'exemple · touchez un mot pour son sens","Diálogo de exemplo · toque em uma palavra para ver o significado","Diálogo de ejemplo · toca una palabra para ver su significado"],
+ "Tap the yellow phrase or a dotted word to see its meaning here.":["Touchez l'expression en jaune ou un mot en pointillés pour voir son sens ici.","Toque na expressão amarela ou em uma palavra pontilhada para ver o significado aqui.","Toca la expresión amarilla o una palabra punteada para ver su significado aquí."],
+ "Tap the yellow phrase or a dotted word. Tap the blurred text to reveal the translation.":["Touchez l'expression en jaune ou un mot en pointillés. Touchez le texte flou pour afficher la traduction.","Toque na expressão amarela ou em uma palavra pontilhada. Toque no texto borrado para ver a tradução.","Toca la expresión amarilla o una palabra punteada. Toca el texto borroso para ver la traducción."],
+ "▶ Play all slowly":["▶ Tout lire lentement","▶ Tocar tudo devagar","▶ Reproducir todo despacio"],
+ "Show all translations":["Afficher toutes les traductions","Mostrar todas as traduções","Mostrar todas las traducciones"],
+ "▶ Line":["▶ Réplique","▶ Esta fala","▶ Esta frase"],
+ "▶ Slow":["▶ Lent","▶ Devagar","▶ Despacio"],
+ "🔊 Listen":["🔊 Écouter","🔊 Ouvir","🔊 Escuchar"],
+ "🐢 Slowly":["🐢 Lentement","🐢 Devagar","🐢 Despacio"],
+ "Key phrase":["Expression clé","Expressão-chave","Expresión clave"],
+ "Words":["Vocabulaire","Vocabulário","Vocabulario"],
+ "More examples · tap a word":["Autres exemples · touchez un mot","Mais exemplos · toque em uma palavra","Más ejemplos · toca una palabra"],
+ "Tap a word in the examples to see its meaning here.":["Touchez un mot des exemples pour voir son sens ici.","Toque em uma palavra dos exemplos para ver o significado aqui.","Toca una palabra de los ejemplos para ver su significado aquí."],
+ "Tip":["Astuce","Dica","Consejo"],
+ "← Previous":["← Précédent","← Anterior","← Anterior"],
+ "Next →":["Suivant →","Próxima →","Siguiente →"],
+ "VIDEO · coming soon":["VIDÉO · bientôt disponible","VÍDEO · em breve","VIDEO · próximamente"],
+ "The video is on its way. Here's the script:":["La vidéo arrive bientôt. Voici le script :","O vídeo está a caminho. Veja o roteiro:","El video llegará pronto. Aquí tienes el guion:"],
+ "Try with a video on this device":["Essayer avec une vidéo de cet appareil","Testar com um vídeo deste aparelho","Probar con un video de este dispositivo"],
+ "The video only plays on this device. It is not uploaded or saved.":["La vidéo est lue uniquement sur cet appareil. Elle n'est ni envoyée ni enregistrée.","O vídeo só é reproduzido neste aparelho. Ele não é enviado nem salvo.","El video solo se reproduce en este dispositivo. No se sube ni se guarda."],
+ "What does this phrase mean?":["Que signifie cette expression ?","O que significa esta expressão?","¿Qué significa esta expresión?"],
+ "Which phrase fits the blank?":["Quelle expression complète le blanc ?","Qual expressão completa a lacuna?","¿Qué expresión completa el espacio en blanco?"],
+ "Correct":["Bonnes réponses","Acertos","Aciertos"],
+ "Correct!":["Bonne réponse !","Correto!","¡Correcto!"],
+ "Not quite!":["Presque !","Quase!","¡Casi!"],
+ "The answer is":["La bonne réponse est","A resposta é","La respuesta es"],
+ "Next question":["Question suivante","Próxima pergunta","Siguiente pregunta"],
+ "See results":["Voir les résultats","Ver resultado","Ver resultados"],
+ "Perfect score! You've got all the phrases down.":["Sans faute ! Vous maîtrisez toutes les expressions.","Gabaritou! Você aprendeu todas as expressões.","¡Puntuación perfecta! Dominas todas las expresiones."],
+ "Review the ones you missed and try again.":["Revoyez celles que vous avez manquées et réessayez.","Revise as que você errou e tente de novo.","Repasa las que fallaste y vuelve a intentarlo."],
+ "Best score: ":["Meilleur score : ","Melhor pontuação: ","Mejor puntuación: "],
+ "Phrases to review":["Expressions à revoir","Expressões para revisar","Expresiones para repasar"],
+ "Study this":["Étudier","Estudar","Estudiar"],
+ "Try again":["Réessayer","Tentar de novo","Intentar de nuevo"],
+ "Add to your home screen":["Ajouter à l'écran d'accueil","Adicionar à tela inicial","Añadir a la pantalla de inicio"],
+ "It's free. Open it from the icon anytime — it works offline, too.":["C'est gratuit. Ouvrez-la depuis l'icône quand vous voulez ; elle marche aussi hors ligne.","É grátis. Abra pelo ícone quando quiser; funciona também sem internet.","Es gratis. Ábrela desde el icono cuando quieras; también funciona sin conexión."],
+ "Close":["Fermer","Fechar","Cerrar"],
+ "Noun":["Nom","Substantivo","Sustantivo"],
+ "Verb":["Verbe","Verbo","Verbo"],
+ "Adjective":["Adjectif","Adjetivo","Adjetivo"],
+ "Adverb":["Adverbe","Advérbio","Adverbio"],
+ "Expression":["Expression","Expressão","Expresión"],
+ "Demonstrative":["Démonstratif","Demonstrativo","Demostrativo"],
+ "Pronoun":["Pronom","Pronome","Pronombre"],
+ "Interjection":["Interjection","Interjeição","Interjección"],
+ "Particle":["Particule","Partícula","Partícula"],
+ "Awesome! / Uh-oh! (amazing or terrible)":["Génial ! / Oh non ! (incroyable ou terrible)","Incrível! / Ih, deu ruim! (muito bom ou muito ruim)","¡Increíble! / ¡Ay, no! (genial o terrible)"],
+ "Reacting to something surprising":["Pour réagir à quelque chose de surprenant","Para reagir a algo surpreendente","Para reaccionar a algo sorprendente"],
+ "Originally meant 'dangerous', but young people use it for anything extreme — good or bad. Tone and context tell you which.":["Au départ, cela voulait dire « dangereux », mais les jeunes l'emploient pour tout ce qui est extrême, en bien ou en mal. Le ton et le contexte indiquent lequel.","Originalmente significava “perigoso”, mas os jovens usam para qualquer coisa extrema, boa ou ruim. O tom e o contexto mostram qual é.","Originalmente significaba “peligroso”, pero los jóvenes lo usan para cualquier cosa extrema, buena o mala. El tono y el contexto te dicen cuál."],
+ "Casual only — avoid it with your boss or in formal settings. やばっ! is an even shorter form.":["Seulement entre proches : évitez-le avec votre patron ou dans un cadre formel. やばっ! en est une forme encore plus courte.","Só em situações informais. Evite com o chefe ou em ambientes formais. やばっ! é uma forma ainda mais curta.","Solo en contextos informales; evítalo con tu jefe o en situaciones formales. やばっ! es una forma aún más corta."],
+ "This ramen is insane!":["Ces ramen sont dingues !","Esse lámen é sensacional!","¡Este ramen está buenísimo!"],
+ "Right? It's really popular.":["N'est-ce pas ? C'est très populaire.","Né? É muito famoso.","¿Verdad? Es muy popular."],
+ "this":["ce, cette","este, esta","este, esta"],
+ "ramen (noodle soup)":["ramen (soupe de nouilles)","lámen (sopa de macarrão)","ramen (sopa de fideos)"],
+ "right? (asking for agreement)":["n'est-ce pas ? (pour chercher l'accord)","né? (pedindo concordância)","¿verdad? (para buscar acuerdo)"],
+ "popularity; popular":["popularité ; populaire","popularidade; popular","popularidad; popular"],
+ "it is, you know (casual explanation)":["c'est…, tu sais (explication familière)","é que…, sabe (explicação informal)","es que…, ¿sabes? (explicación informal)"],
+ "There's a test tomorrow. I'm in trouble!":["J'ai un examen demain. Je suis mal !","Tenho prova amanhã. Tô ferrado!","Mañana tengo examen. ¡Estoy perdido!"],
+ "tomorrow":["demain","amanhã","mañana"],
+ "test, exam":["test, examen","prova, teste","examen, prueba"],
+ "Isn't this view amazing?":["Cette vue est incroyable, non ?","Essa vista não é incrível?","¿No es increíble esta vista?"],
+ "view, scenery":["vue, paysage","vista, paisagem","vista, paisaje"],
+ "Seriously? / For real":["Sérieux ? / Vraiment","Sério? / De verdade","¿En serio? / De verdad"],
+ "When surprised, or to stress that something is true":["Quand on est surpris, ou pour insister sur le fait que c'est vrai","Quando você se surpreende, ou para reforçar que algo é verdade","Cuando te sorprendes, o para recalcar que algo es verdad"],
+ "Casual form of 本当に (really). With a rising tone (マジで？) it's a question: 'Seriously?'. Said flat, it means 'I mean it.'":["Forme familière de 本当に (vraiment). Avec une intonation montante (マジで？), c'est une question : « Sérieux ? ». Dit d'un ton neutre, cela veut dire « Je te jure ».","Forma informal de 本当に (de verdade). Com entonação de pergunta (マジで？) significa “Sério?”. Dito de forma neutra, significa “Tô falando sério”.","Forma informal de 本当に (de verdad). Con entonación ascendente (マジで？) es una pregunta: “¿En serio?”. Dicho en tono plano significa “Lo digo en serio”."],
+ "Short version: マジ？ Polite version: 本当ですか？":["Version courte : マジ？ Version polie : 本当ですか？","Versão curta: マジ？ Versão educada: 本当ですか？","Versión corta: マジ？ Versión formal: 本当ですか？"],
+ "I won the lottery!":["J'ai gagné au loto !","Ganhei na loteria!","¡Me tocó la lotería!"],
+ "Seriously? That's amazing!":["Sérieux ? C'est génial !","Sério? Que incrível!","¿En serio? ¡Qué increíble!"],
+ "lottery (ticket)":["billet de loterie","bilhete de loteria","billete de lotería"],
+ "won, hit (past of 当たる)":["gagné, touché (passé de 当たる)","ganhou, acertou (passado de 当たる)","ganó, acertó (pasado de 当たる)"],
+ "amazing, awesome":["génial, incroyable","incrível, demais","increíble, genial"],
+ "I'm seriously exhausted.":["Je suis vraiment épuisé(e).","Tô muito cansado.","Estoy agotadísimo."],
+ "got tired (past of 疲れる)":["fatigué (passé de 疲れる)","cansou (passado de 疲れる)","se cansó (pasado de 疲れる)"],
+ "For real? I didn't know.":["Vraiment ? Je ne savais pas.","Sério? Eu não sabia.","¿De verdad? No lo sabía."],
+ "didn't know":["ne savais pas","não sabia","no sabía"],
+ "Thank you for the food (before eating)":["Merci pour ce repas (avant de manger)","Obrigado pela comida (antes de comer)","Gracias por la comida (antes de comer)"],
+ "Right before you start eating":["Juste avant de commencer à manger","Logo antes de começar a comer","Justo antes de empezar a comer"],
+ "Literally 'I humbly receive.' It thanks the people who made the food and the lives in it. Japanese people say it even when eating alone.":["Littéralement « je reçois humblement ». On remercie ceux qui ont préparé le repas et les vies qu'il contient. Les Japonais le disent même quand ils mangent seuls.","Literalmente “recebo com humildade”. Agradece a quem preparou a comida e às vidas que ela contém. Os japoneses dizem isso até quando comem sozinhos.","Literalmente “recibo con humildad”. Agradece a quienes prepararon la comida y a las vidas que contiene. Los japoneses lo dicen incluso cuando comen solos."],
+ "Put your hands together and bow slightly. After eating, say ごちそうさまでした.":["Joignez les mains et inclinez légèrement la tête. Après le repas, dites ごちそうさまでした.","Junte as mãos e incline levemente a cabeça. Depois de comer, diga ごちそうさまでした.","Junta las manos e inclina un poco la cabeza. Después de comer, di ごちそうさまでした."],
+ "Here, go ahead and eat.":["Tiens, vas-y, mange.","Pode comer, fique à vontade.","Toma, adelante, come."],
+ "Wow, looks delicious! Thank you for the food!":["Waouh, ça a l'air délicieux ! Merci pour ce repas !","Nossa, que delícia! Obrigado pela comida!","¡Guau, qué buena pinta! ¡Gracias por la comida!"],
+ "please, go ahead":["je t'en prie, vas-y","por favor, fique à vontade","por favor, adelante"],
+ "eat (request form of 食べる)":["mange (forme de demande de 食べる)","coma (forma de pedido de 食べる)","come (forma de petición de 食べる)"],
+ "wow":["waouh","nossa","guau"],
+ "looks delicious":["a l'air délicieux","parece delicioso","tiene buena pinta"],
+ "All together: thank you for the food!":["Tous ensemble : merci pour ce repas !","Todos juntos: obrigado pela comida!","Todos juntos: ¡gracias por la comida!"],
+ "all together":["tous ensemble","todos juntos","todos juntos"],
+ "Hands together — itadakimasu.":["Mains jointes : itadakimasu.","Mãos juntas: itadakimasu.","Con las manos juntas: itadakimasu."],
+ "hand":["main","mão","mano"],
+ "put together (て form of 合わせる)":["joindre (forme en て de 合わせる)","juntar (forma て de 合わせる)","juntar (forma て de 合わせる)"],
+ "Thanks for your hard work (greeting)":["Merci pour votre travail (salutation)","Obrigado pelo seu esforço (cumprimento)","Gracias por tu esfuerzo (saludo)"],
+ "At work, in clubs, or after finishing something together":["Au travail, dans un club, ou après avoir fini quelque chose ensemble","No trabalho, em clubes ou depois de terminar algo juntos","En el trabajo, en clubes o después de terminar algo juntos"],
+ "The all-purpose workplace greeting. Use it when passing coworkers in the hall, at the start of emails, or when leaving for the day.":["La salutation passe-partout au bureau. On l'utilise en croisant un collègue dans le couloir, au début d'un e-mail ou en partant le soir.","O cumprimento coringa do trabalho. Use ao cruzar com colegas no corredor, no começo de e-mails ou ao ir embora.","El saludo comodín del trabajo. Se usa al cruzarse con compañeros en el pasillo, al empezar un correo o al irse a casa."],
+ "With friends, just say お疲れ! When leaving before others: お先に失礼します.":["Entre amis, dites simplement お疲れ! Si vous partez avant les autres : お先に失礼します.","Com amigos, diga só お疲れ! Ao sair antes dos outros: お先に失礼します.","Con amigos, basta con お疲れ! Si te vas antes que los demás: お先に失礼します."],
+ "The meeting is over.":["La réunion est terminée.","A reunião terminou.","La reunión terminó."],
+ "Thanks for your hard work!":["Merci pour votre travail !","Obrigado pelo esforço!","¡Gracias por tu esfuerzo!"],
+ "meeting":["réunion","reunião","reunión"],
+ "has finished (polite past of 終わる)":["est terminé (passé poli de 終わる)","terminou (passado educado de 終わる)","terminó (pasado formal de 終わる)"],
+ "Thanks for today. I'll be heading out first.":["Merci pour aujourd'hui. Je m'en vais en premier.","Obrigado por hoje. Vou indo na frente.","Gracias por hoy. Me voy primero."],
+ "excuse me for leaving first":["excusez-moi de partir avant vous","com licença, vou indo antes","disculpen que me vaya antes"],
+ "Good job today, too!":["Bon travail aujourd'hui aussi !","Bom trabalho hoje também!","¡Buen trabajo hoy también!"],
+ "today":["aujourd'hui","hoje","hoy"],
+ "also, too":["aussi","também","también"],
+ "Nice to meet you / I'm counting on you":["Enchanté / Je compte sur vous","Muito prazer / Conto com você","Mucho gusto / Cuento contigo"],
+ "Introducing yourself, or asking someone for a favor":["Pour se présenter, ou demander un service","Ao se apresentar ou pedir um favor","Al presentarte o al pedir un favor"],
+ "There's no exact English match. It asks for a good relationship from now on. Used at the end of self-introductions, requests and emails.":["Pas d'équivalent exact en français. On souhaite une bonne relation à partir de maintenant. S'emploie à la fin d'une présentation, d'une demande ou d'un e-mail.","Não há equivalente exato em português. Expressa o desejo de uma boa relação daqui em diante. Usado no fim de apresentações, pedidos e e-mails.","No tiene equivalente exacto en español. Expresa el deseo de una buena relación a partir de ahora. Se usa al final de presentaciones, peticiones y correos."],
+ "Casual: よろしく! Very polite: よろしくお願いいたします.":["Familier : よろしく! Très poli : よろしくお願いいたします.","Informal: よろしく! Muito educado: よろしくお願いいたします.","Informal: よろしく! Muy formal: よろしくお願いいたします."],
+ "Nice to meet you. I'm Lee.":["Enchanté(e). Je m'appelle Lee.","Muito prazer. Eu sou o Lee.","Mucho gusto. Soy Lee."],
+ "I look forward to getting to know you.":["Au plaisir de mieux vous connaître.","Conto com vocês daqui em diante.","Espero que nos llevemos bien."],
+ "nice to meet you (first meeting)":["enchanté (première rencontre)","muito prazer (primeiro encontro)","mucho gusto (primer encuentro)"],
+ "am / is (polite)":["suis / est (poli)","sou / é (educado)","soy / es (formal)"],
+ "Could you please take care of this?":["Pourriez-vous vous en occuper, s'il vous plaît ?","Você poderia cuidar disso, por favor?","¿Podrías encargarte de esto, por favor?"],
+ "this (thing)":["ceci (chose)","isto (coisa)","esto (cosa)"],
+ "Here's to another good year together!":["À une nouvelle bonne année ensemble !","Que venha mais um bom ano juntos!","¡Por otro buen año juntos!"],
+ "this year":["cette année","este ano","este año"],
+ "Um, that's a bit… (a soft 'no')":["Euh, c'est un peu… (un « non » poli)","Hum, é que… (um “não” educado)","Mmm, es que… (un “no” suave)"],
+ "Politely turning down an invitation":["Pour refuser poliment une invitation","Ao recusar um convite com educação","Para rechazar una invitación con cortesía"],
+ "ちょっと means 'a little', but trailing off with ちょっと… is a polite 'no'. Japanese often avoids a direct いいえ — leaving the sentence unfinished is the point.":["ちょっと veut dire « un peu », mais laisser la phrase en suspens avec ちょっと… est un « non » poli. Le japonais évite souvent un いいえ direct : c'est justement la phrase inachevée qui compte.","ちょっと significa “um pouco”, mas deixar a frase no ar com ちょっと… é um “não” educado. Em japonês se evita um いいえ direto; o importante é justamente não terminar a frase.","ちょっと significa “un poco”, pero dejar la frase en el aire con ちょっと… es un “no” cortés. En japonés se suele evitar un いいえ directo; lo importante es justamente no terminar la frase."],
+ "If someone says ちょっと… to you, don't push. It almost always means no.":["Si quelqu'un vous répond ちょっと…, n'insistez pas. Cela veut presque toujours dire non.","Se alguém disser ちょっと… para você, não insista. Quase sempre significa não.","Si alguien te dice ちょっと…, no insistas. Casi siempre significa que no."],
+ "Want to go for drinks tonight?":["On va boire un verre ce soir ?","Bora tomar alguma coisa hoje à noite?","¿Vamos a tomar algo esta noche?"],
+ "Tonight's a bit… (difficult).":["Ce soir, c'est un peu… (compliqué).","Hoje à noite é meio… (difícil).","Esta noche es un poco… (complicado)."],
+ "tonight":["ce soir","hoje à noite","esta noche"],
+ "(go) for drinks":["(aller) boire un verre","(ir) beber","(ir) a tomar algo"],
+ "won't you go? (casual invitation)":["on y va ? (invitation familière)","vamos? (convite informal)","¿vamos? (invitación informal)"],
+ "as for… (topic marker)":["quant à… (marque du thème)","quanto a… (marcador de tópico)","en cuanto a… (marcador de tema)"],
+ "Sunday is a bit… (not good).":["Dimanche, c'est un peu… (pas possible).","Domingo é meio… (não dá).","El domingo es un poco… (no puedo)."],
+ "Sunday":["dimanche","domingo","domingo"],
+ "Wait a sec!":["Attends une seconde !","Espera aí!","¡Espera un momento!"],
+ "wait (request form of 待つ)":["attends (forme de demande de 待つ)","espere (forma de pedido de 待つ)","espera (forma de petición de 待つ)"],
+ "I'm fine / No, thank you":["Ça va / Non merci","Tudo bem / Não, obrigado","Estoy bien / No, gracias"],
+ "Declining an offer in a shop, or saying you're OK":["Pour refuser une offre en magasin, ou dire que tout va bien","Ao recusar algo em uma loja, ou para dizer que está tudo bem","Para rechazar algo en una tienda, o decir que estás bien"],
+ "Literally 'safe, OK'. In shops, answering 'Do you need a bag?' with 大丈夫です means 'No thanks'. It confuses even Japanese people — gestures and tone help.":["Littéralement « sans danger, OK ». En magasin, répondre 大丈夫です à « Voulez-vous un sac ? » veut dire « Non merci ». Même les Japonais s'y perdent : les gestes et le ton aident.","Literalmente “seguro, ok”. Na loja, responder 大丈夫です a “Quer uma sacola?” significa “Não, obrigado”. Até os japoneses se confundem; gestos e tom de voz ajudam.","Literalmente “seguro, está bien”. En una tienda, responder 大丈夫です a “¿Quiere una bolsa?” significa “No, gracias”. Hasta los japoneses se confunden; los gestos y el tono ayudan."],
+ "Add a small wave of the hand to make 'No thanks' clear.":["Faites un petit signe de la main pour que le « non merci » soit clair.","Faça um leve aceno com a mão para deixar claro o “não, obrigado”.","Haz un pequeño gesto con la mano para que el “no, gracias” quede claro."],
+ "Would you like a bag?":["Voulez-vous un sac ?","Quer uma sacola?","¿Quiere una bolsa?"],
+ "Oh, no thank you.":["Ah, non merci.","Ah, não, obrigado.","Ah, no, gracias."],
+ "bag":["sac","sacola, bolsa","bolsa"],
+ "would you like (to use)…? (polite, in shops)":["désirez-vous… ? (poli, en magasin)","deseja…? (educado, em lojas)","¿desea…? (formal, en tiendas)"],
+ "oh":["ah","ah","ah"],
+ "Are you OK?":["Ça va ?","Você está bem?","¿Estás bien?"],
+ "It's totally fine.":["Aucun problème.","Tudo bem, sem problema nenhum.","No pasa nada, de verdad."],
+ "totally; (not) at all":["totalement ; (pas) du tout","totalmente; nem um pouco","totalmente; (nada) en absoluto"],
+ "(adds emphasis / reassurance)":["(ajoute de l'insistance / rassure)","(dá ênfase / tranquiliza)","(añade énfasis / tranquiliza)"],
+ "Excuse me / Sorry / Thank you":["Excusez-moi / Pardon / Merci","Com licença / Desculpe / Obrigado","Disculpe / Perdón / Gracias"],
+ "Calling staff, apologizing, or thanking someone":["Pour appeler le personnel, s'excuser ou remercier","Para chamar atendentes, pedir desculpas ou agradecer","Para llamar al personal, disculparte o dar las gracias"],
+ "One word, three jobs: getting attention (in restaurants), a light apology, and a thank-you when someone goes out of their way for you.":["Un mot, trois usages : attirer l'attention (au restaurant), s'excuser légèrement, et remercier quelqu'un qui s'est donné du mal pour vous.","Uma palavra, três usos: chamar a atenção (em restaurantes), pedir desculpas de leve e agradecer quando alguém se esforça por você.","Una palabra, tres usos: llamar la atención (en restaurantes), disculparse un poco y agradecer cuando alguien se toma una molestia por ti."],
+ "In restaurants, raise your hand and say すみません! clearly — staff usually won't come unless called.":["Au restaurant, levez la main et dites すみません! distinctement : en général, le personnel ne vient pas si on ne l'appelle pas.","Em restaurantes, levante a mão e diga すみません! com clareza; geralmente os atendentes só vêm se você chamar.","En los restaurantes, levanta la mano y di すみません! con claridad; normalmente el personal no viene si no lo llamas."],
+ "Excuse me! Can I order?":["Excusez-moi ! Je peux commander ?","Com licença! Posso fazer o pedido?","¡Disculpe! ¿Puedo pedir?"],
+ "Yes, one moment please.":["Oui, un instant, s'il vous plaît.","Sim, um momento, por favor.","Sí, un momento, por favor."],
+ "order":["commande","pedido","pedido"],
+ "is it OK? / may I?":["c'est possible ? / puis-je ?","pode? / posso?","¿se puede? / ¿puedo?"],
+ "yes":["oui","sim","sí"],
+ "please wait a moment (very polite)":["veuillez patienter un instant (très poli)","aguarde um momento, por favor (muito educado)","espere un momento, por favor (muy formal)"],
+ "Sorry I'm late.":["Désolé(e) d'être en retard.","Desculpe o atraso.","Perdón por llegar tarde."],
+ "was late (polite past of 遅れる)":["était en retard (passé poli de 遅れる)","atrasou-se (passado educado de 遅れる)","llegó tarde (pasado formal de 遅れる)"],
+ "Thank you for going to the trouble.":["Merci de vous être donné la peine.","Obrigado pelo trabalho que teve.","Gracias por tomarte la molestia."],
+ "going out of your way":["se donner la peine de","dar-se ao trabalho","tomarse la molestia"],
+ "I see / That makes sense":["Je vois / Ça se tient","Entendi / Faz sentido","Ya veo / Tiene sentido"],
+ "When you understand an explanation":["Quand on comprend une explication","Quando você entende uma explicação","Cuando entiendes una explicación"],
+ "Shows you understood and agree with the logic. Great for keeping a conversation going.":["Montre que vous avez compris et que vous suivez le raisonnement. Idéal pour relancer la conversation.","Mostra que você entendeu e concorda com a lógica. Ótimo para manter a conversa fluindo.","Muestra que entendiste y que estás de acuerdo con la lógica. Ideal para mantener la conversación."],
+ "Careful: なるほど can sound a little casual to a boss or teacher. そうなんですね is safer.":["Attention : なるほど peut paraître un peu familier face à un supérieur ou un professeur. そうなんですね est plus sûr.","Cuidado: なるほど pode soar um pouco informal com um chefe ou professor. そうなんですね é mais seguro.","Cuidado: なるほど puede sonar algo informal con un jefe o un profesor. そうなんですね es más seguro."],
+ "Press this button and it opens.":["Appuie sur ce bouton et ça s'ouvre.","Aperte este botão e ele abre.","Pulsa este botón y se abre."],
+ "I see! That's easy.":["Je vois ! C'est facile.","Entendi! É fácil.","¡Ya veo! Es fácil."],
+ "button":["bouton","botão","botón"],
+ "to push, press":["pousser, appuyer","empurrar, apertar","empujar, pulsar"],
+ "opens (polite form of 開く)":["s'ouvre (forme polie de 開く)","abre (forma educada de 開く)","se abre (forma formal de 開く)"],
+ "easy, simple":["facile, simple","fácil, simples","fácil, sencillo"],
+ "…isn't it? (polite, sharing a feeling)":["…n'est-ce pas ? (poli, partage un ressenti)","…né? (educado, compartilha um sentimento)","…¿verdad? (formal, compartir una impresión)"],
+ "I see, so that's what it is.":["Je vois, c'est donc ça.","Entendi, então é isso.","Ya veo, así que es eso."],
+ "so that's what it is":["c'est donc ça","então é isso","así que es eso"],
+ "Huh, I see. I learned something.":["Ah, je vois. J'ai appris quelque chose.","Ah, entendi. Aprendi algo novo.","Ah, ya veo. Aprendí algo."],
+ "I learned something":["j'ai appris quelque chose","aprendi algo","aprendí algo"],
+ "Meh / So-so / Hard to say":["Bof / Moyen / Difficile à dire","Mais ou menos / Meio assim / Difícil dizer","Regular / Más o menos / Difícil de decir"],
+ "Giving a not-so-positive opinion softly":["Pour donner un avis peu positif en douceur","Para dar uma opinião não muito positiva de forma suave","Para dar una opinión poco positiva con suavidad"],
+ "The dictionary meaning is 'subtle', but in conversation it's a soft way to say 'not great'. Popular because it doesn't sound harsh.":["Le sens du dictionnaire est « subtil », mais à l'oral c'est une façon douce de dire « pas terrible ». Très utilisé parce que ça ne sonne pas dur.","O sentido de dicionário é “sutil”, mas na conversa é um jeito suave de dizer “não muito bom”. É popular porque não soa grosseiro.","El significado de diccionario es “sutil”, pero en la conversación es una forma suave de decir “no muy bueno”. Es popular porque no suena duro."],
+ "Ask 微妙？ to get someone's honest opinion. Typical answer: うーん、微妙。":["Demandez 微妙？ pour obtenir un avis sincère. Réponse typique : うーん、微妙。","Pergunte 微妙？ para saber a opinião sincera de alguém. Resposta típica: うーん、微妙。","Pregunta 微妙？ para conocer la opinión sincera de alguien. Respuesta típica: うーん、微妙。"],
+ "How was that movie?":["C'était comment, ce film ?","Como foi aquele filme?","¿Qué tal esa película?"],
+ "Hmm, it was meh.":["Hmm, c'était bof.","Hum, mais ou menos.","Mmm, regular."],
+ "that (over there)":["ce…-là (là-bas)","aquele, aquela","ese, aquel"],
+ "movie":["film","filme","película"],
+ "how was it?":["c'était comment ?","como foi?","¿qué tal fue?"],
+ "hmm":["hmm","hum","mmm"],
+ "Isn't this color kind of meh?":["Cette couleur est un peu bof, non ?","Essa cor não está meio estranha?","¿Este color no es un poco raro?"],
+ "color":["couleur","cor","color"],
+ "a little, kind of":["un peu, plutôt","um pouco, meio","un poco, algo"],
+ "The taste was so-so.":["Le goût était moyen.","O sabor estava mais ou menos.","El sabor era regular."],
+ "taste, flavor":["goût, saveur","sabor, gosto","sabor, gusto"],
+ "Where?":["Où ?","Onde?","¿Dónde?"],
+ "Looking for something or someone":["Quand on cherche quelque chose ou quelqu'un","Ao procurar algo ou alguém","Al buscar algo o a alguien"],
+ "どこ on its own is a casual 'Where?'. Add ですか to make it polite: どこですか？ The pattern [thing]はどこですか？ means 'Where is [thing]?'.":["どこ seul est un « Où ? » familier. Ajoutez ですか pour être poli : どこですか？ La structure [objet]はどこですか？ veut dire « Où est [objet] ? ».","どこ sozinho é um “Onde?” informal. Acrescente ですか para ficar educado: どこですか？ A estrutura [coisa]はどこですか？ significa “Onde fica [coisa]?”.","どこ solo es un “¿Dónde?” informal. Añade ですか para que sea formal: どこですか？ La estructura [cosa]はどこですか？ significa “¿Dónde está [cosa]?”."],
+ "A lifesaver when you're lost: トイレはどこですか？ (Where's the toilet?) Point at a map while asking and it's even clearer.":["Indispensable quand on est perdu : トイレはどこですか？ (Où sont les toilettes ?) Montrez une carte en même temps, c'est encore plus clair.","Salva-vidas quando você se perde: トイレはどこですか？ (Onde fica o banheiro?) Aponte para um mapa enquanto pergunta e fica ainda mais claro.","Te salva cuando te pierdes: トイレはどこですか？ (¿Dónde está el baño?) Si señalas un mapa mientras preguntas, queda aún más claro."],
+ "Where is my rabbit?":["Où est mon lapin ?","Onde está o meu coelho?","¿Dónde está mi conejo?"],
+ "where":["où","onde","dónde"],
+ "I, me":["je, moi","eu, mim","yo, mí"],
+ "'s, of (shows possession)":["de (possession)","de (posse)","de (posesión)"],
+ "rabbit":["lapin","coelho","conejo"],
+ "(polite question ending)":["(fin de question polie)","(final de pergunta educada)","(final de pregunta formal)"],
+ "Where is the toilet?":["Où sont les toilettes ?","Onde fica o banheiro?","¿Dónde está el baño?"],
+ "toilet, restroom":["toilettes","banheiro","baño, servicio"],
+ "Where is the station?":["Où est la gare ?","Onde fica a estação?","¿Dónde está la estación?"],
+ "(train) station":["gare (de train)","estação (de trem)","estación (de tren)"],
+ "High, tall / Low, short":["Haut, grand / Bas, petit","Alto / Baixo","Alto / Bajo"],
+ "Talking about height, prices or levels":["Pour parler de hauteur, de prix ou de niveau","Para falar de altura, preços ou níveis","Para hablar de altura, precios o niveles"],
+ "Both are い-adjectives. 高い means 'high / tall', and for prices it means 'expensive'. Careful: the opposite of 'expensive' is 安い (cheap), not 低い.":["Ce sont deux adjectifs en い. 高い veut dire « haut / grand » et, pour un prix, « cher ». Attention : le contraire de « cher » est 安い (bon marché), pas 低い.","Os dois são adjetivos em い. 高い significa “alto” e, para preços, “caro”. Cuidado: o contrário de “caro” é 安い (barato), não 低い.","Los dos son adjetivos en い. 高い significa “alto” y, con precios, “caro”. Cuidado: lo contrario de “caro” es 安い (barato), no 低い."],
+ "For a person's height, say 背が高い (tall) / 背が低い (short).":["Pour la taille d'une personne, dites 背が高い (grand) / 背が低い (petit).","Para a altura de uma pessoa, diga 背が高い (alto) / 背が低い (baixo).","Para la estatura de una persona, di 背が高い (alto) / 背が低い (bajo)."],
+ "High! / Tall!":["C'est haut ! / Grand !","Alto!","¡Alto!"],
+ "Low! / Short!":["C'est bas ! / Petit !","Baixo!","¡Bajo!"],
+ "high, tall; expensive":["haut, grand ; cher","alto; caro","alto; caro"],
+ "low; short (height)":["bas ; petit (taille)","baixo","bajo"],
+ "This building is tall.":["Cet immeuble est haut.","Este prédio é alto.","Este edificio es alto."],
+ "building":["immeuble","prédio","edificio"],
+ "This bag is expensive.":["Ce sac est cher.","Esta bolsa é cara.","Este bolso es caro."],
+ "My little brother is short.":["Mon petit frère est petit.","Meu irmão mais novo é baixo.","Mi hermano menor es bajo."],
+ "younger brother":["petit frère","irmão mais novo","hermano menor"],
+ "height (of a person)":["taille (d'une personne)","altura (de uma pessoa)","estatura (de una persona)"],
+ "(subject marker)":["(marque du sujet)","(marcador de sujeito)","(marcador de sujeto)"],
+ "When?":["Quand ?","Quando?","¿Cuándo?"],
+ "Asking about dates and times":["Pour demander une date ou une heure","Para perguntar sobre datas e horários","Para preguntar por fechas y horas"],
+ "いつ alone is a casual 'When?'. Add ですか to make it polite: いつですか？ The usual pattern is [thing]はいつですか？ = 'When is [thing]?'.":["いつ seul est un « Quand ? » familier. Ajoutez ですか pour être poli : いつですか？ La structure courante est [chose]はいつですか？ = « Quand est [chose] ? ».","いつ sozinho é um “Quando?” informal. Acrescente ですか para ficar educado: いつですか？ A estrutura mais comum é [coisa]はいつですか？ = “Quando é [coisa]?”.","いつ solo es un “¿Cuándo?” informal. Añade ですか para que sea formal: いつですか？ La estructura habitual es [cosa]はいつですか？ = “¿Cuándo es [cosa]?”."],
+ "The most common way to ask is 誕生日はいつですか？ Answer with a date: 5月3日です (It's May 3rd).":["La façon la plus courante de demander est 誕生日はいつですか？ Répondez avec une date : 5月3日です (C'est le 3 mai).","A forma mais comum de perguntar é 誕生日はいつですか？ Responda com a data: 5月3日です (É 3 de maio).","La forma más común de preguntar es 誕生日はいつですか？ Responde con una fecha: 5月3日です (Es el 3 de mayo)."],
+ "When is your birthday?":["Quand est ton anniversaire ?","Quando é o seu aniversário?","¿Cuándo es tu cumpleaños?"],
+ "when":["quand","quando","cuándo"],
+ "birthday":["anniversaire","aniversário","cumpleaños"],
+ "When does summer vacation start?":["Les vacances d'été commencent quand ?","Quando começam as férias de verão?","¿Desde cuándo son las vacaciones de verano?"],
+ "summer vacation":["vacances d'été","férias de verão","vacaciones de verano"],
+ "from (starting point)":["à partir de","a partir de","desde"],
+ "Sorry (casual)":["Désolé (familier)","Desculpa (informal)","Perdona (informal)"],
+ "Apologizing to friends or family":["Pour s'excuser auprès d'amis ou de la famille","Para pedir desculpas a amigos ou à família","Para disculparte con amigos o familia"],
+ "ごめん is the casual 'sorry'; adding ね makes it softer and friendlier. 遅れて来て means 'coming late' (遅れる 'be late' + 来る 'come'). With teachers or at work, say 遅れてすみません instead.":["ごめん est le « pardon » familier ; ajouter ね le rend plus doux et amical. 遅れて来て veut dire « arriver en retard » (遅れる « être en retard » + 来る « venir »). Avec un professeur ou au travail, dites plutôt 遅れてすみません.","ごめん é o “desculpa” informal; acrescentar ね deixa mais suave e simpático. 遅れて来て significa “chegar atrasado” (遅れる “atrasar” + 来る “vir”). Com professores ou no trabalho, diga 遅れてすみません.","ごめん es el “perdón” informal; añadir ね lo hace más suave y cercano. 遅れて来て significa “llegar tarde” (遅れる “retrasarse” + 来る “venir”). Con profesores o en el trabajo, di mejor 遅れてすみません."],
+ "Politeness ladder: ごめん → ごめんね → ごめんなさい → すみません → 申し訳ありません (most formal).":["Du plus familier au plus poli : ごめん → ごめんね → ごめんなさい → すみません → 申し訳ありません (le plus formel).","Do mais informal ao mais educado: ごめん → ごめんね → ごめんなさい → すみません → 申し訳ありません (o mais formal).","De lo más informal a lo más formal: ごめん → ごめんね → ごめんなさい → すみません → 申し訳ありません (lo más formal)."],
+ "Sorry I'm late!":["Désolé(e) d'être en retard !","Desculpa o atraso!","¡Perdona por llegar tarde!"],
+ "being late (て form of 遅れる)":["en retard (forme en て de 遅れる)","atrasado (forma て de 遅れる)","con retraso (forma て de 遅れる)"],
+ "coming (て form of 来る)":["venir (forme en て de 来る)","vir (forma て de 来る)","venir (forma て de 来る)"],
+ "Sorry to keep you waiting.":["Désolé(e) de t'avoir fait attendre.","Desculpa te fazer esperar.","Perdona por hacerte esperar."],
+ "making (someone) wait (causative of 待つ)":["faire attendre (causatif de 待つ)","fazer esperar (causativo de 待つ)","hacer esperar (causativo de 待つ)"],
+ "Sorry for being late. (polite)":["Pardon pour le retard. (poli)","Desculpe pelo atraso. (educado)","Disculpe la tardanza. (formal)"],
+ "excuse me, I'm sorry (polite)":["pardon, excusez-moi (poli)","desculpe, com licença (educado)","disculpe, perdón (formal)"],
+ "About to melt / Looks like it'll melt":["Sur le point de fondre","Quase derretendo","A punto de derretirse"],
+ "Describing something that's about to happen":["Pour décrire ce qui est sur le point d'arriver","Para descrever algo que está prestes a acontecer","Para describir algo que está a punto de pasar"],
+ "溶ける means 'to melt'. Drop る and add そう (溶けそう) to say it looks like it's about to happen. The same pattern works for many verbs: 雨が降りそう (It looks like rain), 泣きそう (I'm about to cry).":["溶ける veut dire « fondre ». Enlevez る et ajoutez そう (溶けそう) pour dire que ça semble sur le point d'arriver. La même structure marche avec beaucoup de verbes : 雨が降りそう (On dirait qu'il va pleuvoir), 泣きそう (Je vais pleurer).","溶ける significa “derreter”. Tire o る e acrescente そう (溶けそう) para dizer que algo parece prestes a acontecer. O mesmo padrão serve para muitos verbos: 雨が降りそう (Parece que vai chover), 泣きそう (Vou chorar).","溶ける significa “derretirse”. Quita る y añade そう (溶けそう) para decir que algo parece a punto de pasar. La misma estructura sirve con muchos verbos: 雨が降りそう (Parece que va a llover), 泣きそう (Estoy a punto de llorar)."],
+ "In everyday talk, アイス alone means ice cream. Eat it fast: 早く食べて！ (Eat it quickly!)":["Au quotidien, アイス tout court veut dire glace. Mangez-la vite : 早く食べて！ (Mange vite !)","No dia a dia, só アイス já significa sorvete. Coma rápido: 早く食べて！ (Come logo!)","En el día a día, basta con decir アイス para referirse al helado. Cómelo rápido: 早く食べて！ (¡Cómelo rápido!)"],
+ "Ice cream.":["De la glace.","Sorvete.","Helado."],
+ "The ice cream is about to melt.":["La glace est sur le point de fondre.","O sorvete está quase derretendo.","El helado está a punto de derretirse."],
+ "ice cream":["glace","sorvete","helado"],
+ "looks about to melt (溶ける + そう)":["semble sur le point de fondre (溶ける + そう)","parece que vai derreter (溶ける + そう)","parece que se va a derretir (溶ける + そう)"],
+ "It looks like it's going to rain.":["On dirait qu'il va pleuvoir.","Parece que vai chover.","Parece que va a llover."],
+ "rain":["pluie","chuva","lluvia"],
+ "looks like it will fall (rain)":["semble sur le point de tomber (pluie)","parece que vai cair (chuva)","parece que va a caer (lluvia)"],
+ "Eat it quick! It's about to melt!":["Mange vite ! Elle va fondre !","Come logo! Vai derreter!","¡Cómelo rápido! ¡Se va a derretir!"],
+ "quickly":["vite","rápido","rápido"],
+ "Why?":["Pourquoi ?","Por quê?","¿Por qué?"],
+ "Asking for a reason":["Pour demander une raison","Para perguntar o motivo","Para preguntar el motivo"],
+ "なぜ is a slightly formal 'why'. In casual talk people usually say どうして or なんで. 知っているの means 'do you know?'; the の at the end makes it a soft, casual question.":["なぜ est un « pourquoi » un peu soutenu. À l'oral, on dit plutôt どうして ou なんで. 知っているの veut dire « tu sais ? » ; le の final rend la question douce et familière.","なぜ é um “por quê” um pouco formal. Na conversa, o mais comum é どうして ou なんで. 知っているの significa “você sabe?”; o の no final deixa a pergunta suave e informal.","なぜ es un “por qué” algo formal. En la conversación se suele decir どうして o なんで. 知っているの significa “¿lo sabes?”; el の final hace la pregunta suave e informal."],
+ "From casual to polite: なんで？ → どうして？ → なぜですか？":["Du plus familier au plus poli : なんで？ → どうして？ → なぜですか？","Do mais informal ao mais educado: なんで？ → どうして？ → なぜですか？","De lo más informal a lo más formal: なんで？ → どうして？ → なぜですか？"],
+ "How come you know that?":["Comment tu le sais ?","Como você sabe disso?","¿Cómo lo sabes?"],
+ "why":["pourquoi","por quê","por qué"],
+ "do you know? (casual question)":["tu sais ? (question familière)","você sabe? (pergunta informal)","¿lo sabes? (pregunta informal)"],
+ "Why are you crying?":["Pourquoi tu pleures ?","Por que você está chorando?","¿Por qué lloras?"],
+ "why (everyday)":["pourquoi (courant)","por quê (do dia a dia)","por qué (cotidiano)"],
+ "are you crying? (casual)":["tu pleures ? (familier)","está chorando? (informal)","¿estás llorando? (informal)"],
+ "Why is that? (polite)":["Pourquoi ? (poli)","Por quê? (educado)","¿Por qué? (formal)"],
+ "Easy / Simple":["Facile / Simple","Fácil / Simples","Fácil / Sencillo"],
+ "Saying something is easy to do":["Pour dire que quelque chose est facile à faire","Para dizer que algo é fácil de fazer","Para decir que algo es fácil de hacer"],
+ "簡単 is a な-adjective: 簡単です (It's easy), 簡単な問題 (an easy question). The opposite is 難しい (difficult).":["簡単 est un adjectif en な : 簡単です (C'est facile), 簡単な問題 (une question facile). Le contraire est 難しい (difficile).","簡単 é um adjetivo em な: 簡単です (É fácil), 簡単な問題 (uma pergunta fácil). O contrário é 難しい (difícil).","簡単 es un adjetivo en な: 簡単です (Es fácil), 簡単な問題 (una pregunta fácil). Lo contrario es 難しい (difícil)."],
+ "Add とても for 'very': とても簡単です (It's very easy). Casual: 超簡単！ (Super easy!)":["Ajoutez とても pour « très » : とても簡単です (C'est très facile). Familier : 超簡単！ (Super facile !)","Acrescente とても para “muito”: とても簡単です (É muito fácil). Informal: 超簡単！ (Facílimo!)","Añade とても para “muy”: とても簡単です (Es muy fácil). Informal: 超簡単！ (¡Facilísimo!)"],
+ "Easy.":["Facile.","Fácil.","Fácil."],
+ "It's easy.":["C'est facile.","É fácil.","Es fácil."],
+ "This question is easy.":["Cette question est facile.","Esta pergunta é fácil.","Esta pregunta es fácil."],
+ "question, problem":["question, problème","pergunta, problema","pregunta, problema"],
+ "Is Japanese difficult?":["Le japonais, c'est difficile ?","Japonês é difícil?","¿El japonés es difícil?"],
+ "Japanese (language)":["japonais (langue)","japonês (idioma)","japonés (idioma)"],
+ "difficult":["difficile","difícil","difícil"]
+};
+/* Korean and Arabic, same idea: keyed by the English text. Value = [ko, ar]. */
+const XL2 = {
+ "Learn the Japanese people actually speak.":["일본 사람들이 실제로 쓰는 일본어를 배워요.","تعلّم اليابانية التي يتحدث بها الناس فعلًا."],
+ "Watch short clips, tap any word for its meaning, and lock it in with quizzes.":["짧은 영상을 보고, 단어를 탭해서 뜻을 확인하고, 퀴즈로 확실히 익혀요.","شاهد مقاطع قصيرة، والمس أي كلمة لترى معناها، ثم ثبّتها بالاختبارات."],
+ "Choose your language":["언어를 선택하세요","اختر لغتك"],
+ "Start →":["시작하기 →","ابدأ ←"],
+ "Take the quiz":["퀴즈 풀기","ابدأ الاختبار"],
+ "phrases":["표현","عبارة"],
+ "video clips":["영상","مقطع فيديو"],
+ "Install the app for free":["앱 무료 설치","ثبّت التطبيق مجانًا"],
+ "Watch":["보기","شاهد"],
+ "See how Japanese people really talk in short clips. Replay any line, or slow it down.":["일본 사람들이 실제로 어떻게 말하는지 짧은 영상으로 확인해요. 문장마다 다시 듣거나 느리게 들을 수 있어요.","شاهد كيف يتحدث اليابانيون فعلًا في مقاطع قصيرة. أعد تشغيل أي جملة أو أبطئها."],
+ "Tap":["탭하기","المس"],
+ "Tap any word to see its reading and meaning in your language.":["단어를 탭하면 읽는 법과 뜻을 내 언어로 볼 수 있어요.","المس أي كلمة لترى طريقة قراءتها ومعناها بلغتك."],
+ "Quiz":["퀴즈","اختبار"],
+ "Check what you learned with quick 4-choice quizzes.":["4지선다 퀴즈로 배운 내용을 확인해요.","راجع ما تعلّمته باختبارات سريعة من 4 خيارات."],
+ "Add it to your home screen to use it like an app.":["홈 화면에 추가하면 앱처럼 쓸 수 있어요.","أضفه إلى الشاشة الرئيسية لتستخدمه كتطبيق."],
+ "Watch, tap and quiz your way to real Japanese":["보고, 탭하고, 퀴즈로 배우는 진짜 일본어","شاهد والمس واختبر نفسك: يابانية حقيقية"],
+ "Furigana":["후리가나","فوريغانا"],
+ "Romaji":["로마자","روماجي"],
+ "Learn":["배우기","تعلّم"],
+ "When to use: ":["사용하는 상황: ","متى تُستخدم: "],
+ "Video lines & translation · tap a word for its meaning":["영상 대사와 번역 · 단어를 탭하면 뜻이 나와요","جمل الفيديو والترجمة · المس كلمة لترى معناها"],
+ "Example dialogue · tap a word for its meaning":["대화 예시 · 단어를 탭하면 뜻이 나와요","حوار مثال · المس كلمة لترى معناها"],
+ "Tap the yellow phrase or a dotted word to see its meaning here.":["노란색 표현이나 점선 단어를 탭하면 여기에 뜻이 나와요.","المس العبارة الصفراء أو كلمة منقّطة ليظهر معناها هنا."],
+ "Tap the yellow phrase or a dotted word. Tap the blurred text to reveal the translation.":["노란색 표현이나 점선 단어를 탭해 보세요. 흐린 글자를 탭하면 번역이 보여요.","المس العبارة الصفراء أو كلمة منقّطة. المس النص الضبابي لإظهار الترجمة."],
+ "▶ Play all slowly":["▶ 전체 느리게 재생","▶ تشغيل الكل ببطء"],
+ "Show all translations":["번역 모두 보기","إظهار كل الترجمات"],
+ "▶ Line":["▶ 이 문장","▶ هذه الجملة"],
+ "▶ Slow":["▶ 느리게","▶ ببطء"],
+ "🔊 Listen":["🔊 듣기","🔊 استمع"],
+ "🐢 Slowly":["🐢 천천히","🐢 ببطء"],
+ "Key phrase":["핵심 표현","العبارة الأساسية"],
+ "Words":["단어","المفردات"],
+ "More examples · tap a word":["예문 더 보기 · 단어를 탭하세요","أمثلة أخرى · المس كلمة"],
+ "Tap a word in the examples to see its meaning here.":["예문의 단어를 탭하면 여기에 뜻이 나와요.","المس كلمة في الأمثلة ليظهر معناها هنا."],
+ "Tip":["팁","نصيحة"],
+ "← Previous":["← 이전","السابق →"],
+ "Next →":["다음 →","← التالي"],
+ "VIDEO · coming soon":["영상 · 준비 중","فيديو · قريبًا"],
+ "The video is on its way. Here's the script:":["영상은 준비 중이에요. 먼저 대본을 보세요:","الفيديو قادم قريبًا. إليك النص:"],
+ "Try with a video on this device":["이 기기의 영상으로 해 보기","جرّب بفيديو من هذا الجهاز"],
+ "The video only plays on this device. It is not uploaded or saved.":["영상은 이 기기에서만 재생되며, 업로드되거나 저장되지 않아요.","يُشغَّل الفيديو على هذا الجهاز فقط، ولا يُرفع ولا يُحفظ."],
+ "What does this phrase mean?":["이 표현은 무슨 뜻일까요?","ما معنى هذه العبارة؟"],
+ "Which phrase fits the blank?":["빈칸에 들어갈 표현은?","أي عبارة تملأ الفراغ؟"],
+ "Correct":["정답","صحيح"],
+ "Correct!":["정답이에요!","إجابة صحيحة!"],
+ "Not quite!":["아쉬워요!","ليس تمامًا!"],
+ "The answer is":["정답은","الإجابة هي"],
+ "Next question":["다음 문제","السؤال التالي"],
+ "See results":["결과 보기","عرض النتيجة"],
+ "Perfect score! You've got all the phrases down.":["만점이에요! 모든 표현을 익혔어요.","علامة كاملة! أتقنت كل العبارات."],
+ "Review the ones you missed and try again.":["틀린 표현을 복습하고 다시 도전해 보세요.","راجع ما أخطأت فيه وحاول مرة أخرى."],
+ "Best score: ":["최고 기록: ","أفضل نتيجة: "],
+ "Phrases to review":["복습할 표현","عبارات للمراجعة"],
+ "Study this":["이 표현 배우기","تعلّم هذه"],
+ "Try again":["다시 도전","حاول مرة أخرى"],
+ "Add to your home screen":["홈 화면에 추가","أضف إلى الشاشة الرئيسية"],
+ "It's free. Open it from the icon anytime — it works offline, too.":["무료예요. 언제든 아이콘으로 열 수 있고, 인터넷 없이도 쓸 수 있어요.","إنه مجاني. افتحه من الأيقونة في أي وقت، ويعمل دون إنترنت أيضًا."],
+ "Close":["닫기","إغلاق"],
+ "Noun":["명사","اسم"],
+ "Verb":["동사","فعل"],
+ "Adjective":["형용사","صفة"],
+ "Adverb":["부사","ظرف"],
+ "Expression":["표현","تعبير"],
+ "Demonstrative":["지시어","اسم إشارة"],
+ "Pronoun":["대명사","ضمير"],
+ "Interjection":["감탄사","أداة تعجب"],
+ "Particle":["조사","أداة (حرف)"],
+ "Awesome! / Uh-oh! (amazing or terrible)":["대박! / 큰일 났다! (아주 좋거나 아주 나쁨)","رائع! / يا للمصيبة! (رائع جدًا أو سيئ جدًا)"],
+ "Reacting to something surprising":["놀라운 일에 반응할 때","عند التفاعل مع شيء مفاجئ"],
+ "Originally meant 'dangerous', but young people use it for anything extreme — good or bad. Tone and context tell you which.":["원래는 '위험하다'라는 뜻이지만, 젊은 사람들은 좋든 나쁘든 극단적인 모든 것에 써요. 말투와 상황으로 판단해요.","كان معناها الأصلي «خطير»، لكن الشباب يستخدمونها لأي شيء متطرف، جيدًا كان أم سيئًا. النبرة والسياق يحددان المعنى."],
+ "Casual only — avoid it with your boss or in formal settings. やばっ! is an even shorter form.":["친한 사이에서만 써요. 상사나 격식 있는 자리에서는 피하세요. やばっ! 는 더 짧은 형태예요.","للمواقف غير الرسمية فقط؛ تجنّبها مع مديرك أو في المواقف الرسمية. やばっ! صيغة أقصر."],
+ "This ramen is insane!":["이 라멘 대박이야!","هذا الرامن مذهل!"],
+ "Right? It's really popular.":["그렇지? 엄청 인기 있어.","أليس كذلك؟ إنه مشهور جدًا."],
+ "this":["이","هذا، هذه"],
+ "ramen (noodle soup)":["라멘 (일본식 라면)","رامن (حساء النودلز)"],
+ "right? (asking for agreement)":["그렇지? (동의를 구함)","أليس كذلك؟ (طلب الموافقة)"],
+ "popularity; popular":["인기; 인기 있는","شعبية؛ مشهور"],
+ "it is, you know (casual explanation)":["~거든 (편한 설명)","إنه…، كما تعلم (شرح غير رسمي)"],
+ "There's a test tomorrow. I'm in trouble!":["내일 시험이야. 큰일 났다!","عندي اختبار غدًا. أنا في ورطة!"],
+ "tomorrow":["내일","غدًا"],
+ "test, exam":["시험, 테스트","اختبار، امتحان"],
+ "Isn't this view amazing?":["이 경치 대박이지 않아?","أليس هذا المنظر رائعًا؟"],
+ "view, scenery":["경치, 풍경","منظر، مشهد"],
+ "Seriously? / For real":["진짜? / 정말로","حقًا؟ / بجد"],
+ "When surprised, or to stress that something is true":["놀랐을 때, 또는 정말이라고 강조할 때","عند الدهشة، أو للتأكيد أن الأمر حقيقي"],
+ "Casual form of 本当に (really). With a rising tone (マジで？) it's a question: 'Seriously?'. Said flat, it means 'I mean it.'":["本当に(정말로)의 구어체예요. 끝을 올리면(マジで？) '진짜?'라는 질문이고, 평탄하게 말하면 '진짜야'라는 뜻이에요.","صيغة عامية من 本当に (حقًا). بنبرة صاعدة (マジで؟) تصبح سؤالًا: «حقًا؟». وبنبرة عادية تعني «أنا جاد»."],
+ "Short version: マジ？ Polite version: 本当ですか？":["짧게: マジ？ 정중하게: 本当ですか？","الصيغة القصيرة: マジ？ الصيغة المهذبة: 本当ですか？"],
+ "I won the lottery!":["복권에 당첨됐어!","ربحت اليانصيب!"],
+ "Seriously? That's amazing!":["진짜? 대단하다!","حقًا؟ هذا رائع!"],
+ "lottery (ticket)":["복권","ورقة يانصيب"],
+ "won, hit (past of 当たる)":["당첨됐다, 맞았다 (当たる의 과거형)","ربح، أصاب (ماضي 当たる)"],
+ "amazing, awesome":["대단하다, 멋지다","رائع، مذهل"],
+ "I'm seriously exhausted.":["진짜 너무 피곤해.","أنا متعب جدًا بجد."],
+ "got tired (past of 疲れる)":["피곤했다 (疲れる의 과거형)","تعبتُ (ماضي 疲れる)"],
+ "For real? I didn't know.":["진짜? 몰랐어.","حقًا؟ لم أكن أعرف."],
+ "didn't know":["몰랐다","لم أكن أعرف"],
+ "Thank you for the food (before eating)":["잘 먹겠습니다 (식사 전)","شكرًا على الطعام (قبل الأكل)"],
+ "Right before you start eating":["밥을 먹기 직전에","قبل البدء في الأكل مباشرة"],
+ "Literally 'I humbly receive.' It thanks the people who made the food and the lives in it. Japanese people say it even when eating alone.":["직역하면 '겸손히 받겠습니다'예요. 음식을 만든 사람과 음식이 된 생명에게 감사하는 말이에요. 일본 사람들은 혼자 먹을 때도 말해요.","معناها الحرفي «أتلقّى بتواضع». هي شكر لمن أعدّ الطعام وللأرواح التي فيه. يقولها اليابانيون حتى عندما يأكلون وحدهم."],
+ "Put your hands together and bow slightly. After eating, say ごちそうさまでした.":["두 손을 모으고 살짝 고개를 숙여요. 다 먹은 후에는 ごちそうさまでした라고 말해요.","اضمم يديك وانحنِ قليلًا. وبعد الأكل قل ごちそうさまでした."],
+ "Here, go ahead and eat.":["자, 어서 먹어.","تفضّل، كُل."],
+ "Wow, looks delicious! Thank you for the food!":["와, 맛있겠다! 잘 먹겠습니다!","واو، يبدو لذيذًا! شكرًا على الطعام!"],
+ "please, go ahead":["자, 어서 (권유)","تفضّل"],
+ "eat (request form of 食べる)":["먹어 (食べる의 부탁형)","كُل (صيغة الطلب من 食べる)"],
+ "wow":["와","واو"],
+ "looks delicious":["맛있어 보인다","يبدو لذيذًا"],
+ "All together: thank you for the food!":["다 같이: 잘 먹겠습니다!","معًا: شكرًا على الطعام!"],
+ "all together":["다 같이","جميعًا معًا"],
+ "Hands together — itadakimasu.":["두 손을 모으고, 이타다키마스.","اليدان مضمومتان: إيتاداكيماس."],
+ "hand":["손","يد"],
+ "put together (て form of 合わせる)":["모으다 (合わせる의 て형)","ضمّ (صيغة て من 合わせる)"],
+ "Thanks for your hard work (greeting)":["수고하셨습니다 (인사)","شكرًا على مجهودك (تحية)"],
+ "At work, in clubs, or after finishing something together":["회사나 동아리에서, 또는 함께 일을 끝낸 후에","في العمل أو النوادي، أو بعد إنهاء عمل معًا"],
+ "The all-purpose workplace greeting. Use it when passing coworkers in the hall, at the start of emails, or when leaving for the day.":["직장에서 두루 쓰는 인사예요. 복도에서 동료를 만났을 때, 이메일 첫머리, 퇴근할 때 써요.","تحية العمل لكل المناسبات. تُقال عند مقابلة الزملاء في الممر، وفي بداية الرسائل الإلكترونية، وعند المغادرة."],
+ "With friends, just say お疲れ! When leaving before others: お先に失礼します.":["친구끼리는 お疲れ! 라고만 해요. 남보다 먼저 퇴근할 때는 お先に失礼します.","مع الأصدقاء قل فقط お疲れ! وعند المغادرة قبل الآخرين: お先に失礼します."],
+ "The meeting is over.":["회의 끝났습니다.","انتهى الاجتماع."],
+ "Thanks for your hard work!":["수고하셨습니다!","شكرًا على مجهودك!"],
+ "meeting":["회의","اجتماع"],
+ "has finished (polite past of 終わる)":["끝났습니다 (終わる의 정중한 과거형)","انتهى (الماضي المهذب من 終わる)"],
+ "Thanks for today. I'll be heading out first.":["오늘 수고하셨습니다. 먼저 들어가 보겠습니다.","شكرًا على اليوم. سأغادر أولًا."],
+ "excuse me for leaving first":["먼저 실례하겠습니다","اعذروني على المغادرة أولًا"],
+ "Good job today, too!":["오늘도 수고했어!","أحسنت اليوم أيضًا!"],
+ "today":["오늘","اليوم"],
+ "also, too":["~도","أيضًا"],
+ "Nice to meet you / I'm counting on you":["잘 부탁드립니다 / 부탁해요","تشرفنا / أعتمد عليك"],
+ "Introducing yourself, or asking someone for a favor":["자기소개를 할 때, 또는 부탁할 때","عند تقديم نفسك أو طلب خدمة"],
+ "There's no exact English match. It asks for a good relationship from now on. Used at the end of self-introductions, requests and emails.":["한국어의 '잘 부탁드립니다'와 거의 같아요. 앞으로 좋은 관계를 부탁하는 말이에요. 자기소개, 부탁, 이메일 끝에 써요.","لا يوجد مقابل دقيق لها في العربية. معناها طلب علاقة طيبة من الآن فصاعدًا. تُقال في نهاية التعريف بالنفس والطلبات والرسائل."],
+ "Casual: よろしく! Very polite: よろしくお願いいたします.":["편하게: よろしく! 아주 정중하게: よろしくお願いいたします.","غير رسمي: よろしく! مهذب جدًا: よろしくお願いいたします."],
+ "Nice to meet you. I'm Lee.":["처음 뵙겠습니다. 리입니다.","تشرفنا. أنا لي."],
+ "I look forward to getting to know you.":["잘 부탁드립니다.","يسعدني التعرّف إليكم."],
+ "nice to meet you (first meeting)":["처음 뵙겠습니다 (첫 만남)","تشرفنا (أول لقاء)"],
+ "am / is (polite)":["~입니다 (정중)","يكون / هو (مهذب)"],
+ "Could you please take care of this?":["이거 잘 부탁드려요.","هل يمكنك الاهتمام بهذا من فضلك؟"],
+ "this (thing)":["이것","هذا (الشيء)"],
+ "Here's to another good year together!":["올해도 잘 부탁해!","لنقضِ عامًا جميلًا آخر معًا!"],
+ "this year":["올해","هذا العام"],
+ "Um, that's a bit… (a soft 'no')":["음, 그건 좀… (부드러운 거절)","امم، هذا صعب قليلًا… («لا» بلطف)"],
+ "Politely turning down an invitation":["초대를 정중하게 거절할 때","عند رفض دعوة بلطف"],
+ "ちょっと means 'a little', but trailing off with ちょっと… is a polite 'no'. Japanese often avoids a direct いいえ — leaving the sentence unfinished is the point.":["ちょっと는 '조금'이라는 뜻이지만, ちょっと…처럼 말끝을 흐리면 정중한 거절이에요. 일본어에서는 직접적인 いいえ를 피하는 경우가 많아요. 문장을 끝맺지 않는 것이 핵심이에요.","ちょっと تعني «قليلًا»، لكن ترك الجملة معلّقة بـ ちょっと… هو «لا» مهذبة. كثيرًا ما يتجنب اليابانيون قول いいえ مباشرة، والمهم هو عدم إكمال الجملة."],
+ "If someone says ちょっと… to you, don't push. It almost always means no.":["상대가 ちょっと…라고 하면 더 조르지 마세요. 거의 항상 거절이라는 뜻이에요.","إذا قال لك أحد ちょっと… فلا تُلحّ. فهي تعني «لا» في أغلب الأحيان."],
+ "Want to go for drinks tonight?":["오늘 밤 한잔하러 갈래?","هل نخرج لنشرب شيئًا الليلة؟"],
+ "Tonight's a bit… (difficult).":["오늘 밤은 좀… (어려워).","الليلة صعب قليلًا…"],
+ "tonight":["오늘 밤","الليلة"],
+ "(go) for drinks":["(술) 마시러","(الذهاب) للشرب"],
+ "won't you go? (casual invitation)":["안 갈래? (편한 권유)","ألا تذهب؟ (دعوة غير رسمية)"],
+ "as for… (topic marker)":["~은/는 (주제 조사)","أما… (أداة الموضوع)"],
+ "Sunday is a bit… (not good).":["일요일은 좀… (안 돼).","يوم الأحد صعب قليلًا…"],
+ "Sunday":["일요일","الأحد"],
+ "Wait a sec!":["잠깐만!","انتظر لحظة!"],
+ "wait (request form of 待つ)":["기다려 (待つ의 부탁형)","انتظر (صيغة الطلب من 待つ)"],
+ "I'm fine / No, thank you":["괜찮아요 / 아니요, 됐어요","أنا بخير / لا، شكرًا"],
+ "Declining an offer in a shop, or saying you're OK":["가게에서 거절할 때, 또는 괜찮다고 말할 때","عند رفض عرض في متجر، أو للقول إنك بخير"],
+ "Literally 'safe, OK'. In shops, answering 'Do you need a bag?' with 大丈夫です means 'No thanks'. It confuses even Japanese people — gestures and tone help.":["직역하면 '안전하다, 괜찮다'예요. 가게에서 '봉투 필요하세요?'에 大丈夫です라고 하면 '괜찮아요(필요 없어요)'라는 뜻이에요. 일본 사람도 헷갈리니 손짓과 말투가 도움이 돼요.","معناها الحرفي «آمن، لا بأس». في المتجر، الرد على «هل تريد كيسًا؟» بـ 大丈夫です يعني «لا، شكرًا». حتى اليابانيون يرتبكون، والإشارات ونبرة الصوت تساعد."],
+ "Add a small wave of the hand to make 'No thanks' clear.":["손을 살짝 저으면 '괜찮아요'라는 뜻이 분명해져요.","حرّك يدك قليلًا ليتضح أنك تقصد «لا، شكرًا»."],
+ "Would you like a bag?":["봉투 필요하세요?","هل تريد كيسًا؟"],
+ "Oh, no thank you.":["아, 괜찮아요.","آه، لا شكرًا."],
+ "bag":["봉투, 가방","كيس، حقيبة"],
+ "would you like (to use)…? (polite, in shops)":["~ 이용하시겠어요? (가게에서 쓰는 정중한 말)","هل ترغب في…؟ (مهذب، في المتاجر)"],
+ "oh":["아","آه"],
+ "Are you OK?":["괜찮아?","هل أنت بخير؟"],
+ "It's totally fine.":["전혀 괜찮아요.","لا مشكلة على الإطلاق."],
+ "totally; (not) at all":["전혀, 완전히","تمامًا؛ (ليس) إطلاقًا"],
+ "(adds emphasis / reassurance)":["(강조·안심시키는 말투)","(للتأكيد / الطمأنة)"],
+ "Excuse me / Sorry / Thank you":["저기요 / 죄송해요 / 감사해요","عفوًا / آسف / شكرًا"],
+ "Calling staff, apologizing, or thanking someone":["직원을 부를 때, 사과할 때, 감사할 때","لنداء الموظفين، أو الاعتذار، أو الشكر"],
+ "One word, three jobs: getting attention (in restaurants), a light apology, and a thank-you when someone goes out of their way for you.":["한 단어로 세 가지 역할: (식당에서) 사람을 부를 때, 가볍게 사과할 때, 일부러 신경 써 준 사람에게 감사할 때.","كلمة واحدة بثلاثة استخدامات: لفت الانتباه (في المطاعم)، واعتذار خفيف، وشكر من تكلّف عناءً من أجلك."],
+ "In restaurants, raise your hand and say すみません! clearly — staff usually won't come unless called.":["식당에서는 손을 들고 すみません! 하고 또렷하게 말하세요. 부르지 않으면 직원이 잘 오지 않아요.","في المطاعم ارفع يدك وقل すみません! بوضوح، فالموظفون غالبًا لا يأتون إلا إذا ناديتهم."],
+ "Excuse me! Can I order?":["저기요! 주문해도 될까요?","عفوًا! هل يمكنني أن أطلب؟"],
+ "Yes, one moment please.":["네, 잠시만 기다려 주세요.","نعم، لحظة من فضلك."],
+ "order":["주문","طلب"],
+ "is it OK? / may I?":["괜찮을까요? / 해도 될까요?","هل يمكن؟ / هل لي أن…؟"],
+ "yes":["네","نعم"],
+ "please wait a moment (very polite)":["잠시만 기다려 주십시오 (매우 정중)","انتظر لحظة من فضلك (مهذب جدًا)"],
+ "Sorry I'm late.":["늦어서 죄송해요.","آسف على التأخير."],
+ "was late (polite past of 遅れる)":["늦었습니다 (遅れる의 정중한 과거형)","تأخرتُ (الماضي المهذب من 遅れる)"],
+ "Thank you for going to the trouble.":["일부러 신경 써 주셔서 감사해요.","شكرًا لأنك تكلّفت العناء."],
+ "going out of your way":["일부러","تكلّف العناء"],
+ "I see / That makes sense":["아하 / 그렇구나","فهمت / هذا منطقي"],
+ "When you understand an explanation":["설명을 이해했을 때","عندما تفهم شرحًا"],
+ "Shows you understood and agree with the logic. Great for keeping a conversation going.":["이해했고 그 논리에 동의한다는 뜻이에요. 대화를 이어 가기에 좋아요.","تُظهر أنك فهمت ووافقت على المنطق. مفيدة جدًا لاستمرار المحادثة."],
+ "Careful: なるほど can sound a little casual to a boss or teacher. そうなんですね is safer.":["주의: 상사나 선생님께 なるほど는 조금 가볍게 들릴 수 있어요. そうなんですね가 더 안전해요.","انتبه: قد تبدو なるほど غير رسمية قليلًا مع المدير أو المعلم. そうなんですね أكثر أمانًا."],
+ "Press this button and it opens.":["이 버튼을 누르면 열려요.","اضغط هذا الزر فيُفتح."],
+ "I see! That's easy.":["아하! 쉽네요.","فهمت! هذا سهل."],
+ "button":["버튼","زر"],
+ "to push, press":["누르다","يضغط"],
+ "opens (polite form of 開く)":["열립니다 (開く의 정중형)","يُفتح (الصيغة المهذبة من 開く)"],
+ "easy, simple":["쉽다, 간단하다","سهل، بسيط"],
+ "…isn't it? (polite, sharing a feeling)":["~네요 (정중, 공감)","…أليس كذلك؟ (مهذب، مشاركة شعور)"],
+ "I see, so that's what it is.":["아하, 그런 거구나.","فهمت، إذن هذا هو الأمر."],
+ "so that's what it is":["그런 거구나","إذن هذا هو الأمر"],
+ "Huh, I see. I learned something.":["아하, 그렇구나. 공부가 됐어.","آه، فهمت. تعلّمت شيئًا جديدًا."],
+ "I learned something":["공부가 됐다, 배웠다","تعلّمت شيئًا"],
+ "Meh / So-so / Hard to say":["애매해 / 그저 그래 / 뭐라 하기 어려워","عادي / لا بأس / يصعب القول"],
+ "Giving a not-so-positive opinion softly":["별로라는 의견을 부드럽게 말할 때","عند إبداء رأي غير إيجابي بلطف"],
+ "The dictionary meaning is 'subtle', but in conversation it's a soft way to say 'not great'. Popular because it doesn't sound harsh.":["사전 뜻은 '미묘하다'지만, 대화에서는 '별로'를 부드럽게 말하는 표현이에요. 딱딱하게 들리지 않아서 자주 써요.","معناها في القاموس «دقيق، خفيّ»، لكنها في الكلام طريقة لطيفة لقول «ليس جيدًا». شائعة لأنها لا تبدو قاسية."],
+ "Ask 微妙？ to get someone's honest opinion. Typical answer: うーん、微妙。":["微妙？ 라고 물으면 솔직한 의견을 들을 수 있어요. 흔한 대답: うーん、微妙。","اسأل 微妙？ لتعرف رأي الشخص الصريح. الإجابة المعتادة: うーん、微妙。"],
+ "How was that movie?":["그 영화 어땠어?","كيف كان ذلك الفيلم؟"],
+ "Hmm, it was meh.":["음, 애매했어.","همم، كان عاديًا."],
+ "that (over there)":["저","ذلك"],
+ "movie":["영화","فيلم"],
+ "how was it?":["어땠어?","كيف كان؟"],
+ "hmm":["음","همم"],
+ "Isn't this color kind of meh?":["이 색 좀 애매하지 않아?","أليس هذا اللون غريبًا بعض الشيء؟"],
+ "color":["색","لون"],
+ "a little, kind of":["조금, 좀","قليلًا، نوعًا ما"],
+ "The taste was so-so.":["맛은 그저 그랬어.","كان الطعم عاديًا."],
+ "taste, flavor":["맛","طعم، نكهة"],
+ "Where?":["어디?","أين؟"],
+ "Looking for something or someone":["물건이나 사람을 찾을 때","عند البحث عن شيء أو شخص"],
+ "どこ on its own is a casual 'Where?'. Add ですか to make it polite: どこですか？ The pattern [thing]はどこですか？ means 'Where is [thing]?'.":["どこ만 말하면 편한 '어디?'예요. ですか를 붙이면 정중해져요: どこですか？ [물건]はどこですか？는 '[물건]은 어디예요?'라는 뜻이에요.","どこ وحدها تعني «أين؟» بشكل غير رسمي. أضف ですか لتصبح مهذبة: どこですか？ والتركيب [شيء]はどこですか？ يعني «أين [الشيء]؟»."],
+ "A lifesaver when you're lost: トイレはどこですか？ (Where's the toilet?) Point at a map while asking and it's even clearer.":["길을 잃었을 때 아주 유용해요: トイレはどこですか？ (화장실은 어디예요?) 지도를 가리키면서 물으면 더 잘 통해요.","منقذة عندما تضيع: トイレはどこですか？ (أين الحمّام؟) أشر إلى خريطة أثناء السؤال ليكون أوضح."],
+ "Where is my rabbit?":["내 토끼는 어디에 있어요?","أين أرنبي؟"],
+ "where":["어디","أين"],
+ "I, me":["나, 저","أنا"],
+ "'s, of (shows possession)":["~의 (소유)","لـِ، الخاص بـ (الملكية)"],
+ "rabbit":["토끼","أرنب"],
+ "(polite question ending)":["(정중한 의문 어미)","(نهاية سؤال مهذبة)"],
+ "Where is the toilet?":["화장실은 어디예요?","أين الحمّام؟"],
+ "toilet, restroom":["화장실","حمّام، دورة مياه"],
+ "Where is the station?":["역은 어디예요?","أين المحطة؟"],
+ "(train) station":["(기차) 역","محطة (قطار)"],
+ "High, tall / Low, short":["높다 / 낮다","عالٍ، طويل / منخفض، قصير"],
+ "Talking about height, prices or levels":["높이, 가격, 수준을 말할 때","عند الحديث عن الارتفاع أو الأسعار أو المستويات"],
+ "Both are い-adjectives. 高い means 'high / tall', and for prices it means 'expensive'. Careful: the opposite of 'expensive' is 安い (cheap), not 低い.":["둘 다 い형용사예요. 高い는 '높다'이고, 가격에 쓰면 '비싸다'예요. 주의: '비싸다'의 반대는 低い가 아니라 安い(싸다)예요.","كلتاهما صفة من نوع い. 高い تعني «عالٍ / طويل»، ومع الأسعار تعني «غالٍ». انتبه: عكس «غالٍ» هو 安い (رخيص)، وليس 低い."],
+ "For a person's height, say 背が高い (tall) / 背が低い (short).":["사람의 키는 背が高い(키가 크다) / 背が低い(키가 작다)라고 해요.","لطول الشخص قل 背が高い (طويل) / 背が低い (قصير)."],
+ "High! / Tall!":["높다!","عالٍ!"],
+ "Low! / Short!":["낮다!","منخفض!"],
+ "high, tall; expensive":["높다; 비싸다","عالٍ، طويل؛ غالٍ"],
+ "low; short (height)":["낮다; (키가) 작다","منخفض؛ قصير (القامة)"],
+ "This building is tall.":["이 빌딩은 높아.","هذا المبنى عالٍ."],
+ "building":["빌딩, 건물","مبنى"],
+ "This bag is expensive.":["이 가방은 비싸.","هذه الحقيبة غالية."],
+ "My little brother is short.":["남동생은 키가 작아.","أخي الأصغر قصير."],
+ "younger brother":["남동생","الأخ الأصغر"],
+ "height (of a person)":["키","طول القامة"],
+ "(subject marker)":["~이/가 (주어 조사)","(أداة الفاعل)"],
+ "When?":["언제?","متى؟"],
+ "Asking about dates and times":["날짜나 시간을 물을 때","عند السؤال عن التواريخ والأوقات"],
+ "いつ alone is a casual 'When?'. Add ですか to make it polite: いつですか？ The usual pattern is [thing]はいつですか？ = 'When is [thing]?'.":["いつ만 말하면 편한 '언제?'예요. ですか를 붙이면 정중해져요: いつですか？ 흔한 패턴은 [일]はいつですか？ = '[일]은 언제예요?'예요.","いつ وحدها تعني «متى؟» بشكل غير رسمي. أضف ですか لتصبح مهذبة: いつですか？ والتركيب الشائع [شيء]はいつですか？ يعني «متى [الشيء]؟»."],
+ "The most common way to ask is 誕生日はいつですか？ Answer with a date: 5月3日です (It's May 3rd).":["가장 흔한 질문 방식은 誕生日はいつですか？예요. 날짜로 대답해요: 5月3日です (5월 3일이에요).","أشهر طريقة للسؤال هي 誕生日はいつですか？ وأجب بتاريخ: 5月3日です (في 3 مايو)."],
+ "When is your birthday?":["생일이 언제예요?","متى عيد ميلادك؟"],
+ "when":["언제","متى"],
+ "birthday":["생일","عيد الميلاد"],
+ "When does summer vacation start?":["여름방학은 언제부터야?","متى تبدأ العطلة الصيفية؟"],
+ "summer vacation":["여름방학","العطلة الصيفية"],
+ "from (starting point)":["~부터","من (نقطة البداية)"],
+ "Sorry (casual)":["미안해 (반말)","آسف (غير رسمي)"],
+ "Apologizing to friends or family":["친구나 가족에게 사과할 때","عند الاعتذار للأصدقاء أو العائلة"],
+ "ごめん is the casual 'sorry'; adding ね makes it softer and friendlier. 遅れて来て means 'coming late' (遅れる 'be late' + 来る 'come'). With teachers or at work, say 遅れてすみません instead.":["ごめん은 편한 '미안'이고, ね를 붙이면 더 부드럽고 친근해져요. 遅れて来て는 '늦게 와서'라는 뜻이에요 (遅れる '늦다' + 来る '오다'). 선생님이나 직장에서는 遅れてすみません이라고 하세요.","ごめん هي «آسف» غير الرسمية، وإضافة ね تجعلها ألطف وأكثر ودًّا. 遅れて来て تعني «المجيء متأخرًا» (遅れる «يتأخر» + 来る «يأتي»). مع المعلمين أو في العمل قل 遅れてすみません."],
+ "Politeness ladder: ごめん → ごめんね → ごめんなさい → すみません → 申し訳ありません (most formal).":["정중함의 단계: ごめん → ごめんね → ごめんなさい → すみません → 申し訳ありません (가장 격식).","درجات التهذيب: ごめん → ごめんね → ごめんなさい → すみません → 申し訳ありません (الأكثر رسمية)."],
+ "Sorry I'm late!":["늦게 와서 미안해!","آسف على التأخير!"],
+ "being late (て form of 遅れる)":["늦어서 (遅れる의 て형)","متأخرًا (صيغة て من 遅れる)"],
+ "coming (て form of 来る)":["와서 (来る의 て형)","المجيء (صيغة て من 来る)"],
+ "Sorry to keep you waiting.":["기다리게 해서 미안해.","آسف لأنني جعلتك تنتظر."],
+ "making (someone) wait (causative of 待つ)":["기다리게 하다 (待つ의 사역형)","جعل شخص ينتظر (صيغة السببية من 待つ)"],
+ "Sorry for being late. (polite)":["늦어서 죄송합니다. (정중)","أعتذر عن التأخير. (مهذب)"],
+ "excuse me, I'm sorry (polite)":["죄송합니다 (정중)","عفوًا، أنا آسف (مهذب)"],
+ "About to melt / Looks like it'll melt":["녹을 것 같다","على وشك الذوبان"],
+ "Describing something that's about to happen":["곧 일어날 것 같은 일을 말할 때","عند وصف شيء على وشك الحدوث"],
+ "溶ける means 'to melt'. Drop る and add そう (溶けそう) to say it looks like it's about to happen. The same pattern works for many verbs: 雨が降りそう (It looks like rain), 泣きそう (I'm about to cry).":["溶ける는 '녹다'라는 뜻이에요. る를 빼고 そう를 붙이면(溶けそう) '~할 것 같다'라는 뜻이 돼요. 많은 동사에 쓸 수 있어요: 雨が降りそう (비가 올 것 같아), 泣きそう (울 것 같아).","溶ける تعني «يذوب». احذف る وأضف そう (溶けそう) لتقول إن الأمر يبدو على وشك الحدوث. ينطبق هذا النمط على أفعال كثيرة: 雨が降りそう (يبدو أنها ستمطر)، 泣きそう (أكاد أبكي)."],
+ "In everyday talk, アイス alone means ice cream. Eat it fast: 早く食べて！ (Eat it quickly!)":["일상 대화에서는 アイス만 말해도 아이스크림이에요. 얼른 먹어요: 早く食べて！ (빨리 먹어!)","في الكلام اليومي تكفي كلمة アイス لتعني الآيس كريم. كُله بسرعة: 早く食べて！ (كُله بسرعة!)"],
+ "Ice cream.":["아이스크림.","آيس كريم."],
+ "The ice cream is about to melt.":["아이스크림이 녹을 것 같아요.","الآيس كريم على وشك أن يذوب."],
+ "ice cream":["아이스크림","آيس كريم"],
+ "looks about to melt (溶ける + そう)":["녹을 것 같다 (溶ける + そう)","يبدو أنه سيذوب (溶ける + そう)"],
+ "It looks like it's going to rain.":["비가 올 것 같아.","يبدو أنها ستمطر."],
+ "rain":["비","مطر"],
+ "looks like it will fall (rain)":["(비가) 내릴 것 같다","يبدو أنه سيهطل (المطر)"],
+ "Eat it quick! It's about to melt!":["빨리 먹어! 녹을 것 같아!","كُله بسرعة! سيذوب!"],
+ "quickly":["빨리","بسرعة"],
+ "Why?":["왜?","لماذا؟"],
+ "Asking for a reason":["이유를 물을 때","عند السؤال عن السبب"],
+ "なぜ is a slightly formal 'why'. In casual talk people usually say どうして or なんで. 知っているの means 'do you know?'; the の at the end makes it a soft, casual question.":["なぜ는 조금 격식 있는 '왜'예요. 일상 대화에서는 どうして나 なんで를 더 많이 써요. 知っているの는 '알고 있어?'라는 뜻이고, 끝의 の가 질문을 부드럽고 편하게 만들어요.","なぜ تعني «لماذا» بشكل رسمي قليلًا. في الكلام اليومي يقول الناس غالبًا どうして أو なんで. و知っているの تعني «هل تعرف؟»، والـ の في النهاية تجعل السؤال لطيفًا وغير رسمي."],
+ "From casual to polite: なんで？ → どうして？ → なぜですか？":["편한 말에서 정중한 말 순서: なんで？ → どうして？ → なぜですか？","من غير الرسمي إلى المهذب: なんで？ → どうして？ → なぜですか？"],
+ "How come you know that?":["왜 알고 있어?","كيف عرفت ذلك؟"],
+ "why":["왜","لماذا"],
+ "do you know? (casual question)":["알고 있어? (편한 질문)","هل تعرف؟ (سؤال غير رسمي)"],
+ "Why are you crying?":["왜 울고 있어?","لماذا تبكي؟"],
+ "why (everyday)":["왜 (일상)","لماذا (يومي)"],
+ "are you crying? (casual)":["울고 있어? (편한 말)","هل تبكي؟ (غير رسمي)"],
+ "Why is that? (polite)":["왜 그런가요? (정중)","لماذا؟ (مهذب)"],
+ "Easy / Simple":["간단하다 / 쉽다","سهل / بسيط"],
+ "Saying something is easy to do":["어떤 일이 쉽다고 말할 때","للقول إن شيئًا سهل الفعل"],
+ "簡単 is a な-adjective: 簡単です (It's easy), 簡単な問題 (an easy question). The opposite is 難しい (difficult).":["簡単은 な형용사예요: 簡単です (간단해요), 簡単な問題 (간단한 문제). 한자어 '간단'과 같은 말이에요. 반대말은 難しい (어렵다)예요.","簡単 صفة من نوع な: 簡単です (إنه سهل)، 簡単な問題 (سؤال سهل). عكسها 難しい (صعب)."],
+ "Add とても for 'very': とても簡単です (It's very easy). Casual: 超簡単！ (Super easy!)":["'아주'는 とても를 붙여요: とても簡単です (아주 간단해요). 편하게: 超簡単！ (완전 쉬워!)","أضف とても لتعني «جدًا»: とても簡単です (إنه سهل جدًا). وبشكل غير رسمي: 超簡単！ (سهل جدًا!)"],
+ "Easy.":["간단해.","سهل."],
+ "It's easy.":["간단해요.","إنه سهل."],
+ "This question is easy.":["이 문제는 간단해요.","هذا السؤال سهل."],
+ "question, problem":["문제","سؤال، مشكلة"],
+ "Is Japanese difficult?":["일본어는 어려워?","هل اليابانية صعبة؟"],
+ "Japanese (language)":["일본어","اللغة اليابانية"],
+ "difficult":["어렵다","صعب"]
+};
+/* the install steps are lists, so they carry their own fr / pt / es / ko / ar */
+Object.assign(U.ios, {
+ ko:["이 페이지를 <b>Safari</b>로 열어요","<b>공유</b> 버튼(위쪽 화살표가 있는 네모)을 탭해요","<b>홈 화면에 추가</b>를 고르고 추가를 탭해요"],
+ ar:["افتح هذه الصفحة في <b>Safari</b>","المس زر <b>المشاركة</b> (مربع بسهم إلى الأعلى)","اختر <b>إضافة إلى الشاشة الرئيسية</b> ثم المس إضافة"]});
+Object.assign(U.android, {
+ ko:["이 페이지를 <b>Chrome</b>으로 열어요","오른쪽 위의 <b>⋮</b> 메뉴를 탭해요","<b>앱 설치</b> 또는 <b>홈 화면에 추가</b>를 골라요"],
+ ar:["افتح هذه الصفحة في <b>Chrome</b>","المس قائمة <b>⋮</b> أعلى اليمين","اختر <b>تثبيت التطبيق</b> أو <b>إضافة إلى الشاشة الرئيسية</b>"]});
+Object.assign(U.desktop, {
+ ko:["이 페이지를 <b>Chrome</b>이나 <b>Edge</b>로 열어요","주소창 오른쪽의 <b>설치 아이콘</b>을 클릭해요","<b>설치</b>를 클릭해요"],
+ ar:["افتح هذه الصفحة في <b>Chrome</b> أو <b>Edge</b>","انقر <b>أيقونة التثبيت</b> يمين شريط العنوان","انقر <b>تثبيت</b>"]});
+Object.assign(U.ios, {
+ fr:["Ouvrez cette page dans <b>Safari</b>","Touchez le bouton <b>Partager</b> (carré avec une flèche vers le haut)","Choisissez <b>Sur l'écran d'accueil</b>, puis touchez Ajouter"],
+ pt:["Abra esta página no <b>Safari</b>","Toque no botão <b>Compartilhar</b> (quadrado com seta para cima)","Escolha <b>Adicionar à Tela de Início</b> e toque em Adicionar"],
+ es:["Abre esta página en <b>Safari</b>","Toca el botón <b>Compartir</b> (cuadrado con una flecha hacia arriba)","Elige <b>Añadir a pantalla de inicio</b> y toca Añadir"]});
+Object.assign(U.android, {
+ fr:["Ouvrez cette page dans <b>Chrome</b>","Touchez le menu <b>⋮</b> en haut à droite","Choisissez <b>Installer l'application</b> ou <b>Ajouter à l'écran d'accueil</b>"],
+ pt:["Abra esta página no <b>Chrome</b>","Toque no menu <b>⋮</b> no canto superior direito","Escolha <b>Instalar app</b> ou <b>Adicionar à tela inicial</b>"],
+ es:["Abre esta página en <b>Chrome</b>","Toca el menú <b>⋮</b> arriba a la derecha","Elige <b>Instalar aplicación</b> o <b>Añadir a pantalla de inicio</b>"]});
+Object.assign(U.desktop, {
+ fr:["Ouvrez cette page dans <b>Chrome</b> ou <b>Edge</b>","Cliquez sur l'<b>icône d'installation</b> à droite de la barre d'adresse","Cliquez sur <b>Installer</b>"],
+ pt:["Abra esta página no <b>Chrome</b> ou no <b>Edge</b>","Clique no <b>ícone de instalação</b> à direita da barra de endereço","Clique em <b>Instalar</b>"],
+ es:["Abre esta página en <b>Chrome</b> o <b>Edge</b>","Haz clic en el <b>icono de instalar</b> a la derecha de la barra de direcciones","Haz clic en <b>Instalar</b>"]});
+
+/* ---------- data: phrases ----------
+   Japanese markup: 漢字(よみ) = furigana, {…} = tappable word (looked up in words), [[…]] = the key phrase.
+   video: MP4 file name in this folder (shown only once the file exists). t: [start,end] seconds of each line in that video.
+   ALL_PHRASES keeps every phrase ever made; SHOW (below the list) picks which ones the app shows, and in what order. */
+const ALL_PHRASES = [
+ {jp:"やばい", ro:"yabai",
+  mean:L("Awesome! / Uh-oh! (amazing or terrible)","超讚！／糟了！（極好或極糟）","太棒了！／糟了！（极好或极糟）","ज़बरदस्त! / गड़बड़! (बहुत अच्छा या बहुत बुरा)","สุดยอด! / แย่แล้ว! (ดีมากหรือแย่มาก)","Đỉnh quá! / Toang rồi! (cực hay hoặc cực tệ)"),
+  scene:L("Reacting to something surprising","對驚人的事做出反應時","对惊人的事做出反应时","किसी चौंकाने वाली चीज़ पर प्रतिक्रिया देते समय","เวลาตอบสนองต่อสิ่งที่น่าตกใจ","Khi phản ứng với điều bất ngờ"),
+  nuance:L("Originally meant 'dangerous', but young people use it for anything extreme — good or bad. Tone and context tell you which.","原本是「危險」的意思，現在年輕人用來形容任何極端的事，好壞都可以。要看語氣和情境判斷。","原本是“危险”的意思，现在年轻人用来形容任何极端的事，好坏都可以。要看语气和情境判断。","मूल अर्थ 'ख़तरनाक' था, पर युवा इसे किसी भी हद से ज़्यादा चीज़ के लिए बोलते हैं — अच्छी या बुरी। लहजे और संदर्भ से मतलब समझें।","เดิมแปลว่า 'อันตราย' แต่วัยรุ่นใช้กับอะไรก็ได้ที่สุดขั้ว ทั้งดีและแย่ ต้องดูน้ำเสียงและสถานการณ์","Nghĩa gốc là 'nguy hiểm', nhưng giới trẻ dùng cho mọi thứ quá mức — tốt hay xấu đều được. Hãy dựa vào giọng điệu và ngữ cảnh."),
+  tip:L("Casual only — avoid it with your boss or in formal settings. やばっ! is an even shorter form.","只用於輕鬆場合，對上司或正式場合請避免。「やばっ！」是更短的說法。","只用于轻松场合，对上司或正式场合请避免。“やばっ！”是更短的说法。","सिर्फ़ अनौपचारिक बातचीत में। बॉस के सामने या औपचारिक जगह पर न बोलें। やばっ! इसका और छोटा रूप है।","ใช้กับคนสนิทเท่านั้น หลีกเลี่ยงกับหัวหน้าหรือในที่ทางการ やばっ! เป็นแบบสั้นกว่า","Chỉ dùng khi nói chuyện thân mật, tránh dùng với sếp hay nơi trang trọng. やばっ! là dạng ngắn hơn."),
+  video:"no1-yabai.mp4", lines:[
+   {who:"A", jp:"{この}{ラーメン}、[[やばい]]！", ro:"Kono raamen, yabai!", tr:L("This ramen is insane!","這碗拉麵超讚！","这碗拉面太好吃了！","यह रामेन तो कमाल का है!","ราเมงนี้สุดยอดไปเลย!","Món ramen này đỉnh quá!"), t:null},
+   {who:"B", jp:"{でしょ}？{人気(にんき)}{なんだよ}。", ro:"Desho? Ninki nan da yo.", tr:L("Right? It's really popular.","對吧？這家很有名喔。","对吧？这家很火的。","है ना? यह बहुत मशहूर है।","ใช่มั้ยล่ะ? ร้านนี้ดังมากเลยนะ","Đúng không? Quán này nổi tiếng lắm đó."), t:null}],
+  words:{
+   "この":["det","",L("this","這個","这个","यह","นี้","này")],
+   "ラーメン":["n","",L("ramen (noodle soup)","拉麵","拉面","रामेन (नूडल सूप)","ราเมง","mì ramen")],
+   "でしょ":["exp","",L("right? (asking for agreement)","對吧？","对吧？","है ना? (सहमति माँगना)","ใช่มั้ยล่ะ (ขอความเห็นด้วย)","đúng không? (tìm sự đồng tình)")],
+   "人気":["n","にんき",L("popularity; popular","人氣、受歡迎","人气、受欢迎","लोकप्रियता; लोकप्रिय","ความนิยม; เป็นที่นิยม","sự nổi tiếng; được ưa chuộng")],
+   "なんだよ":["exp","",L("it is, you know (casual explanation)","…的喔（口語說明）","…的哦（口语解释）","है, पता है (अनौपचारिक व्याख्या)","…นะ (อธิบายแบบกันเอง)","…đó (giải thích thân mật)")]},
+  examples:[
+   {jp:"{明日(あした)}{テスト}だ。[[やばい]]！", ro:"Ashita tesuto da. Yabai!", tr:L("There's a test tomorrow. I'm in trouble!","明天要考試，慘了！","明天要考试，完了！","कल टेस्ट है। गड़बड़ हो गई!","พรุ่งนี้มีสอบ แย่แล้ว!","Mai thi rồi. Toang!"),
+    words:{"明日":["n","あした",L("tomorrow","明天","明天","कल (आने वाला)","พรุ่งนี้","ngày mai")],"テスト":["n","",L("test, exam","考試","考试","टेस्ट, परीक्षा","การสอบ","bài kiểm tra")]}},
+   {jp:"{この}{景色(けしき)}、[[やばくない]]？", ro:"Kono keshiki, yabakunai?", tr:L("Isn't this view amazing?","這風景是不是超美？","这风景是不是绝了？","यह नज़ारा कमाल का है ना?","วิวนี้สุดยอดไปเลยไม่ใช่เหรอ?","Cảnh này đẹp đỉnh luôn nhỉ?"),
+    words:{"景色":["n","けしき",L("view, scenery","風景","风景","नज़ारा, दृश्य","วิว, ทิวทัศน์","phong cảnh")]}}]},
+
+ {jp:"マジで", ro:"maji de",
+  mean:L("Seriously? / For real","真的假的？／真的","真的假的？／真的","सच में? / सचमुच","จริงดิ? / จริงๆ","Thật á? / Thật sự"),
+  scene:L("When surprised, or to stress that something is true","驚訝時，或強調是真的時","惊讶时，或强调是真的时","हैरानी में, या किसी बात पर ज़ोर देते समय","ตอนตกใจ หรือเน้นว่าเป็นเรื่องจริง","Khi ngạc nhiên hoặc nhấn mạnh là thật"),
+  nuance:L("Casual form of 本当に (really). With a rising tone (マジで？) it's a question: 'Seriously?'. Said flat, it means 'I mean it.'","「本当に（真的）」的口語。語尾上揚（マジで？）是問句「真的嗎？」；平調則是「我是說真的」。","“本当に（真的）”的口语。语尾上扬（マジで？）是问句“真的吗？”；平调则是“我是说真的”。","本当に (सच में) का अनौपचारिक रूप। आवाज़ ऊपर उठाकर (マジで？) बोलें तो सवाल 'सच में?' — सपाट बोलें तो 'मैं सच कह रहा/रही हूँ'।","เป็นภาษาพูดของ 本当に (จริงๆ) ถ้าขึ้นเสียงท้าย (マジで？) เป็นคำถามว่า 'จริงเหรอ?' ถ้าเสียงเรียบแปลว่า 'พูดจริงนะ'","Cách nói thân mật của 本当に (thật sự). Lên giọng cuối (マジで？) là câu hỏi 'Thật á?'; giọng đều nghĩa là 'Nói thật đấy'."),
+  tip:L("Short version: マジ？ Polite version: 本当ですか？","更短：「マジ？」 禮貌說法：「本当ですか？」","更短：“マジ？” 礼貌说法：“本当ですか？”","छोटा रूप: マジ？ विनम्र रूप: 本当ですか？","แบบสั้น: マジ？ แบบสุภาพ: 本当ですか？","Dạng ngắn: マジ？ Dạng lịch sự: 本当ですか？"),
+  video:"no2-majide.mp4", lines:[
+   {who:"A", jp:"{宝(たから)くじ}が{当(あ)たった}！", ro:"Takarakuji ga atatta!", tr:L("I won the lottery!","我中樂透了！","我中彩票了！","मेरी लॉटरी लग गई!","ฉันถูกลอตเตอรี่!","Mình trúng xổ số rồi!"), t:null},
+   {who:"B", jp:"[[マジで]]？{すごい}！", ro:"Maji de? Sugoi!", tr:L("Seriously? That's amazing!","真的假的？好厲害！","真的假的？太厉害了！","सच में? कमाल है!","จริงดิ? สุดยอด!","Thật á? Đỉnh vậy!"), t:null}],
+  words:{
+   "宝くじ":["n","たからくじ",L("lottery (ticket)","樂透、彩券","彩票","लॉटरी","ลอตเตอรี่","vé số")],
+   "当たった":["v","あたった",L("won, hit (past of 当たる)","中了（当たる的過去式）","中了（当たる的过去式）","लग गई, जीत गए (当たる का भूतकाल)","ถูก (รางวัล) (อดีตของ 当たる)","trúng (quá khứ của 当たる)")],
+   "すごい":["adj","",L("amazing, awesome","好厲害","太厉害","कमाल, ज़बरदस्त","สุดยอด","giỏi quá, tuyệt")]},
+  examples:[
+   {jp:"[[マジで]]{疲(つか)れた}。", ro:"Maji de tsukareta.", tr:L("I'm seriously exhausted.","真的累死了。","真的累死了。","मैं सच में थक गया/गई।","เหนื่อยสุดๆ จริงๆ","Mệt thật sự luôn."),
+    words:{"疲れた":["v","つかれた",L("got tired (past of 疲れる)","累了（疲れる的過去式）","累了（疲れる的过去式）","थक गया/गई (疲れる का भूतकाल)","เหนื่อย (อดีตของ 疲れる)","mệt (quá khứ của 疲れる)")]}},
+   {jp:"[[マジで]]？{知(し)らなかった}。", ro:"Maji de? Shiranakatta.", tr:L("For real? I didn't know.","真的嗎？我都不知道。","真的吗？我都不知道。","सच में? मुझे पता नहीं था।","จริงเหรอ? ไม่รู้มาก่อนเลย","Thật á? Mình không biết luôn."),
+    words:{"知らなかった":["v","しらなかった",L("didn't know","不知道（過去）","不知道（过去）","पता नहीं था","ไม่รู้มาก่อน","đã không biết")]}}]},
+
+ {jp:"いただきます", ro:"itadakimasu",
+  mean:L("Thank you for the food (before eating)","我開動了（用餐前）","我开动了（用餐前）","खाना शुरू करने से पहले का धन्यवाद","ขอบคุณสำหรับอาหาร (ก่อนกิน)","Cảm ơn vì bữa ăn (trước khi ăn)"),
+  scene:L("Right before you start eating","開始吃飯的前一刻","开始吃饭之前","खाना खाने से ठीक पहले","ก่อนเริ่มกินข้าว","Ngay trước khi bắt đầu ăn"),
+  nuance:L("Literally 'I humbly receive.' It thanks the people who made the food and the lives in it. Japanese people say it even when eating alone.","字面意思是「我謙卑地領受」。感謝做菜的人，也感謝食材的生命。日本人一個人吃飯時也會說。","字面意思是“我谦卑地领受”。感谢做饭的人，也感谢食材的生命。日本人一个人吃饭时也会说。","शाब्दिक अर्थ: 'मैं विनम्रता से ग्रहण करता/करती हूँ।' इसमें खाना बनाने वालों और भोजन के प्रति आभार है। जापानी लोग अकेले खाते समय भी कहते हैं।","แปลตรงตัวว่า 'ขอรับอย่างนอบน้อม' เป็นการขอบคุณคนทำอาหารและชีวิตในวัตถุดิบ คนญี่ปุ่นพูดแม้กินคนเดียว","Nghĩa đen là 'Tôi xin nhận'. Đây là lời cảm ơn người nấu và cả sự sống trong món ăn. Người Nhật nói cả khi ăn một mình."),
+  tip:L("Put your hands together and bow slightly. After eating, say ごちそうさまでした.","雙手合十、微微低頭。吃完後說「ごちそうさまでした」。","双手合十，微微低头。吃完后说“ごちそうさまでした”。","दोनों हाथ जोड़कर हल्का सिर झुकाएँ। खाने के बाद ごちそうさまでした कहें।","พนมมือและก้มหัวเล็กน้อย กินเสร็จแล้วพูดว่า ごちそうさまでした","Chắp hai tay và hơi cúi đầu. Ăn xong thì nói ごちそうさまでした."),
+  video:"no3-itadakimasu.mp4", lines:[
+   {who:"A", jp:"{どうぞ}、{食(た)べて}。", ro:"Douzo, tabete.", tr:L("Here, go ahead and eat.","請用，吃吧。","请吃吧。","लीजिए, खाइए।","เชิญเลย กินสิ","Mời bạn, ăn đi."), t:null},
+   {who:"B", jp:"{わあ}、{おいしそう}！[[いただきます]]！", ro:"Waa, oishisou! Itadakimasu!", tr:L("Wow, looks delicious! Thank you for the food!","哇，看起來好好吃！我開動了！","哇，看起来好好吃！我开动了！","वाह, बहुत स्वादिष्ट लग रहा है! धन्यवाद, अब खाता/खाती हूँ!","ว้าว น่ากินจัง! ขอบคุณสำหรับอาหารนะ!","Oa, trông ngon quá! Cảm ơn, mình ăn đây!"), t:null}],
+  words:{
+   "どうぞ":["exp","",L("please, go ahead","請、請用","请、请用","लीजिए, कृपया","เชิญ","xin mời")],
+   "食べて":["v","たべて",L("eat (request form of 食べる)","吃吧（食べる的て形）","吃吧（食べる的て形）","खाओ (食べる का अनुरोध रूप)","กินสิ (รูปขอร้องของ 食べる)","ăn đi (dạng nhờ của 食べる)")],
+   "わあ":["int","",L("wow","哇","哇","वाह","ว้าว","oa")],
+   "おいしそう":["adj","",L("looks delicious","看起來很好吃","看起来很好吃","स्वादिष्ट लग रहा है","ดูน่ากิน","trông ngon")]},
+  examples:[
+   {jp:"{みんなで}、[[いただきます]]！", ro:"Minna de, itadakimasu!", tr:L("All together: thank you for the food!","大家一起：我開動了！","大家一起：我开动了！","सब मिलकर: खाने के लिए धन्यवाद!","ทุกคนพร้อมกัน: ขอบคุณสำหรับอาหาร!","Cả nhà cùng nói: cảm ơn vì bữa ăn!"),
+    words:{"みんなで":["exp","",L("all together","大家一起","大家一起","सब मिलकर","ทุกคนด้วยกัน","cùng mọi người")]}},
+   {jp:"{手(て)}を{合(あ)わせて}、[[いただきます]]。", ro:"Te o awasete, itadakimasu.", tr:L("Hands together — itadakimasu.","雙手合十，我開動了。","双手合十，我开动了。","हाथ जोड़कर — इतादाकिमास।","พนมมือ แล้วพูดว่า อิตาดาคิมัส","Chắp tay lại — itadakimasu."),
+    words:{"手":["n","て",L("hand","手","手","हाथ","มือ","tay")],"合わせて":["v","あわせて",L("put together (て form of 合わせる)","合起來（合わせる的て形）","合起来（合わせる的て形）","मिलाकर (合わせる का て रूप)","ประกบกัน (รูป て ของ 合わせる)","chắp lại (dạng て của 合わせる)")]}}]},
+
+ {jp:"お疲(つか)れさまです", ro:"otsukaresama desu",
+  mean:L("Thanks for your hard work (greeting)","辛苦了","辛苦了","आपकी मेहनत के लिए धन्यवाद (अभिवादन)","เหนื่อยหน่อยนะ / ขอบคุณที่ทำงานหนัก","Anh/chị vất vả rồi"),
+  scene:L("At work, in clubs, or after finishing something together","在公司、社團，或一起完成某事後","在公司、社团，或一起完成某事后","ऑफ़िस में, क्लब में, या साथ में कोई काम खत्म करने के बाद","ที่ทำงาน ชมรม หรือหลังทำอะไรเสร็จด้วยกัน","Ở công ty, câu lạc bộ, hoặc sau khi cùng làm xong việc"),
+  nuance:L("The all-purpose workplace greeting. Use it when passing coworkers in the hall, at the start of emails, or when leaving for the day.","職場萬用招呼語。走廊遇到同事、寫郵件開頭、下班時都能用。","职场万能招呼语。走廊遇到同事、写邮件开头、下班时都能用。","ऑफ़िस का हर मौके वाला अभिवादन। गलियारे में सहकर्मी से मिलते समय, ईमेल की शुरुआत में या घर जाते समय बोलें।","เป็นคำทักทายสารพัดประโยชน์ในที่ทำงาน ใช้ตอนเดินสวนเพื่อนร่วมงาน ขึ้นต้นอีเมล หรือตอนเลิกงาน","Câu chào 'vạn năng' nơi công sở. Dùng khi gặp đồng nghiệp ở hành lang, mở đầu email hoặc khi tan làm."),
+  tip:L("With friends, just say お疲れ! When leaving before others: お先に失礼します.","對朋友說「お疲れ！」就好。比別人先下班時說「お先に失礼します」。","对朋友说“お疲れ！”就好。比别人先下班时说“お先に失礼します”。","दोस्तों से बस お疲れ! कहें। दूसरों से पहले निकलते समय: お先に失礼します।","กับเพื่อนพูดแค่ お疲れ! ถ้ากลับก่อนคนอื่นให้พูดว่า お先に失礼します","Với bạn bè chỉ cần nói お疲れ! Khi về trước người khác: お先に失礼します."),
+  video:"no4-otsukaresama.mp4", lines:[
+   {who:"A", jp:"{会議(かいぎ)}、{終(お)わりました}。", ro:"Kaigi, owarimashita.", tr:L("The meeting is over.","會議結束了。","会议结束了。","मीटिंग खत्म हो गई।","ประชุมเสร็จแล้ว","Cuộc họp xong rồi ạ."), t:null},
+   {who:"B", jp:"[[お疲(つか)れさまです]]！", ro:"Otsukaresama desu!", tr:L("Thanks for your hard work!","辛苦了！","辛苦了！","आपकी मेहनत के लिए धन्यवाद!","เหนื่อยหน่อยนะ!","Anh vất vả rồi!"), t:null}],
+  words:{
+   "会議":["n","かいぎ",L("meeting","會議","会议","मीटिंग, बैठक","การประชุม","cuộc họp")],
+   "終わりました":["v","おわりました",L("has finished (polite past of 終わる)","結束了（終わる的禮貌過去式）","结束了（終わる的礼貌过去式）","खत्म हो गई (終わる का विनम्र भूतकाल)","เสร็จแล้ว (อดีตแบบสุภาพของ 終わる)","đã xong (quá khứ lịch sự của 終わる)")]},
+  examples:[
+   {jp:"[[お疲(つか)れさまです]]。{お先(さき)に失礼(しつれい)します}。", ro:"Otsukaresama desu. Osaki ni shitsurei shimasu.", tr:L("Thanks for today. I'll be heading out first.","辛苦了，我先走了。","辛苦了，我先走了。","आज के लिए धन्यवाद। मैं पहले निकल रहा/रही हूँ।","เหนื่อยหน่อยนะ ขอตัวกลับก่อนนะ","Mọi người vất vả rồi. Em xin phép về trước."),
+    words:{"お先に失礼します":["exp","おさきにしつれいします",L("excuse me for leaving first","我先走了","我先走了","माफ़ कीजिए, मैं पहले निकल रहा/रही हूँ","ขอตัวกลับก่อน","xin phép về trước")]}},
+   {jp:"{今日(きょう)}{も}[[お疲(つか)れ]]！", ro:"Kyou mo otsukare!", tr:L("Good job today, too!","今天也辛苦啦！","今天也辛苦啦！","आज भी बहुत मेहनत की!","วันนี้ก็เหนื่อยหน่อยนะ!","Hôm nay cũng vất vả rồi!"),
+    words:{"今日":["n","きょう",L("today","今天","今天","आज","วันนี้","hôm nay")],"も":["part","",L("also, too","也","也","भी","ก็…ด้วย","cũng")]}}]},
+
+ {jp:"よろしくお願(ねが)いします", ro:"yoroshiku onegai shimasu",
+  mean:L("Nice to meet you / I'm counting on you","請多指教／拜託了","请多关照／拜托了","आपसे मिलकर खुशी हुई / आप पर भरोसा है","ฝากเนื้อฝากตัวด้วย / ฝากด้วยนะ","Rất mong được giúp đỡ / Nhờ anh chị"),
+  scene:L("Introducing yourself, or asking someone for a favor","自我介紹，或拜託別人時","自我介绍，或拜托别人时","अपना परिचय देते समय, या किसी से मदद माँगते समय","ตอนแนะนำตัว หรือขอให้ใครช่วย","Khi tự giới thiệu hoặc nhờ ai đó giúp"),
+  nuance:L("There's no exact English match. It asks for a good relationship from now on. Used at the end of self-introductions, requests and emails.","沒有完全對應的翻譯，意思是「今後請多多關照」。用在自我介紹結尾、拜託別人、郵件結尾。","没有完全对应的翻译，意思是“今后请多多关照”。用在自我介绍结尾、拜托别人、邮件结尾。","इसका कोई सटीक अनुवाद नहीं है। भाव है 'आगे से अच्छे संबंध की उम्मीद'। परिचय के अंत में, अनुरोध करते समय और ईमेल के अंत में बोलते हैं।","ไม่มีคำแปลตรงตัว ความหมายคือ 'ขอให้มีความสัมพันธ์ที่ดีต่อจากนี้' ใช้ท้ายการแนะนำตัว เวลาขอร้อง และท้ายอีเมล","Không có từ tương đương hoàn toàn. Ý là 'mong từ nay được quan tâm giúp đỡ'. Dùng cuối phần tự giới thiệu, khi nhờ vả và cuối email."),
+  tip:L("Casual: よろしく! Very polite: よろしくお願いいたします.","輕鬆說法：「よろしく！」 非常禮貌：「よろしくお願いいたします」。","轻松说法：“よろしく！” 非常礼貌：“よろしくお願いいたします”。","अनौपचारिक: よろしく! बहुत विनम्र: よろしくお願いいたします।","แบบกันเอง: よろしく! แบบสุภาพมาก: よろしくお願いいたします","Thân mật: よろしく! Rất lịch sự: よろしくお願いいたします."),
+  video:"no5-yoroshiku.mp4", solo:true, lines:[
+   {who:"A", jp:"{初(はじ)めまして}。リー{です}。", ro:"Hajimemashite. Rii desu.", tr:L("Nice to meet you. I'm Lee.","初次見面，我是李。","初次见面，我是李。","नमस्ते, मैं ली हूँ।","ยินดีที่ได้รู้จัก ฉันชื่อลี","Rất vui được gặp mọi người. Mình là Lee."), t:null},
+   {who:"A", jp:"[[よろしくお願(ねが)いします]]。", ro:"Yoroshiku onegai shimasu.", tr:L("I look forward to getting to know you.","請多指教。","请多关照。","आपके साथ अच्छे संबंध की आशा है।","ฝากเนื้อฝากตัวด้วยนะ","Rất mong được mọi người giúp đỡ."), t:null}],
+  words:{
+   "初めまして":["exp","はじめまして",L("nice to meet you (first meeting)","初次見面","初次见面","पहली मुलाक़ात का अभिवादन","ยินดีที่ได้รู้จัก (เจอครั้งแรก)","rất vui được gặp (lần đầu)")],
+   "です":["exp","",L("am / is (polite)","是（禮貌）","是（礼貌）","है / हूँ (विनम्र)","เป็น / คือ (สุภาพ)","là (lịch sự)")]},
+  examples:[
+   {jp:"{これ}、[[よろしくお願(ねが)いします]]。", ro:"Kore, yoroshiku onegai shimasu.", tr:L("Could you please take care of this?","這個就拜託你了。","这个就拜托你了。","कृपया इसे संभाल लीजिए।","อันนี้ฝากด้วยนะ","Cái này nhờ anh/chị nhé."),
+    words:{"これ":["pron","",L("this (thing)","這個","这个","यह (चीज़)","อันนี้","cái này")]}},
+   {jp:"{今年(ことし)}{も}[[よろしく]]！", ro:"Kotoshi mo yoroshiku!", tr:L("Here's to another good year together!","今年也請多指教！","今年也请多关照！","इस साल भी साथ बना रहे!","ปีนี้ก็ฝากตัวด้วยนะ!","Năm nay cũng mong được giúp đỡ nhé!"),
+    words:{"今年":["n","ことし",L("this year","今年","今年","इस साल","ปีนี้","năm nay")],"も":["part","",L("also, too","也","也","भी","ก็…ด้วย","cũng")]}}]},
+
+ {jp:"ちょっと…", ro:"chotto…",
+  mean:L("Um, that's a bit… (a soft 'no')","這個嘛…有點…（委婉拒絕）","这个嘛…有点…（委婉拒绝）","थोड़ा मुश्किल है… (नरम 'ना')","อืม…ไม่ค่อยสะดวก (ปฏิเสธแบบนุ่มนวล)","Ừm… hơi… (từ chối khéo)"),
+  scene:L("Politely turning down an invitation","委婉拒絕邀請時","委婉拒绝邀请时","निमंत्रण विनम्रता से ठुकराते समय","ปฏิเสธคำชวนอย่างสุภาพ","Khi khéo léo từ chối lời mời"),
+  nuance:L("ちょっと means 'a little', but trailing off with ちょっと… is a polite 'no'. Japanese often avoids a direct いいえ — leaving the sentence unfinished is the point.","「ちょっと」本來是「一點點」，但話說一半「ちょっと…」就是委婉的拒絕。日語常避免直接說「いいえ（不）」，故意不把話說完正是重點。","“ちょっと”本来是“一点点”，但话说一半“ちょっと…”就是委婉的拒绝。日语常避免直接说“いいえ（不）”，故意不把话说完正是重点。","ちょっと का अर्थ 'थोड़ा' है, पर ちょっと… कहकर वाक्य अधूरा छोड़ना विनम्र 'ना' है। जापानी लोग सीधे いいえ कहने से बचते हैं — वाक्य अधूरा छोड़ना ही असली बात है।","ちょっと แปลว่า 'นิดหน่อย' แต่ถ้าพูดค้างไว้ว่า ちょっと… คือการปฏิเสธอย่างสุภาพ คนญี่ปุ่นมักเลี่ยงการพูด いいえ ตรงๆ การพูดไม่จบประโยคคือหัวใจสำคัญ","ちょっと nghĩa là 'một chút', nhưng nói lửng ちょっと… là cách từ chối lịch sự. Người Nhật thường tránh nói thẳng いいえ — bỏ lửng câu chính là mấu chốt."),
+  tip:L("If someone says ちょっと… to you, don't push. It almost always means no.","如果對方說「ちょっと…」，就別再勉強了，幾乎都代表「不行」。","如果对方说“ちょっと…”，就别再勉强了，几乎都代表“不行”。","अगर कोई आपसे ちょっと… कहे, तो ज़ोर न दें। इसका लगभग हमेशा मतलब 'ना' होता है।","ถ้ามีคนพูด ちょっと… กับคุณ อย่าตื๊อ เกือบทุกครั้งหมายถึง 'ไม่'","Nếu ai đó nói ちょっと… với bạn, đừng nài thêm. Hầu như luôn có nghĩa là 'không'."),
+  video:"no6-chotto.mp4", lines:[
+   {who:"A", jp:"{今夜(こんや)}、{飲(の)みに}{行(い)かない}？", ro:"Konya, nomi ni ikanai?", tr:L("Want to go for drinks tonight?","今晚要不要去喝一杯？","今晚要不要去喝一杯？","आज रात ड्रिंक्स के लिए चलें?","คืนนี้ไปดื่มกันไหม?","Tối nay đi nhậu không?"), t:null},
+   {who:"B", jp:"{今夜(こんや)}{は}[[ちょっと…]]", ro:"Konya wa chotto…", tr:L("Tonight's a bit… (difficult).","今晚有點…","今晚有点…","आज रात थोड़ा…","คืนนี้ไม่ค่อยสะดวก…","Tối nay thì hơi…"), t:null}],
+  words:{
+   "今夜":["n","こんや",L("tonight","今晚","今晚","आज रात","คืนนี้","tối nay")],
+   "飲みに":["exp","のみに",L("(go) for drinks","去喝酒","去喝酒","पीने (के लिए)","ไปดื่ม","đi uống (rượu)")],
+   "行かない":["v","いかない",L("won't you go? (casual invitation)","要不要去？（口語邀約）","要不要去？（口语邀约）","चलोगे? (अनौपचारिक न्योता)","ไปไหม? (ชวนแบบกันเอง)","đi không? (rủ thân mật)")],
+   "は":["part","",L("as for… (topic marker)","主題助詞（至於…）","主题助词（至于…）","के बारे में… (विषय-चिह्न)","คำชี้หัวข้อ","trợ từ chủ đề (còn… thì)")]},
+  examples:[
+   {jp:"{日曜日(にちようび)}{は}[[ちょっと…]]", ro:"Nichiyoubi wa chotto…", tr:L("Sunday is a bit… (not good).","星期天有點…","星期天有点…","रविवार थोड़ा…","วันอาทิตย์ไม่ค่อยสะดวก…","Chủ nhật thì hơi…"),
+    words:{"日曜日":["n","にちようび",L("Sunday","星期天","星期天","रविवार","วันอาทิตย์","Chủ nhật")]}},
+   {jp:"[[ちょっと]]{待(ま)って}！", ro:"Chotto matte!", tr:L("Wait a sec!","等一下！","等一下！","एक मिनट रुको!","เดี๋ยวก่อน!","Đợi chút!"),
+    words:{"待って":["v","まって",L("wait (request form of 待つ)","等一下（待つ的て形）","等一下（待つ的て形）","रुको (待つ का अनुरोध रूप)","รอ (รูปขอร้องของ 待つ)","đợi (dạng nhờ của 待つ)")]}}]},
+
+ {jp:"大丈夫(だいじょうぶ)です", ro:"daijoubu desu",
+  mean:L("I'm fine / No, thank you","沒關係／不用了，謝謝","没关系／不用了，谢谢","मैं ठीक हूँ / जी नहीं, धन्यवाद","ไม่เป็นไร / ไม่ต้อง ขอบคุณ","Không sao / Không cần đâu, cảm ơn"),
+  scene:L("Declining an offer in a shop, or saying you're OK","在店裡婉拒，或表示自己沒事時","在店里婉拒，或表示自己没事时","दुकान में कुछ मना करते समय, या 'मैं ठीक हूँ' कहते समय","ปฏิเสธในร้านค้า หรือบอกว่าตัวเองโอเค","Khi từ chối ở cửa hàng, hoặc nói mình ổn"),
+  nuance:L("Literally 'safe, OK'. In shops, answering 'Do you need a bag?' with 大丈夫です means 'No thanks'. It confuses even Japanese people — gestures and tone help.","字面是「安全、沒問題」。在店裡被問「需要袋子嗎？」時回答「大丈夫です」就是「不用了」。連日本人都會搞混，要配合手勢和語氣。","字面是“安全、没问题”。在店里被问“需要袋子吗？”时回答“大丈夫です”就是“不用了”。连日本人都会搞混，要配合手势和语气。","शाब्दिक अर्थ 'सुरक्षित, ठीक'। दुकान में 'बैग चाहिए?' के जवाब में 大丈夫です का मतलब 'जी नहीं, धन्यवाद' है। जापानी लोग भी कभी-कभी भ्रमित होते हैं — इशारों और लहजे से समझें।","แปลตรงตัวว่า 'ปลอดภัย, โอเค' ในร้านค้าถ้าถูกถามว่า 'รับถุงไหม?' แล้วตอบ 大丈夫です หมายถึง 'ไม่ต้อง' แม้แต่คนญี่ปุ่นก็สับสน ต้องดูท่าทางและน้ำเสียงประกอบ","Nghĩa đen là 'an toàn, ổn'. Ở cửa hàng, khi được hỏi 'Có cần túi không?' mà trả lời 大丈夫です nghĩa là 'Không cần'. Ngay cả người Nhật cũng dễ nhầm — hãy dựa vào cử chỉ và giọng điệu."),
+  tip:L("Add a small wave of the hand to make 'No thanks' clear.","加上輕輕揮手，「不用了」的意思會更清楚。","加上轻轻挥手，“不用了”的意思会更清楚。","'जी नहीं' साफ़ करने के लिए हल्के से हाथ हिलाएँ।","โบกมือเบาๆ ประกอบ จะชัดเจนว่า 'ไม่ต้อง'","Kèm cử chỉ xua tay nhẹ để rõ ý 'Không cần'."),
+  video:"no7-daijoubu.mp4", lines:[
+   {who:"A", jp:"{袋(ふくろ)}{は}{ご利用(りよう)ですか}？", ro:"Fukuro wa goriyou desu ka?", tr:L("Would you like a bag?","需要袋子嗎？","需要袋子吗？","क्या आपको थैली चाहिए?","รับถุงไหม?","Quý khách có cần túi không ạ?"), t:null},
+   {who:"B", jp:"{あ}、[[大丈夫(だいじょうぶ)です]]。", ro:"A, daijoubu desu.", tr:L("Oh, no thank you.","啊，不用了。","啊，不用了。","अरे, जी नहीं, धन्यवाद।","อ๋อ ไม่เป็นไร ไม่ต้อง","À, không cần đâu ạ."), t:null}],
+  words:{
+   "袋":["n","ふくろ",L("bag","袋子","袋子","थैली, बैग","ถุง","túi")],
+   "は":["part","",L("as for… (topic marker)","主題助詞（至於…）","主题助词（至于…）","के बारे में… (विषय-चिह्न)","คำชี้หัวข้อ","trợ từ chủ đề (còn… thì)")],
+   "ご利用ですか":["exp","ごりようですか",L("would you like (to use)…? (polite, in shops)","需要嗎？（店員的禮貌用語）","需要吗？（店员的礼貌用语）","क्या आप लेंगे? (दुकान में विनम्र)","ต้องการใช้ไหม (ภาษาสุภาพในร้าน)","quý khách có dùng không? (lịch sự, ở cửa hàng)")],
+   "あ":["int","",L("oh","啊","啊","अरे","อ๋อ","à")]},
+  examples:[
+   {jp:"[[大丈夫(だいじょうぶ)]]？", ro:"Daijoubu?", tr:L("Are you OK?","你還好嗎？","你还好吗？","तुम ठीक हो?","เป็นอะไรไหม?","Bạn ổn không?")},
+   {jp:"{全然(ぜんぜん)}[[大丈夫(だいじょうぶ)です]]{よ}。", ro:"Zenzen daijoubu desu yo.", tr:L("It's totally fine.","完全沒關係喔。","完全没关系哦。","बिल्कुल ठीक है।","ไม่เป็นไรเลย","Hoàn toàn không sao đâu."),
+    words:{"全然":["adv","ぜんぜん",L("totally; (not) at all","完全","完全","बिल्कुल","เลย, โดยสิ้นเชิง","hoàn toàn")],"よ":["part","",L("(adds emphasis / reassurance)","喔（加強語氣）","哦（加强语气）","(ज़ोर या भरोसा देने के लिए)","นะ (เน้นย้ำ)","đâu / đấy (nhấn mạnh)")]}}]},
+
+ {jp:"すみません", ro:"sumimasen",
+  mean:L("Excuse me / Sorry / Thank you","不好意思／對不起／謝謝","不好意思／对不起／谢谢","माफ़ कीजिए / सॉरी / धन्यवाद","ขอโทษ / ขอบคุณ","Xin lỗi / Làm phiền / Cảm ơn"),
+  scene:L("Calling staff, apologizing, or thanking someone","叫店員、道歉或道謝時","叫店员、道歉或道谢时","स्टाफ़ को बुलाते, माफ़ी माँगते या धन्यवाद देते समय","เรียกพนักงาน ขอโทษ หรือขอบคุณ","Khi gọi nhân viên, xin lỗi hoặc cảm ơn"),
+  nuance:L("One word, three jobs: getting attention (in restaurants), a light apology, and a thank-you when someone goes out of their way for you.","一個詞三種用途：叫店員、輕微道歉，以及別人特地幫你時表示感謝。","一个词三种用途：叫店员、轻微道歉，以及别人特地帮你时表示感谢。","एक शब्द, तीन काम: ध्यान खींचना (रेस्टोरेंट में), हल्की माफ़ी, और जब कोई आपके लिए तकलीफ़ उठाए तो धन्यवाद।","คำเดียวใช้ได้ 3 แบบ: เรียกพนักงาน ขอโทษเล็กน้อย และขอบคุณเมื่อมีคนลำบากเพื่อเรา","Một từ, ba công dụng: gọi nhân viên (ở nhà hàng), xin lỗi nhẹ, và cảm ơn khi ai đó cất công giúp mình."),
+  tip:L("In restaurants, raise your hand and say すみません! clearly — staff usually won't come unless called.","在餐廳要舉手清楚地說「すみません！」，不叫的話店員通常不會過來。","在餐厅要举手清楚地说“すみません！”，不叫的话店员通常不会过来。","रेस्टोरेंट में हाथ उठाकर साफ़ आवाज़ में すみません! कहें — बुलाए बिना स्टाफ़ अक्सर नहीं आता।","ในร้านอาหาร ให้ยกมือแล้วพูด すみません! ชัดๆ ถ้าไม่เรียก พนักงานมักไม่มา","Ở nhà hàng, hãy giơ tay và nói rõ すみません! — không gọi thì nhân viên thường không đến."),
+  video:"no8-sumimasen.mp4", lines:[
+   {who:"A", jp:"[[すみません]]！{注文(ちゅうもん)}、{いいですか}？", ro:"Sumimasen! Chuumon, ii desu ka?", tr:L("Excuse me! Can I order?","不好意思！可以點餐嗎？","不好意思！可以点餐吗？","माफ़ कीजिए! क्या मैं ऑर्डर कर सकता/सकती हूँ?","ขอโทษนะ! สั่งอาหารได้ไหม?","Xin lỗi! Cho tôi gọi món được không?"), t:null},
+   {who:"B", jp:"{はい}、{少々(しょうしょう)お待(ま)ちください}。", ro:"Hai, shoushou omachi kudasai.", tr:L("Yes, one moment please.","好的，請稍等。","好的，请稍等。","जी, एक पल रुकिए।","ได้เลย รอสักครู่นะ","Vâng, xin vui lòng đợi một chút."), t:null}],
+  words:{
+   "注文":["n","ちゅうもん",L("order","點餐、訂購","点餐、订购","ऑर्डर","การสั่ง (อาหาร)","gọi món")],
+   "いいですか":["exp","",L("is it OK? / may I?","可以嗎？","可以吗？","क्या ठीक है? / क्या मैं…?","ได้ไหม?","được không?")],
+   "はい":["int","",L("yes","是、好的","是、好的","जी हाँ","ใช่, ได้","vâng")],
+   "少々お待ちください":["exp","しょうしょうおまちください",L("please wait a moment (very polite)","請稍等（非常禮貌）","请稍等（非常礼貌）","कृपया एक पल रुकिए (बहुत विनम्र)","กรุณารอสักครู่ (สุภาพมาก)","xin vui lòng đợi một chút (rất lịch sự)")]},
+  examples:[
+   {jp:"[[すみません]]、{遅(おく)れました}。", ro:"Sumimasen, okuremashita.", tr:L("Sorry I'm late.","對不起，我遲到了。","对不起，我迟到了。","माफ़ कीजिए, मुझे देर हो गई।","ขอโทษที่มาสาย","Xin lỗi, tôi đến muộn."),
+    words:{"遅れました":["v","おくれました",L("was late (polite past of 遅れる)","遲到了（遅れる的禮貌過去式）","迟到了（遅れる的礼貌过去式）","देर हो गई (遅れる का विनम्र भूतकाल)","มาสาย (อดีตแบบสุภาพของ 遅れる)","đã đến muộn (quá khứ lịch sự của 遅れる)")]}},
+   {jp:"{わざわざ}[[すみません]]。", ro:"Wazawaza sumimasen.", tr:L("Thank you for going to the trouble.","還特地麻煩你，謝謝。","还特地麻烦你，谢谢。","मेरे लिए इतनी तकलीफ़ उठाने के लिए धन्यवाद।","ขอบคุณที่อุตส่าห์ลำบากนะ","Cảm ơn vì đã cất công."),
+    words:{"わざわざ":["adv","",L("going out of your way","特地","特地","ख़ास तौर पर तकलीफ़ उठाकर","อุตส่าห์","cất công")]}}]},
+
+ {jp:"なるほど", ro:"naruhodo",
+  mean:L("I see / That makes sense","原來如此","原来如此","अच्छा, समझ गया/गई","อ๋อ เข้าใจแล้ว","À, ra vậy / Hiểu rồi"),
+  scene:L("When you understand an explanation","聽懂對方的說明時","听懂对方的说明时","जब कोई बात समझ में आ जाए","ตอนเข้าใจคำอธิบาย","Khi hiểu ra lời giải thích"),
+  nuance:L("Shows you understood and agree with the logic. Great for keeping a conversation going.","表示你理解並認同對方的說法，很適合用來接話。","表示你理解并认同对方的说法，很适合用来接话。","दिखाता है कि आप बात समझ गए और तर्क से सहमत हैं। बातचीत आगे बढ़ाने के लिए बढ़िया।","แสดงว่าเข้าใจและเห็นด้วยกับเหตุผล ใช้ต่อบทสนทนาได้ดี","Cho thấy bạn đã hiểu và đồng tình với lập luận. Rất hợp để duy trì cuộc trò chuyện."),
+  tip:L("Careful: なるほど can sound a little casual to a boss or teacher. そうなんですね is safer.","注意：對上司或老師說「なるほど」可能稍嫌隨便，「そうなんですね」比較保險。","注意：对上司或老师说“なるほど”可能稍嫌随便，“そうなんですね”比较保险。","ध्यान दें: बॉस या शिक्षक से なるほど थोड़ा अनौपचारिक लग सकता है। そうなんですね ज़्यादा सुरक्षित है।","ระวัง: พูด なるほど กับหัวหน้าหรืออาจารย์อาจฟังไม่ค่อยสุภาพ ใช้ そうなんですね จะปลอดภัยกว่า","Lưu ý: nói なるほど với sếp hay giáo viên có thể hơi suồng sã. そうなんですね an toàn hơn."),
+  video:"no9-naruhodo.mp4", lines:[
+   {who:"A", jp:"{この}{ボタン}を{押(お)す}と、{開(ひら)きます}。", ro:"Kono botan o osu to, hirakimasu.", tr:L("Press this button and it opens.","按這個按鈕就會打開。","按这个按钮就会打开。","यह बटन दबाओ तो खुल जाएगा।","กดปุ่มนี้แล้วมันจะเปิด","Nhấn nút này thì nó sẽ mở."), t:null},
+   {who:"B", jp:"[[なるほど]]！{簡単(かんたん)}{ですね}。", ro:"Naruhodo! Kantan desu ne.", tr:L("I see! That's easy.","原來如此！好簡單喔。","原来如此！好简单啊。","अच्छा! यह तो आसान है।","อ๋อ! ง่ายจัง","À ra vậy! Dễ ghê."), t:null}],
+  words:{
+   "この":["det","",L("this","這個","这个","यह","นี้","này")],
+   "ボタン":["n","",L("button","按鈕","按钮","बटन","ปุ่ม","nút")],
+   "押す":["v","おす",L("to push, press","按、推","按、推","दबाना","กด","nhấn, ấn")],
+   "開きます":["v","ひらきます",L("opens (polite form of 開く)","會打開（開く的禮貌形）","会打开（開く的礼貌形）","खुलता है (開く का विनम्र रूप)","เปิด (รูปสุภาพของ 開く)","mở ra (dạng lịch sự của 開く)")],
+   "簡単":["adj","かんたん",L("easy, simple","簡單","简单","आसान","ง่าย","dễ, đơn giản")],
+   "ですね":["exp","",L("…isn't it? (polite, sharing a feeling)","…呢（禮貌，表示同感）","…呢（礼貌，表示同感）","…है ना? (विनम्र, भावना साझा करना)","…นะ (สุภาพ แสดงความรู้สึกร่วม)","…nhỉ (lịch sự, chia sẻ cảm xúc)")]},
+  examples:[
+   {jp:"[[なるほど]]、{そういうことか}。", ro:"Naruhodo, sou iu koto ka.", tr:L("I see, so that's what it is.","原來如此，是這麼回事啊。","原来如此，是这么回事啊。","अच्छा, तो यह बात है।","อ๋อ เป็นแบบนี้นี่เอง","À, ra là vậy."),
+    words:{"そういうことか":["exp","",L("so that's what it is","原來是這麼回事","原来是这么回事","तो यह बात है","อย่างนี้นี่เอง","ra là vậy")]}},
+   {jp:"[[なるほど]]ね。{勉強(べんきょう)になった}。", ro:"Naruhodo ne. Benkyou ni natta.", tr:L("Huh, I see. I learned something.","原來如此，學到了。","原来如此，学到了。","अच्छा। कुछ नया सीखने को मिला।","อ๋อ ได้ความรู้ใหม่เลย","À ra thế. Học thêm được điều mới."),
+    words:{"勉強になった":["exp","べんきょうになった",L("I learned something","學到了","学到了","कुछ सीखने को मिला","ได้ความรู้","học được điều mới")]}}]},
+
+ {jp:"微妙(びみょう)", ro:"bimyou",
+  mean:L("Meh / So-so / Hard to say","普普通通／不太好說","一般般／不太好说","ठीक-ठाक / कुछ ख़ास नहीं","ก็งั้นๆ / ไม่ค่อยเท่าไหร่","Tàm tạm / Khó nói / Không hay lắm"),
+  scene:L("Giving a not-so-positive opinion softly","委婉表達負面意見時","委婉表达负面意见时","नरमी से 'कुछ ख़ास नहीं' वाली राय देते समय","ให้ความเห็นไม่ค่อยดีแบบนุ่มนวล","Khi nhẹ nhàng đưa ra ý kiến không mấy tích cực"),
+  nuance:L("The dictionary meaning is 'subtle', but in conversation it's a soft way to say 'not great'. Popular because it doesn't sound harsh.","在中文裡「微妙」是細緻難言的意思，但日語會話中多半是委婉地說「不太好」。因為聽起來不刺耳，所以很常用。","在中文里“微妙”是细致难言的意思，但日语会话中多半是委婉地说“不太好”。因为听起来不刺耳，所以很常用。","शब्दकोश में अर्थ 'सूक्ष्म' है, पर बातचीत में यह 'कुछ ख़ास नहीं' कहने का नरम तरीका है। कठोर नहीं लगता, इसलिए लोकप्रिय है।","ความหมายในพจนานุกรมคือ 'ละเอียดอ่อน' แต่ในบทสนทนาเป็นวิธีพูดอ้อมๆ ว่า 'ไม่ค่อยดี' นิยมใช้เพราะไม่ฟังดูแรง","Nghĩa trong từ điển là 'tinh tế', nhưng khi nói chuyện là cách nói nhẹ nhàng 'không hay lắm'. Được dùng nhiều vì nghe không gay gắt."),
+  tip:L("Ask 微妙？ to get someone's honest opinion. Typical answer: うーん、微妙。","可以問「微妙？」來確認對方的真實想法。常見回答：「うーん、微妙。」","可以问“微妙？”来确认对方的真实想法。常见回答：“うーん、微妙。”","किसी की सच्ची राय जानने के लिए 微妙？ पूछें। आम जवाब: うーん、微妙。","ถามว่า 微妙？ เพื่อเช็กความเห็นจริงๆ ของอีกฝ่าย คำตอบที่พบบ่อย: うーん、微妙。","Hỏi 微妙？ để biết ý kiến thật của người khác. Câu trả lời thường gặp: うーん、微妙。"),
+  video:"no10-bimyou.mp4", lines:[
+   {who:"A", jp:"{あの}{映画(えいが)}、{どうだった}？", ro:"Ano eiga, dou datta?", tr:L("How was that movie?","那部電影怎麼樣？","那部电影怎么样？","वह फ़िल्म कैसी थी?","หนังเรื่องนั้นเป็นไงบ้าง?","Bộ phim đó thế nào?"), t:null},
+   {who:"B", jp:"{うーん}、[[微妙(びみょう)]]。", ro:"Uun, bimyou.", tr:L("Hmm, it was meh.","嗯…普普通通。","嗯…一般般吧。","हम्म, कुछ ख़ास नहीं।","อืม ก็งั้นๆ","Ừm, cũng tàm tạm."), t:null}],
+  words:{
+   "あの":["det","",L("that (over there)","那個","那个","वह","นั้น","đó, kia")],
+   "映画":["n","えいが",L("movie","電影","电影","फ़िल्म","ภาพยนตร์, หนัง","phim")],
+   "どうだった":["exp","",L("how was it?","怎麼樣？","怎么样？","कैसा था?","เป็นยังไงบ้าง?","thế nào?")],
+   "うーん":["int","",L("hmm","嗯…","嗯…","हम्म","อืม","ừm")]},
+  examples:[
+   {jp:"{この}{色(いろ)}、{ちょっと}[[微妙(びみょう)]]じゃない？", ro:"Kono iro, chotto bimyou janai?", tr:L("Isn't this color kind of meh?","這個顏色是不是有點微妙？","这个颜色是不是有点怪？","यह रंग थोड़ा अजीब नहीं है?","สีนี้ดูแปลกๆ ไหม?","Màu này hơi kỳ kỳ nhỉ?"),
+    words:{"この":["det","",L("this","這個","这个","यह","นี้","này")],"色":["n","いろ",L("color","顏色","颜色","रंग","สี","màu")],"ちょっと":["adv","",L("a little, kind of","有點","有点","थोड़ा","นิดหน่อย","hơi, một chút")]}},
+   {jp:"{味(あじ)}{は}[[微妙(びみょう)]]だった。", ro:"Aji wa bimyou datta.", tr:L("The taste was so-so.","味道普普通通。","味道一般般。","स्वाद ठीक-ठाक था।","รสชาติก็งั้นๆ","Vị thì cũng tàm tạm."),
+    words:{"味":["n","あじ",L("taste, flavor","味道","味道","स्वाद","รสชาติ","vị")],"は":["part","",L("as for… (topic marker)","主題助詞（至於…）","主题助词（至于…）","के बारे में… (विषय-चिह्न)","คำชี้หัวข้อ","trợ từ chủ đề (còn… thì)")]}}]},
+
+ {jp:"どこ", ro:"doko",
+  mean:L("Where?","在哪裡？","在哪里？","कहाँ?","ที่ไหน?","Ở đâu?"),
+  scene:L("Looking for something or someone","找東西或找人時","找东西或找人时","कोई चीज़ या व्यक्ति ढूँढते समय","ตอนหาของหรือหาคน","Khi tìm đồ vật hoặc tìm người"),
+  nuance:L("どこ on its own is a casual 'Where?'. Add ですか to make it polite: どこですか？ The pattern [thing]はどこですか？ means 'Where is [thing]?'.","單說「どこ？」是口語的「在哪？」。加上「ですか」就變成禮貌說法：「どこですか？」。句型「〔東西〕はどこですか？」＝「〔東西〕在哪裡？」。","单说“どこ？”是口语的“在哪？”。加上“ですか”就变成礼貌说法：“どこですか？”。句型“〔东西〕はどこですか？”＝“〔东西〕在哪里？”。","अकेले どこ？ अनौपचारिक 'कहाँ?' है। विनम्र बनाने के लिए ですか जोड़ें: どこですか？ ढाँचा [चीज़]はどこですか？ का अर्थ है '[चीज़] कहाँ है?'","พูดแค่ どこ？ เป็นคำถามแบบกันเองว่า 'ที่ไหน?' ถ้าจะให้สุภาพให้เติม ですか: どこですか？ รูปประโยค [สิ่งของ]はどこですか？ แปลว่า '[สิ่งของ]อยู่ที่ไหน?'","Chỉ nói どこ？ là câu hỏi thân mật 'Ở đâu?'. Muốn lịch sự thì thêm ですか: どこですか？ Mẫu câu [đồ vật]はどこですか？ nghĩa là '[đồ vật] ở đâu?'."),
+  tip:L("A lifesaver when you're lost: トイレはどこですか？ (Where's the toilet?) Point at a map while asking and it's even clearer.","迷路時超好用：「トイレはどこですか？」（洗手間在哪裡？）邊問邊指地圖會更清楚。","迷路时超好用：“トイレはどこですか？”（洗手间在哪里？）边问边指地图会更清楚。","रास्ता भटकने पर बहुत काम का: トイレはどこですか？ (शौचालय कहाँ है?) पूछते समय नक्शे की ओर इशारा करें तो और साफ़ होगा।","ใช้ได้ดีมากตอนหลงทาง: トイレはどこですか？ (ห้องน้ำอยู่ที่ไหน?) ถามไปพร้อมชี้แผนที่จะยิ่งชัดเจน","Rất hữu ích khi bị lạc: トイレはどこですか？ (Nhà vệ sinh ở đâu?) Vừa hỏi vừa chỉ vào bản đồ sẽ càng rõ hơn."),
+  video:"no11-doko.mp4", solo:true, lines:[
+   {who:"A", jp:"{どこ}？", ro:"Doko?", tr:L("Where?","在哪裡？","在哪里？","कहाँ?","ที่ไหน?","Ở đâu?"), t:null},
+   {who:"A", jp:"{わたし}{の}{ウサギ}{は}[[どこ]]{ですか}？", ro:"Watashi no usagi wa doko desu ka?", tr:L("Where is my rabbit?","我的兔子在哪裡？","我的兔子在哪里？","मेरा खरगोश कहाँ है?","กระต่ายของฉันอยู่ที่ไหน?","Con thỏ của tôi ở đâu?"), t:null}],
+  words:{
+   "どこ":["pron","",L("where","哪裡","哪里","कहाँ","ที่ไหน","ở đâu")],
+   "わたし":["pron","",L("I, me","我","我","मैं","ฉัน","tôi")],
+   "の":["part","",L("'s, of (shows possession)","的（表示所屬）","的（表示所属）","का / की / के (संबंध)","ของ (แสดงความเป็นเจ้าของ)","của (sở hữu)")],
+   "ウサギ":["n","",L("rabbit","兔子","兔子","खरगोश","กระต่าย","con thỏ")],
+   "は":["part","",L("as for… (topic marker)","主題助詞（至於…）","主题助词（至于…）","के बारे में… (विषय-चिह्न)","คำชี้หัวข้อ","trợ từ chủ đề (còn… thì)")],
+   "ですか":["exp","",L("(polite question ending)","（禮貌的疑問句尾）","（礼貌的疑问句尾）","(विनम्र प्रश्न का अंत)","(ท้ายประโยคคำถามแบบสุภาพ)","(đuôi câu hỏi lịch sự)")]},
+  examples:[
+   {jp:"{トイレ}{は}[[どこ]]{ですか}？", ro:"Toire wa doko desu ka?", tr:L("Where is the toilet?","洗手間在哪裡？","洗手间在哪里？","शौचालय कहाँ है?","ห้องน้ำอยู่ที่ไหน?","Nhà vệ sinh ở đâu?"),
+    words:{"トイレ":["n","",L("toilet, restroom","洗手間、廁所","洗手间、厕所","शौचालय","ห้องน้ำ","nhà vệ sinh")]}},
+   {jp:"{駅(えき)}{は}[[どこ]]{ですか}？", ro:"Eki wa doko desu ka?", tr:L("Where is the station?","車站在哪裡？","车站在哪里？","स्टेशन कहाँ है?","สถานีอยู่ที่ไหน?","Nhà ga ở đâu?"),
+    words:{"駅":["n","えき",L("(train) station","車站","车站","(रेलवे) स्टेशन","สถานี (รถไฟ)","nhà ga")]}}]},
+
+ {jp:"高(たか)い・低(ひく)い", ro:"takai / hikui",
+  mean:L("High, tall / Low, short","高／低","高／低","ऊँचा / नीचा","สูง / ต่ำ","Cao / Thấp"),
+  scene:L("Talking about height, prices or levels","談論高度、價格或程度時","谈论高度、价格或程度时","ऊँचाई, कीमत या स्तर की बात करते समय","ตอนพูดถึงความสูง ราคา หรือระดับ","Khi nói về độ cao, giá cả hoặc mức độ"),
+  nuance:L("Both are い-adjectives. 高い means 'high / tall', and for prices it means 'expensive'. Careful: the opposite of 'expensive' is 安い (cheap), not 低い.","兩個都是い形容詞。「高い」是「高」，用在價錢上則是「貴」。要注意：「貴」的相反是「安い（便宜）」，不是「低い」。","两个都是い形容词。“高い”是“高”，用在价钱上则是“贵”。要注意：“贵”的反义词是“安い（便宜）”，不是“低い”。","दोनों い-विशेषण हैं। 高い का अर्थ 'ऊँचा / लंबा' है, और कीमत के लिए 'महँगा'। ध्यान दें: 'महँगा' का उल्टा 安い (सस्ता) है, 低い नहीं।","ทั้งคู่เป็นคำคุณศัพท์ い 高い แปลว่า 'สูง' และถ้าพูดถึงราคาแปลว่า 'แพง' ระวัง: คำตรงข้ามของ 'แพง' คือ 安い (ถูก) ไม่ใช่ 低い","Cả hai đều là tính từ đuôi い. 高い nghĩa là 'cao', khi nói về giá thì là 'đắt'. Lưu ý: trái nghĩa của 'đắt' là 安い (rẻ), không phải 低い."),
+  tip:L("For a person's height, say 背が高い (tall) / 背が低い (short).","說人的身高時用「背が高い（個子高）」「背が低い（個子矮）」。","说人的身高时用“背が高い（个子高）”“背が低い（个子矮）”。","किसी व्यक्ति के कद के लिए कहें: 背が高い (लंबा) / 背が低い (नाटा)।","ถ้าพูดถึงส่วนสูงของคน ใช้ 背が高い (ตัวสูง) / 背が低い (ตัวเตี้ย)","Khi nói về chiều cao của người, dùng 背が高い (cao) / 背が低い (thấp)."),
+  video:"no12-takai-hikui.mp4", solo:true, lines:[
+   {who:"A", jp:"[[高(たか)い]]。", ro:"Takai.", tr:L("High! / Tall!","好高！","好高！","ऊँचा!","สูง!","Cao!"), t:null},
+   {who:"A", jp:"[[低(ひく)い]]。", ro:"Hikui.", tr:L("Low! / Short!","好低！","好低！","नीचा!","ต่ำ!","Thấp!"), t:null}],
+  words:{
+   "高い":["adj","たかい",L("high, tall; expensive","高；貴","高；贵","ऊँचा, लंबा; महँगा","สูง; แพง","cao; đắt")],
+   "低い":["adj","ひくい",L("low; short (height)","低；矮","低；矮","नीचा; नाटा (कद)","ต่ำ; เตี้ย","thấp")]},
+  examples:[
+   {jp:"{この}{ビル}{は}[[高(たか)い]]。", ro:"Kono biru wa takai.", tr:L("This building is tall.","這棟大樓很高。","这栋大楼很高。","यह इमारत ऊँची है।","ตึกนี้สูง","Tòa nhà này cao."),
+    words:{"この":["det","",L("this","這個","这个","यह","นี้","này")],"ビル":["n","",L("building","大樓","大楼","इमारत","ตึก","tòa nhà")],"は":["part","",L("as for… (topic marker)","主題助詞（至於…）","主题助词（至于…）","के बारे में… (विषय-चिह्न)","คำชี้หัวข้อ","trợ từ chủ đề (còn… thì)")]}},
+   {jp:"{この}{かばん}{は}[[高(たか)い]]。", ro:"Kono kaban wa takai.", tr:L("This bag is expensive.","這個包包很貴。","这个包很贵。","यह बैग महँगा है।","กระเป๋าใบนี้แพง","Cái túi này đắt."),
+    words:{"かばん":["n","",L("bag","包包","包","बैग","กระเป๋า","cái túi")]}},
+   {jp:"{弟(おとうと)}{は}{背(せ)}{が}[[低(ひく)い]]。", ro:"Otouto wa se ga hikui.", tr:L("My little brother is short.","我弟弟個子矮。","我弟弟个子矮。","मेरा छोटा भाई नाटा है।","น้องชายฉันตัวเตี้ย","Em trai tôi thấp."),
+    words:{"弟":["n","おとうと",L("younger brother","弟弟","弟弟","छोटा भाई","น้องชาย","em trai")],"背":["n","せ",L("height (of a person)","個子、身高","个子、身高","कद","ส่วนสูง","chiều cao")],"が":["part","",L("(subject marker)","主語助詞","主语助词","(कर्ता-चिह्न)","คำชี้ประธาน","trợ từ chủ ngữ")]}}]},
+
+ {jp:"いつ", ro:"itsu",
+  mean:L("When?","什麼時候？","什么时候？","कब?","เมื่อไหร่?","Khi nào?"),
+  scene:L("Asking about dates and times","詢問日期或時間時","询问日期或时间时","तारीख या समय पूछते समय","ตอนถามวันหรือเวลา","Khi hỏi về ngày giờ"),
+  nuance:L("いつ alone is a casual 'When?'. Add ですか to make it polite: いつですか？ The usual pattern is [thing]はいつですか？ = 'When is [thing]?'.","單說「いつ？」是口語的「什麼時候？」。加上「ですか」就變成禮貌說法：「いつですか？」。常用句型「〔事情〕はいつですか？」＝「〔事情〕是什麼時候？」。","单说“いつ？”是口语的“什么时候？”。加上“ですか”就变成礼貌说法：“いつですか？”。常用句型“〔事情〕はいつですか？”＝“〔事情〕是什么时候？”。","अकेले いつ？ अनौपचारिक 'कब?' है। विनम्र बनाने के लिए ですか जोड़ें: いつですか？ आम ढाँचा [चीज़]はいつですか？ का अर्थ है '[चीज़] कब है?'","พูดแค่ いつ？ เป็นคำถามแบบกันเองว่า 'เมื่อไหร่?' ถ้าจะให้สุภาพให้เติม ですか: いつですか？ รูปประโยคที่ใช้บ่อยคือ [สิ่งนั้น]はいつですか？ แปลว่า '[สิ่งนั้น]คือเมื่อไหร่?'","Chỉ nói いつ？ là câu hỏi thân mật 'Khi nào?'. Muốn lịch sự thì thêm ですか: いつですか？ Mẫu câu thường dùng là [việc gì]はいつですか？ nghĩa là '[việc gì] là khi nào?'."),
+  tip:L("The most common way to ask is 誕生日はいつですか？ Answer with a date: 5月3日です (It's May 3rd).","最常見的問法是「誕生日はいつですか？」。回答時說日期：「5月3日です」（5月3日）。","最常见的问法是“誕生日はいつですか？”。回答时说日期：“5月3日です”（5月3日）。","पूछने का सबसे आम तरीका है 誕生日はいつですか？ जवाब में तारीख बताएँ: 5月3日です (3 मई है)।","วิธีถามที่ใช้บ่อยที่สุดคือ 誕生日はいつですか？ ตอบด้วยวันที่: 5月3日です (วันที่ 3 พฤษภาคม)","Cách hỏi phổ biến nhất là 誕生日はいつですか？ Trả lời bằng ngày: 5月3日です (Ngày 3 tháng 5)."),
+  video:"no13-itsu.mp4", solo:true, lines:[
+   {who:"A", jp:"{いつ}？", ro:"Itsu?", tr:L("When?","什麼時候？","什么时候？","कब?","เมื่อไหร่?","Khi nào?"), t:null},
+   {who:"A", jp:"[[いつ]]{が}{誕生日(たんじょうび)}{ですか}？", ro:"Itsu ga tanjoubi desu ka?", tr:L("When is your birthday?","你的生日是什麼時候？","你的生日是什么时候？","आपका जन्मदिन कब है?","วันเกิดของคุณคือเมื่อไหร่?","Sinh nhật của bạn là khi nào?"), t:null}],
+  words:{
+   "いつ":["pron","",L("when","什麼時候","什么时候","कब","เมื่อไหร่","khi nào")],
+   "が":["part","",L("(subject marker)","主語助詞","主语助词","(कर्ता-चिह्न)","คำชี้ประธาน","trợ từ chủ ngữ")],
+   "誕生日":["n","たんじょうび",L("birthday","生日","生日","जन्मदिन","วันเกิด","sinh nhật")],
+   "ですか":["exp","",L("(polite question ending)","（禮貌的疑問句尾）","（礼貌的疑问句尾）","(विनम्र प्रश्न का अंत)","(ท้ายประโยคคำถามแบบสุภาพ)","(đuôi câu hỏi lịch sự)")]},
+  examples:[
+   {jp:"{誕生日(たんじょうび)}{は}[[いつ]]{ですか}？", ro:"Tanjoubi wa itsu desu ka?", tr:L("When is your birthday?","你的生日是什麼時候？","你的生日是什么时候？","आपका जन्मदिन कब है?","วันเกิดของคุณคือเมื่อไหร่?","Sinh nhật của bạn là khi nào?"),
+    words:{"は":["part","",L("as for… (topic marker)","主題助詞（至於…）","主题助词（至于…）","के बारे में… (विषय-चिह्न)","คำชี้หัวข้อ","trợ từ chủ đề (còn… thì)")]}},
+   {jp:"{夏休(なつやす)み}{は}[[いつ]]{から}？", ro:"Natsuyasumi wa itsu kara?", tr:L("When does summer vacation start?","暑假從什麼時候開始？","暑假从什么时候开始？","गर्मी की छुट्टियाँ कब से हैं?","ปิดเทอมหน้าร้อนเริ่มเมื่อไหร่?","Kỳ nghỉ hè bắt đầu từ khi nào?"),
+    words:{"夏休み":["n","なつやすみ",L("summer vacation","暑假","暑假","गर्मी की छुट्टियाँ","ปิดเทอมหน้าร้อน","kỳ nghỉ hè")],"から":["part","",L("from (starting point)","從","从","से (शुरुआत)","ตั้งแต่","từ (điểm bắt đầu)")]}}]},
+
+ {jp:"ごめんね", ro:"gomen ne",
+  mean:L("Sorry (casual)","對不起啦（口語）","对不起啦（口语）","सॉरी (अनौपचारिक)","ขอโทษนะ (แบบกันเอง)","Xin lỗi nhé (thân mật)"),
+  scene:L("Apologizing to friends or family","向朋友或家人道歉時","向朋友或家人道歉时","दोस्तों या परिवार से माफ़ी माँगते समय","ขอโทษเพื่อนหรือคนในครอบครัว","Khi xin lỗi bạn bè hoặc người thân"),
+  nuance:L("ごめん is the casual 'sorry'; adding ね makes it softer and friendlier. 遅れて来て means 'coming late' (遅れる 'be late' + 来る 'come'). With teachers or at work, say 遅れてすみません instead.","「ごめん」是口語的「對不起」，加上「ね」語氣更柔和親切。「遅れて来て」是「來晚了」（遅れる「遲到」＋来る「來」）。對老師或在職場要說「遅れてすみません」。","“ごめん”是口语的“对不起”，加上“ね”语气更柔和亲切。“遅れて来て”是“来晚了”（遅れる“迟到”＋来る“来”）。对老师或在职场要说“遅れてすみません”。","ごめん अनौपचारिक 'सॉरी' है; ね जोड़ने से यह और नरम और दोस्ताना लगता है। 遅れて来て का अर्थ है 'देर से आना' (遅れる 'देर होना' + 来る 'आना')। शिक्षक के सामने या ऑफ़िस में 遅れてすみません कहें।","ごめん คือคำขอโทษแบบกันเอง เติม ね จะฟังนุ่มนวลและเป็นมิตรขึ้น 遅れて来て แปลว่า 'มาสาย' (遅れる 'สาย' + 来る 'มา') ถ้าพูดกับครูหรือที่ทำงาน ให้ใช้ 遅れてすみません","ごめん là 'xin lỗi' thân mật; thêm ね nghe nhẹ nhàng, thân thiện hơn. 遅れて来て nghĩa là 'đến muộn' (遅れる 'muộn' + 来る 'đến'). Với giáo viên hoặc ở chỗ làm, hãy nói 遅れてすみません."),
+  tip:L("Politeness ladder: ごめん → ごめんね → ごめんなさい → すみません → 申し訳ありません (most formal).","禮貌程度由低到高：ごめん → ごめんね → ごめんなさい → すみません → 申し訳ありません（最正式）。","礼貌程度由低到高：ごめん → ごめんね → ごめんなさい → すみません → 申し訳ありません（最正式）。","विनम्रता का क्रम: ごめん → ごめんね → ごめんなさい → すみません → 申し訳ありません (सबसे औपचारिक)।","ระดับความสุภาพ: ごめん → ごめんね → ごめんなさい → すみません → 申し訳ありません (สุภาพที่สุด)","Mức độ lịch sự tăng dần: ごめん → ごめんね → ごめんなさい → すみません → 申し訳ありません (trang trọng nhất)."),
+  video:"no14-okurete.mp4", solo:true, lines:[
+   {who:"A", jp:"{遅(おく)れて}{来(き)て}[[ごめんね]]。", ro:"Okurete kite gomen ne.", tr:L("Sorry I'm late!","抱歉，我來晚了。","抱歉，我来晚了。","देर से आने के लिए माफ़ करना।","ขอโทษนะที่มาสาย","Xin lỗi nhé, mình đến muộn."), t:null}],
+  words:{
+   "遅れて":["v","おくれて",L("being late (て form of 遅れる)","遲到（遅れる的て形）","迟到（遅れる的て形）","देर से (遅れる का て रूप)","สาย (รูป て ของ 遅れる)","muộn (dạng て của 遅れる)")],
+   "来て":["v","きて",L("coming (て form of 来る)","來（来る的て形）","来（来る的て形）","आकर (来る का て रूप)","มา (รูป て ของ 来る)","đến (dạng て của 来る)")]},
+  examples:[
+   {jp:"[[ごめんね]]、{待(ま)たせて}。", ro:"Gomen ne, matasete.", tr:L("Sorry to keep you waiting.","抱歉，讓你久等了。","抱歉，让你久等了。","माफ़ करना, तुम्हें इंतज़ार करवाया।","ขอโทษนะที่ให้รอ","Xin lỗi nhé, để bạn phải chờ."),
+    words:{"待たせて":["v","またせて",L("making (someone) wait (causative of 待つ)","讓人等（待つ的使役形）","让人等（待つ的使役形）","इंतज़ार करवाना (待つ का प्रेरणार्थक रूप)","ทำให้รอ (รูปให้กระทำของ 待つ)","bắt (ai) chờ (thể sai khiến của 待つ)")]}},
+   {jp:"{遅(おく)れて}{すみません}。", ro:"Okurete sumimasen.", tr:L("Sorry for being late. (polite)","抱歉我遲到了。（禮貌）","抱歉我迟到了。（礼貌）","देर के लिए क्षमा करें। (विनम्र)","ขอโทษที่มาสาย (สุภาพ)","Xin lỗi vì đã đến muộn. (lịch sự)"),
+    words:{"すみません":["exp","",L("excuse me, I'm sorry (polite)","對不起（禮貌）","对不起（礼貌）","माफ़ कीजिए (विनम्र)","ขอโทษ (สุภาพ)","xin lỗi (lịch sự)")]}}]},
+
+ {jp:"溶(と)けそう", ro:"tokesou",
+  mean:L("About to melt / Looks like it'll melt","好像快融化了","好像快化了","पिघलने वाला है","ดูเหมือนจะละลาย","Sắp tan"),
+  scene:L("Describing something that's about to happen","描述快要發生的事時","描述快要发生的事时","जो होने ही वाला हो, उसका वर्णन करते समय","บอกสิ่งที่กำลังจะเกิดขึ้น","Khi mô tả điều sắp xảy ra"),
+  nuance:L("溶ける means 'to melt'. Drop る and add そう (溶けそう) to say it looks like it's about to happen. The same pattern works for many verbs: 雨が降りそう (It looks like rain), 泣きそう (I'm about to cry).","「溶ける」是「融化」。去掉「る」加上「そう」（溶けそう），表示「看起來快要…了」。很多動詞都能這樣用：「雨が降りそう」（好像要下雨了）、「泣きそう」（快哭了）。","“溶ける”是“融化”。去掉“る”加上“そう”（溶けそう），表示“看起来快要…了”。很多动词都能这样用：“雨が降りそう”（好像要下雨了）、“泣きそう”（快哭了）。","溶ける का अर्थ है 'पिघलना'। る हटाकर そう जोड़ें (溶けそう) तो अर्थ होता है 'लगता है ऐसा होने वाला है'। यह ढाँचा कई क्रियाओं के साथ चलता है: 雨が降りそう (लगता है बारिश होगी), 泣きそう (रोना आने वाला है)।","溶ける แปลว่า 'ละลาย' ตัด る แล้วเติม そう (溶けそう) จะแปลว่า 'ดูเหมือนกำลังจะ…' ใช้กับคำกริยาได้หลายคำ: 雨が降りそう (ท่าทางฝนจะตก), 泣きそう (จะร้องไห้แล้ว)","溶ける nghĩa là 'tan chảy'. Bỏ る và thêm そう (溶けそう) để nói 'có vẻ sắp…'. Mẫu này dùng được với nhiều động từ: 雨が降りそう (Có vẻ sắp mưa), 泣きそう (Sắp khóc rồi)."),
+  tip:L("In everyday talk, アイス alone means ice cream. Eat it fast: 早く食べて！ (Eat it quickly!)","日常會話中只說「アイス」就是冰淇淋。快吃吧：「早く食べて！」（快吃！）","日常会话中只说“アイス”就是冰淇淋。快吃吧：“早く食べて！”（快吃！）","रोज़ की बातचीत में सिर्फ़ アイス का मतलब भी आइसक्रीम होता है। जल्दी खाओ: 早く食べて！ (जल्दी खाओ!)","ในบทสนทนาทั่วไป พูดแค่ アイス ก็หมายถึงไอศกรีม รีบกินเลย: 早く食べて！ (รีบกินเร็ว!)","Trong giao tiếp hằng ngày, chỉ nói アイス cũng là kem. Ăn nhanh lên: 早く食べて！ (Ăn nhanh đi!)"),
+  video:"no15-icecream.mp4", solo:true, lines:[
+   {who:"A", jp:"{アイスクリーム}。", ro:"Aisukuriimu.", tr:L("Ice cream.","冰淇淋。","冰淇淋。","आइसक्रीम।","ไอศกรีม","Kem."), t:null},
+   {who:"A", jp:"{アイスクリーム}{が}[[溶(と)けそう]]{です}。", ro:"Aisukuriimu ga tokesou desu.", tr:L("The ice cream is about to melt.","冰淇淋快要融化了。","冰淇淋快要化了。","आइसक्रीम पिघलने वाली है।","ไอศกรีมกำลังจะละลาย","Kem sắp tan rồi."), t:null}],
+  words:{
+   "アイスクリーム":["n","",L("ice cream","冰淇淋","冰淇淋","आइसक्रीम","ไอศกรีม","kem")],
+   "が":["part","",L("(subject marker)","主語助詞","主语助词","(कर्ता-चिह्न)","คำชี้ประธาน","trợ từ chủ ngữ")],
+   "溶けそう":["v","とけそう",L("looks about to melt (溶ける + そう)","好像快融化（溶ける＋そう）","好像快化了（溶ける＋そう）","पिघलने वाला लगता है (溶ける + そう)","ดูเหมือนจะละลาย (溶ける + そう)","có vẻ sắp tan (溶ける + そう)")],
+   "です":["exp","",L("am / is (polite)","是（禮貌）","是（礼貌）","है / हूँ (विनम्र)","เป็น / คือ (สุภาพ)","là (lịch sự)")]},
+  examples:[
+   {jp:"{雨(あめ)}{が}{降(ふ)りそう}。", ro:"Ame ga furisou.", tr:L("It looks like it's going to rain.","好像要下雨了。","好像要下雨了。","लगता है बारिश होने वाली है।","ท่าทางฝนจะตก","Có vẻ sắp mưa."),
+    words:{"雨":["n","あめ",L("rain","雨","雨","बारिश","ฝน","mưa")],"降りそう":["v","ふりそう",L("looks like it will fall (rain)","好像要下（雨）","好像要下（雨）","बरसने वाला लगता है","ท่าทางจะตก (ฝน)","có vẻ sắp rơi (mưa)")]}},
+   {jp:"{早(はや)く}{食(た)べて}！[[溶(と)けそう]]！", ro:"Hayaku tabete! Tokesou!", tr:L("Eat it quick! It's about to melt!","快吃！快融化了！","快吃！要化了！","जल्दी खाओ! पिघलने वाली है!","รีบกินเร็ว! จะละลายแล้ว!","Ăn nhanh lên! Sắp tan rồi!"),
+    words:{"早く":["adv","はやく",L("quickly","快","快","जल्दी","รีบ, เร็ว","nhanh")],"食べて":["v","たべて",L("eat (request form of 食べる)","吃吧（食べる的て形）","吃吧（食べる的て形）","खाओ (食べる का अनुरोध रूप)","กินสิ (รูปขอร้องของ 食べる)","ăn đi (dạng nhờ của 食べる)")]}}]},
+
+ {jp:"なぜ", ro:"naze",
+  mean:L("Why?","為什麼？","为什么？","क्यों?","ทำไม?","Tại sao?"),
+  scene:L("Asking for a reason","詢問理由時","询问理由时","कारण पूछते समय","ตอนถามเหตุผล","Khi hỏi lý do"),
+  nuance:L("なぜ is a slightly formal 'why'. In casual talk people usually say どうして or なんで. 知っているの means 'do you know?'; the の at the end makes it a soft, casual question.","「なぜ」是稍微正式的「為什麼」。日常口語多半說「どうして」或「なんで」。「知っているの」是「你知道嗎？」，句尾的「の」讓問句聽起來柔和、口語。","“なぜ”是稍微正式的“为什么”。日常口语多半说“どうして”或“なんで”。“知っているの”是“你知道吗？”，句尾的“の”让问句听起来柔和、口语。","なぜ थोड़ा औपचारिक 'क्यों' है। रोज़ की बातचीत में लोग अक्सर どうして या なんで कहते हैं। 知っているの का अर्थ है 'क्या तुम्हें पता है?'; अंत का の सवाल को नरम और अनौपचारिक बनाता है।","なぜ คือ 'ทำไม' แบบค่อนข้างทางการ ในภาษาพูดคนมักใช้ どうして หรือ なんで ส่วน 知っているの แปลว่า 'รู้เหรอ?' の ท้ายประโยคทำให้คำถามฟังนุ่มและเป็นกันเอง","なぜ là 'tại sao' hơi trang trọng. Khi nói chuyện thường ngày, người ta hay dùng どうして hoặc なんで. 知っているの nghĩa là 'bạn biết à?'; の ở cuối làm câu hỏi nhẹ nhàng, thân mật."),
+  tip:L("From casual to polite: なんで？ → どうして？ → なぜですか？","由口語到禮貌：なんで？ → どうして？ → なぜですか？","由口语到礼貌：なんで？ → どうして？ → なぜですか？","अनौपचारिक से विनम्र तक: なんで？ → どうして？ → なぜですか？","จากกันเองไปสุภาพ: なんで？ → どうして？ → なぜですか？","Từ thân mật đến lịch sự: なんで？ → どうして？ → なぜですか？"),
+  video:"no16-naze.mp4", solo:true, lines:[
+   {who:"A", jp:"{なぜ}？", ro:"Naze?", tr:L("Why?","為什麼？","为什么？","क्यों?","ทำไม?","Tại sao?"), t:null},
+   {who:"A", jp:"[[なぜ]]{知(し)っているの}？", ro:"Naze shitte iru no?", tr:L("How come you know that?","你怎麼會知道？","你怎么会知道？","तुम्हें कैसे पता?","ทำไมถึงรู้ล่ะ?","Sao bạn biết?"), t:null}],
+  words:{
+   "なぜ":["adv","",L("why","為什麼","为什么","क्यों","ทำไม","tại sao")],
+   "知っているの":["v","しっているの",L("do you know? (casual question)","你知道嗎？（口語疑問）","你知道吗？（口语疑问）","क्या तुम्हें पता है? (अनौपचारिक सवाल)","รู้เหรอ? (คำถามแบบกันเอง)","bạn biết à? (câu hỏi thân mật)")]},
+  examples:[
+   {jp:"{どうして}{泣(な)いているの}？", ro:"Doushite naite iru no?", tr:L("Why are you crying?","你為什麼在哭？","你为什么在哭？","तुम क्यों रो रहे हो?","ทำไมร้องไห้ล่ะ?","Sao bạn lại khóc?"),
+    words:{"どうして":["adv","",L("why (everyday)","為什麼（日常）","为什么（日常）","क्यों (रोज़मर्रा)","ทำไม (ภาษาพูดทั่วไป)","tại sao (thường ngày)")],"泣いているの":["v","ないているの",L("are you crying? (casual)","在哭嗎？（口語）","在哭吗？（口语）","रो रहे हो? (अनौपचारिक)","กำลังร้องไห้เหรอ? (กันเอง)","đang khóc à? (thân mật)")]}},
+   {jp:"[[なぜ]]{ですか}？", ro:"Naze desu ka?", tr:L("Why is that? (polite)","為什麼呢？（禮貌）","为什么呢？（礼貌）","ऐसा क्यों है? (विनम्र)","เพราะอะไร? (สุภาพ)","Tại sao vậy ạ? (lịch sự)"),
+    words:{"ですか":["exp","",L("(polite question ending)","（禮貌的疑問句尾）","（礼貌的疑问句尾）","(विनम्र प्रश्न का अंत)","(ท้ายประโยคคำถามแบบสุภาพ)","(đuôi câu hỏi lịch sự)")]}}]},
+
+ {jp:"簡単(かんたん)", ro:"kantan",
+  mean:L("Easy / Simple","簡單","简单","आसान","ง่าย","Dễ / Đơn giản"),
+  scene:L("Saying something is easy to do","表示某件事很容易時","表示某件事很容易时","जब कहना हो कि कोई काम आसान है","บอกว่าบางอย่างทำได้ง่าย","Khi nói điều gì đó dễ làm"),
+  nuance:L("簡単 is a な-adjective: 簡単です (It's easy), 簡単な問題 (an easy question). The opposite is 難しい (difficult).","「簡単」是な形容詞：「簡単です」（很簡單）、「簡単な問題」（簡單的問題）。意思和中文一樣，但讀作「かんたん」。反義詞是「難しい」（難）。","“簡単”是な形容词：“簡単です”（很简单）、“簡単な問題”（简单的问题）。意思和中文的“简单”一样，但读作“かんたん”。反义词是“難しい”（难）。","簡単 एक な-विशेषण है: 簡単です (यह आसान है), 簡単な問題 (आसान सवाल)। इसका उल्टा 難しい (कठिन) है।","簡単 เป็นคำคุณศัพท์ な: 簡単です (ง่าย), 簡単な問題 (โจทย์ง่ายๆ) คำตรงข้ามคือ 難しい (ยาก)","簡単 là tính từ đuôi な: 簡単です (Dễ), 簡単な問題 (câu hỏi dễ). Từ trái nghĩa là 難しい (khó)."),
+  tip:L("Add とても for 'very': とても簡単です (It's very easy). Casual: 超簡単！ (Super easy!)","加上「とても」表示「非常」：「とても簡単です」（非常簡單）。口語：「超簡単！」（超簡單！）","加上“とても”表示“非常”：“とても簡単です”（非常简单）。口语：“超簡単！”（超简单！）","'बहुत' के लिए とても जोड़ें: とても簡単です (बहुत आसान है)। अनौपचारिक: 超簡単！ (एकदम आसान!)","เติม とても แปลว่า 'มาก': とても簡単です (ง่ายมาก) แบบกันเอง: 超簡単！ (ง่ายสุดๆ!)","Thêm とても để nói 'rất': とても簡単です (Rất dễ). Thân mật: 超簡単！ (Siêu dễ!)"),
+  video:"no17-kantan.mp4", solo:true, lines:[
+   {who:"A", jp:"{簡単(かんたん)}。", ro:"Kantan.", tr:L("Easy.","簡單。","简单。","आसान।","ง่าย","Dễ."), t:null},
+   {who:"A", jp:"[[簡単(かんたん)]]{です}。", ro:"Kantan desu.", tr:L("It's easy.","很簡單。","很简单。","यह आसान है।","ง่ายเลย","Dễ thôi ạ."), t:null}],
+  words:{
+   "簡単":["adj","かんたん",L("easy, simple","簡單","简单","आसान","ง่าย","dễ, đơn giản")],
+   "です":["exp","",L("am / is (polite)","是（禮貌）","是（礼貌）","है / हूँ (विनम्र)","เป็น / คือ (สุภาพ)","là (lịch sự)")]},
+  examples:[
+   {jp:"{この}{問題(もんだい)}{は}[[簡単(かんたん)]]{です}。", ro:"Kono mondai wa kantan desu.", tr:L("This question is easy.","這個問題很簡單。","这个问题很简单。","यह सवाल आसान है।","โจทย์ข้อนี้ง่าย","Câu hỏi này dễ."),
+    words:{"この":["det","",L("this","這個","这个","यह","นี้","này")],"問題":["n","もんだい",L("question, problem","問題","问题","सवाल, समस्या","โจทย์, ปัญหา","câu hỏi, vấn đề")],"は":["part","",L("as for… (topic marker)","主題助詞（至於…）","主题助词（至于…）","के बारे में… (विषय-चिह्न)","คำชี้หัวข้อ","trợ từ chủ đề (còn… thì)")]}},
+   {jp:"{日本語(にほんご)}{は}{難(むずか)しい}？", ro:"Nihongo wa muzukashii?", tr:L("Is Japanese difficult?","日語難嗎？","日语难吗？","क्या जापानी कठिन है?","ภาษาญี่ปุ่นยากไหม?","Tiếng Nhật có khó không?"),
+    words:{"日本語":["n","にほんご",L("Japanese (language)","日語","日语","जापानी भाषा","ภาษาญี่ปุ่น","tiếng Nhật")],"難しい":["adj","むずかしい",L("difficult","難","难","कठिन","ยาก","khó")]}}]}
+];
+
+/* Test version: the app shows only these phrases, in this order (by video file name).
+   Waiting (hidden, kept above, ready to bring back): やばい, マジで, いただきます, お疲れさまです, よろしくお願いします,
+   ちょっと…, 大丈夫です, すみません, なるほど, 微妙 (no video yet), いつ (no13), 溶けそう / アイスクリーム (no15).
+   To bring one back, add its video name here (and move its MP4 back from the 待機中の動画 folder). */
+const SHOW = ["no14-okurete.mp4", "no11-doko.mp4", "no17-kantan.mp4", "no16-naze.mp4", "no12-takai-hikui.mp4"];
+const PHRASES = SHOW.map(v => ALL_PHRASES.find(p => p.video === v)).filter(Boolean);
+
+/* ---------- helpers ---------- */
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const RB = /([々一-鿿]+)\(([぀-ゟー]+)\)/g;           // 漢字(よみ)
+const MARK = /\[\[|\]\]|[{}]/g;
+const ruby = s => esc(s).replace(RB, "<ruby>$1<rt>$2</rt></ruby>");
+const bare = s => s.replace(RB, "$1").replace(MARK, "");                     // 漢字 only, no readings
+const yomi = s => s.replace(RB, "$2").replace(MARK, "").replace(/…/g, "");  // reading for speech
+const blanked = s => ruby(s.replace(/\[\[.+?\]\]/, "＿＿＿＿").replace(MARK, ""));
+
+let saved = {};
+try { saved = JSON.parse(localStorage.getItem("nihongo-clip-note") || "{}") || {}; } catch (e) { saved = {}; }
+function save() { try { localStorage.setItem("nihongo-clip-note", JSON.stringify(saved)); } catch (e) {} }
+
+function guessLang() {
+  const ls = (navigator.languages || [navigator.language || "en"]).map(x => String(x).toLowerCase());
+  for (const l of ls) {
+    if (/^zh-(tw|hk|mo)|hant/.test(l)) return "tw";
+    if (l.startsWith("zh")) return "cn";
+    if (l.startsWith("hi")) return "hi";
+    if (l.startsWith("th")) return "th";
+    if (l.startsWith("vi")) return "vi";
+    if (l.startsWith("fr")) return "fr";
+    if (l.startsWith("pt")) return "pt";
+    if (l.startsWith("es")) return "es";
+    if (l.startsWith("ko")) return "ko";
+    if (l.startsWith("ar")) return "ar";
+    if (l.startsWith("en")) return "en";
+  }
+  return "en";
+}
+let lang = LANGS.some(l => l[0] === saved.lang) ? saved.lang : guessLang();
+const XI = { fr: [XL, 0], pt: [XL, 1], es: [XL, 2], ko: [XL2, 0], ar: [XL2, 1] };
+const T = o => {
+  if (!o) return "";
+  if (o[lang] != null) return o[lang];
+  const x = XI[lang], r = x && typeof o.en === "string" ? x[0][o.en] : null;
+  return r ? r[x[1]] : o.en;
+};
+const u = k => T(U[k]);
+
+let cur = Number.isInteger(saved.cur) && saved.cur >= 0 && saved.cur < PHRASES.length ? saved.cur : 0;
+const EDIT = new URLSearchParams(location.search).has("edit");
+const localVideo = {};      // phrase index -> blob URL picked on this device (not saved)
+const avail = {};           // phrase index -> true / false once we know whether its MP4 is there
+const revealed = new Set(); // dialogue lines whose translation is shown
+
+const videoOf = i => localVideo[i] || (PHRASES[i].video && avail[i] !== false ? PHRASES[i].video : null);
+const segOf = (i, j) => {
+  const l = saved.timing && saved.timing[i] && saved.timing[i][j];
+  if (l && typeof l.s === "number" && typeof l.e === "number" && l.e > l.s) return [l.s, l.e];
+  return PHRASES[i].lines[j].t || null;
+};
+
+/* turn a Japanese line into HTML with tappable words */
+function lineHTML(words, s) {
+  return s.split(/(\[\[.+?\]\]|\{.+?\})/).map(seg => {
+    if (seg.startsWith("[[")) return `<button type="button" class="w slang">${ruby(seg.slice(2, -2))}</button>`;
+    if (seg.startsWith("{")) { const t = seg.slice(1, -1), k = bare(t); return words[k] ? `<button type="button" class="w" data-k="${esc(k)}">${ruby(t)}</button>` : ruby(t); }
+    return ruby(seg);
+  }).join("");
+}
+const sayBtns = s => `<button type="button" class="say" data-speak="${esc(yomi(s))}">${esc(u("listen"))}</button><button type="button" class="say" data-speak="${esc(yomi(s))}" data-rate=".65">${esc(u("listenSlow"))}</button>`;
+
+/* ---------- speech (browser's Japanese voice) ---------- */
+function speak(text, rate) {
+  if (!("speechSynthesis" in window) || !text) return;
+  speechSynthesis.cancel();
+  const m = new SpeechSynthesisUtterance(text);
+  m.lang = "ja-JP"; m.rate = rate || 1;
+  const v = speechSynthesis.getVoices().find(x => /^ja/i.test(x.lang));
+  if (v) m.voice = v;
+  speechSynthesis.speak(m);
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-speak]");
+  if (b) { e.stopPropagation(); speak(b.dataset.speak, +b.dataset.rate || 1); }
+}, true);
+
+/* ---------- learn mode ---------- */
+function renderChips() {
+  $("chips").innerHTML = PHRASES.map((p, i) =>
+    `<button type="button" class="chip" data-i="${i}" aria-pressed="${i === cur}"><i>${i + 1}</i><span lang="ja">${esc(bare(p.jp))}</span>${avail[i] || localVideo[i] ? `<span class="dot"></span>` : ""}</button>`).join("");
+}
+function renderStage() {
+  const p = PHRASES[cur], v = videoOf(cur);
+  $("stagebox").innerHTML = v
+    ? `<div class="stage"><video id="vid" src="${esc(v)}" controls playsinline preload="metadata"></video></div>`
+    : `<div class="stage"><div class="empty">
+        <span class="lab">${esc(u("novLab"))}</span>
+        <h3>${esc(u("novH"))}</h3>
+        <ol class="script" lang="ja">${p.lines.map(l => `<li><b>${l.who}</b>${ruby(l.jp.replace(MARK, ""))}</li>`).join("")}</ol>
+        <label class="pick">${esc(u("tryLocal"))}<input type="file" id="pick" accept="video/*"></label>
+        <p class="note">${esc(u("localNote"))}</p>
+      </div></div>`;
+}
+const fmt = x => typeof x === "number" ? x.toFixed(1) + " 秒" : "未設定";
+function timingJSON() {
+  const out = {};
+  PHRASES.forEach((p, i) => { out[p.video || "p" + (i + 1)] = p.lines.map((_, j) => segOf(i, j)); });
+  return JSON.stringify(out, null, 1).replace(/\[\n\s+([\d.]+),\n\s+([\d.]+)\n\s+\]/g, "[$1, $2]");
+}
+function renderBody() {
+  const p = PHRASES[cur], hasV = !!videoOf(cur), edit = EDIT && hasV;
+  const chat = p.lines.map((l, j) => {
+    const seg = segOf(cur, j), tm = (saved.timing && saved.timing[cur] && saved.timing[cur][j]) || {};
+    return `
+    <div class="line ${l.who === "B" ? "b" : ""}">
+      <span class="who" aria-hidden="true">${l.who}</span>
+      <div class="bub">
+        <p class="jp" lang="ja">${lineHTML(p.words, l.jp)}</p>
+        <p class="ro">${esc(l.ro)}</p>
+        ${hasV ? `<p class="tr">${esc(T(l.tr))}</p>` : `<p class="tr hid ${revealed.has(j) ? "" : "hide"}" data-j="${j}">${esc(T(l.tr))}</p>`}
+        <div class="mini">
+          ${hasV && seg ? `<button type="button" data-play="${j}">${esc(u("line"))}</button><button type="button" data-play="${j}" data-slow="1">${esc(u("slow"))}</button>` : ""}
+          <button type="button" data-speak="${esc(yomi(l.jp))}">${esc(u("listen"))}</button>
+        </div>
+        ${edit ? `<div class="timing" lang="ja">
+            <span>開始 <b>${fmt(tm.s)}</b></span><button type="button" data-set="s" data-j="${j}">今の位置</button>
+            <span>終了 <b>${fmt(tm.e)}</b></span><button type="button" data-set="e" data-j="${j}">今の位置</button>
+          </div>` : ""}
+      </div>
+    </div>`;
+  }).join("");
+  const rows = Object.entries(p.words).map(([w, [pos, rd, m]]) =>
+    `<tr><td class="wd" lang="ja"><b>${esc(w)}</b>${rd ? `<small>${esc(rd)}</small>` : ""}</td><td class="pos">${esc(T(POS[pos]))}</td><td>${esc(T(m))}</td></tr>`).join("");
+  const head = `
+      <div class="phrase">
+        <span class="tag">PHRASE ${cur + 1} / ${PHRASES.length}</span>
+        <div class="ttl"><h2 lang="ja">${ruby(p.jp)}</h2><span class="mini">${sayBtns(p.jp)}</span></div>
+        <span class="ro">${esc(p.ro)}</span>
+        <span class="mean">${esc(T(p.mean))}</span>
+        <span class="scene">${esc(u("scene"))}${esc(T(p.scene))}</span>
+      </div>
+      <p class="nuance">${esc(T(p.nuance))}</p>`;
+  const talk = `
+      <div style="display:flex;flex-direction:column;gap:10px" data-pop>
+        <span class="tag">${esc(u(hasV ? "tagV" : "tagN"))}</span>
+        ${edit ? `<div class="admin" lang="ja"><span class="tag">編集モード（URLの最後に ?edit を付けた時だけ表示）</span>
+          <p class="help">動画を再生して、各行の話し始めで「開始」、話し終わりで「終了」の「今の位置」を押します。一時停止してから押すと正確です。設定はこの端末に保存され、下の欄の内容をコピーして送れば、アプリ本体に組み込めます。</p>
+          <textarea readonly id="tjson">${esc(timingJSON())}</textarea>
+          <div class="row"><button type="button" class="btn" id="tcopy">設定をコピー</button></div></div>` : ""}
+        <div class="chat ${p.solo ? "solo" : ""}">${chat}</div>
+        <div class="pop" id="pop" aria-live="polite">${esc(u(hasV ? "popV" : "popN"))}</div>
+        <div class="row">
+          ${hasV ? `<button type="button" class="btn" id="slowall">${esc(u("slowAll"))}</button>` : `<button type="button" class="btn" id="showtr">${esc(u("showAll"))}</button>`}
+        </div>
+      </div>`;
+  const words = `<div class="words"><span class="tag">${esc(u("words"))}</span><table>${rows}</table></div>`;
+  const exs = (p.examples || []).length ? `
+      <div class="examples" data-pop>
+        <span class="tag">${esc(u("examples"))}</span>
+        ${p.examples.map(x => `<div class="ex">
+          <p class="jp" lang="ja">${lineHTML(Object.assign({}, p.words, x.words || {}), x.jp)}</p>
+          <p class="ro">${esc(x.ro)}</p>
+          <p class="tr">${esc(T(x.tr))}</p>
+          <div class="mini"><button type="button" data-speak="${esc(yomi(x.jp))}">${esc(u("listen"))}</button></div>
+          ${x.words ? `<p class="exw">${Object.entries(x.words).map(([w, [, , m]]) => `<span><b lang="ja">${esc(w)}</b>${esc(T(m))}</span>`).join("")}</p>` : ""}
+        </div>`).join("")}
+        <div class="pop" aria-live="polite">${esc(u("exPop"))}</div>
+      </div>` : "";
+  const tail = `
+      <div class="tip"><span class="tag">${esc(u("tip"))}</span><p>${esc(T(p.tip))}</p></div>
+      <div class="nav">
+        <button type="button" class="btn" id="prev" ${cur === 0 ? "disabled" : ""}>${esc(u("prev"))}</button>
+        <button type="button" class="btn" id="next" ${cur === PHRASES.length - 1 ? "disabled" : ""}>${esc(u("next"))}</button>
+      </div>`;
+  /* with a video, the lines, their translation and the word meanings sit right under the video */
+  $("cardbody").innerHTML = hasV ? talk + words + exs + head + tail : head + talk + words + exs + tail;
+}
+function renderCard() { renderStage(); renderBody(); }
+function go(i) {
+  cur = i; saved.cur = i; save();
+  revealed.clear();
+  renderChips(); renderCard();
+}
+
+let stopAt = null;
+function playSeg(t0, t1, slow) {
+  const v = $("vid"); if (!v) return;
+  v.playbackRate = slow ? 0.6 : 1; v.currentTime = t0; stopAt = t1; v.play().catch(() => {});
+}
+document.addEventListener("timeupdate", e => {
+  const v = e.target; if (v.id === "vid" && stopAt != null && v.currentTime >= stopAt) { v.pause(); stopAt = null; }
+}, true);
+/* a video file that isn't in the folder yet: fall back to the script view */
+document.addEventListener("error", e => {
+  const v = e.target;
+  /* only "missing / can't play" (code 4) hides the clip; a network hiccup keeps the player so a retry works */
+  if (v && v.id === "vid" && !localVideo[cur] && v.error && v.error.code === 4) { avail[cur] = false; renderChips(); renderCard(); }
+  else if (v && v.tagName === "VIDEO" && v.closest("#qbody")) v.parentElement.remove();
+}, true);
+document.addEventListener("loadeddata", e => {
+  const v = e.target;
+  if (v && v.id === "vid" && !localVideo[cur] && !avail[cur]) { avail[cur] = true; renderChips(); updateTopStats(); }
+}, true);
+
+function setTime(j, which) {
+  const v = $("vid"); if (!v) return;
+  const x = Math.round(v.currentTime * 10) / 10;
+  saved.timing = saved.timing || {};
+  saved.timing[cur] = saved.timing[cur] || {};
+  saved.timing[cur][j] = Object.assign({}, saved.timing[cur][j], { [which]: x });
+  save(); renderBody();
+}
+
+$("chips").addEventListener("click", e => { const b = e.target.closest(".chip"); if (b) go(+b.dataset.i); });
+$("card").addEventListener("change", e => {
+  const f = e.target.files && e.target.files[0]; if (!f) return;
+  if (e.target.id === "pick") { localVideo[cur] = URL.createObjectURL(f); renderChips(); renderCard(); }
+  e.target.value = "";
+});
+$("card").addEventListener("click", e => {
+  const p = PHRASES[cur], t = e.target;
+  const w = t.closest(".w");
+  if (w) {
+    document.querySelectorAll(".w.on").forEach(x => x.classList.remove("on")); w.classList.add("on");
+    const box = w.closest("[data-pop]"), pop = (box && box.querySelector(".pop")) || $("pop");
+    const all = Object.assign({}, p.words, ...(p.examples || []).map(x => x.words || {}));
+    if (w.classList.contains("slang")) {
+      pop.innerHTML = `<b lang="ja">${ruby(p.jp)}</b><small>${esc(u("key"))}</small>${esc(T(p.mean))} <button type="button" class="say" data-speak="${esc(yomi(p.jp))}">🔊</button>`;
+    } else if (all[w.dataset.k]) {
+      const k = w.dataset.k, [pos, rd, m] = all[k];
+      pop.innerHTML = `<b lang="ja">${esc(k)}</b>${rd ? `<span lang="ja">（${esc(rd)}）</span> ` : ""}<small>${esc(T(POS[pos]))}</small>${esc(T(m))} <button type="button" class="say" data-speak="${esc(rd || k)}">🔊</button>`;
+    }
+    return;
+  }
+  const pb = t.closest("[data-play]");
+  if (pb) { const s = segOf(cur, +pb.dataset.play); if (s) playSeg(s[0], s[1], !!pb.dataset.slow); return; }
+  const sb = t.closest("[data-set]");
+  if (sb) { setTime(+sb.dataset.j, sb.dataset.set); return; }
+  const tr = t.closest(".tr.hid");
+  if (tr) { const j = +tr.dataset.j; if (revealed.has(j)) revealed.delete(j); else revealed.add(j); tr.classList.toggle("hide"); return; }
+  if (t.id === "showtr") { p.lines.forEach((_, j) => revealed.add(j)); document.querySelectorAll("#card .tr.hid").forEach(x => x.classList.remove("hide")); }
+  if (t.id === "slowall") playSeg(0, null, true);
+  if (t.id === "tcopy") { const a = $("tjson"); a.select(); (navigator.clipboard ? navigator.clipboard.writeText(a.value) : Promise.reject()).catch(() => document.execCommand("copy")); t.textContent = "コピーしました"; }
+  if (t.id === "prev" && cur > 0) go(cur - 1);
+  if (t.id === "next" && cur < PHRASES.length - 1) go(cur + 1);
+});
+
+/* ---------- quiz mode ---------- */
+let Q = null;
+function newQuiz() {
+  const qs = shuffle(PHRASES.map((_, i) => i)).map(i => {
+    const type = Math.random() < 0.5 ? "meaning" : "fill";
+    const others = shuffle(PHRASES.map((_, k) => k).filter(k => k !== i)).slice(0, 3);
+    return { i, type, opts: shuffle([i, ...others]) };
+  });
+  Q = { qs, n: 0, score: 0, picked: null, missed: [] };
+  renderQuiz();
+}
+function renderQuiz() {
+  const box = $("qbody");
+  if (!Q) { newQuiz(); return; }
+  if (Q.n >= Q.qs.length) return renderResult();
+  const q = Q.qs[Q.n], p = PHRASES[q.i], done = Q.picked !== null;
+  const keyLine = p.lines.find(l => l.jp.includes("[["));
+  const prompt = q.type === "meaning"
+    ? `<p class="qtext">${esc(u("qMean"))}</p><p class="qbig" lang="ja">${ruby(p.jp)}</p><p class="ro" style="margin-top:-8px">${esc(p.ro)}</p>`
+    : `<p class="qtext">${esc(u("qFill"))}</p>
+       <div class="line ${keyLine.who === "B" ? "b" : ""}" style="max-width:100%"><span class="who">${keyLine.who}</span>
+       <div class="bub"><p class="jp" lang="ja">${blanked(keyLine.jp)}</p><p class="tr">${esc(T(keyLine.tr))}</p></div></div>`;
+  const opts = q.opts.map(k => {
+    let cls = "opt" + (q.type === "fill" ? " ja" : "");
+    if (done && k === q.i) cls += " right"; else if (done && k === Q.picked) cls += " wrong";
+    const label = q.type === "fill" ? `<span lang="ja">${ruby(PHRASES[k].jp)}</span>` : esc(T(PHRASES[k].mean));
+    return `<button type="button" class="${cls}" data-k="${k}" ${done ? "disabled" : ""}>${label}</button>`;
+  }).join("");
+  const v = videoOf(q.i);
+  box.innerHTML = `
+    <div class="qhead"><span class="tag">QUESTION ${Q.n + 1} / ${Q.qs.length}</span><div class="bar"><span style="width:${Q.n / Q.qs.length * 100}%"></span></div><span class="tag">${esc(u("correct"))} ${Q.score}</span></div>
+    ${v ? `<div class="stage" style="border-radius:12px;overflow:hidden"><video src="${esc(v)}" controls playsinline preload="metadata"></video></div>` : ""}
+    ${prompt}
+    <div class="opts">${opts}</div>
+    ${done ? `<div class="fb">${Q.picked === q.i ? `<strong class="ok">${esc(u("ok"))}</strong>` : `<strong class="ng">${esc(u("ng"))}</strong> ${esc(u("ansIs"))} <b lang="ja">${ruby(p.jp)}</b>`}
+      <br><span lang="ja">${ruby(p.jp)}</span> ＝ ${esc(T(p.mean))}<br>${esc(T(p.nuance))}</div>
+      <div class="row"><button type="button" class="btn main" id="qnext">${esc(u(Q.n + 1 < Q.qs.length ? "nextQ" : "seeRes"))}</button></div>` : ""}`;
+}
+function renderResult() {
+  const best = Math.max(saved.best || 0, Q.score); saved.best = best; save();
+  const miss = Q.missed.map(i => `<li><span lang="ja">${ruby(PHRASES[i].jp)}</span><button type="button" class="btn" data-learn="${i}">${esc(u("study"))}</button></li>`).join("");
+  $("qbody").innerHTML = `<div class="result">
+    <span class="tag">RESULT</span>
+    <div class="score">${Q.score}<small> / ${Q.qs.length}</small></div>
+    <p style="margin:0">${esc(u(Q.score === Q.qs.length ? "perfect" : "retry"))}　${esc(u("best"))}${best} / ${Q.qs.length}</p>
+    ${miss ? `<span class="tag">${esc(u("review"))}</span><ul class="miss">${miss}</ul>` : ""}
+    <button type="button" class="btn main" id="qagain">${esc(u("again"))}</button></div>`;
+}
+$("qbody").addEventListener("click", e => {
+  const t = e.target, o = t.closest(".opt");
+  if (o && Q.picked === null) {
+    const q = Q.qs[Q.n]; Q.picked = +o.dataset.k;
+    if (Q.picked === q.i) Q.score++; else Q.missed.push(q.i);
+    renderQuiz(); return;
+  }
+  if (t.id === "qnext") { Q.n++; Q.picked = null; renderQuiz(); }
+  if (t.id === "qagain") newQuiz();
+  if (t.dataset.learn) { setMode("learn"); go(+t.dataset.learn); }
+});
+
+/* ---------- mode switch & display toggles ---------- */
+function setMode(m) {
+  $("learn").hidden = m !== "learn"; $("quiz").hidden = m !== "quiz";
+  $("m-learn").setAttribute("aria-pressed", m === "learn"); $("m-quiz").setAttribute("aria-pressed", m === "quiz");
+  saved.mode = m; save();
+  if (m === "quiz") renderQuiz();
+}
+$("m-learn").addEventListener("click", () => setMode("learn"));
+$("m-quiz").addEventListener("click", () => setMode("quiz"));
+function applyToggles() {
+  const furi = saved.furi !== false, ro = saved.ro !== false;
+  document.body.classList.toggle("nofuri", !furi); document.body.classList.toggle("noro", !ro);
+  $("tg-furi").setAttribute("aria-pressed", furi); $("tg-ro").setAttribute("aria-pressed", ro);
+}
+$("tg-furi").addEventListener("click", () => { saved.furi = saved.furi === false; save(); applyToggles(); });
+$("tg-ro").addEventListener("click", () => { saved.ro = saved.ro === false; save(); applyToggles(); });
+
+/* ---------- language ---------- */
+$("langsel").innerHTML = LANGS.map(([id, name]) => `<option value="${id}">${name}</option>`).join("");
+$("t-langs").innerHTML = LANGS.map(([id, name, h]) => `<button type="button" class="lg" data-l="${id}" lang="${h}">${name}</button>`).join("");
+function setLang(l) {
+  lang = l; saved.lang = l; save();
+  document.documentElement.lang = LANGS.find(x => x[0] === l)[2];
+  document.documentElement.dir = l === "ar" ? "rtl" : "ltr";
+  document.querySelectorAll("[data-u]").forEach(el => { el.textContent = u(el.dataset.u); });
+  $("langsel").value = l;
+  document.querySelectorAll(".lg").forEach(b => b.setAttribute("aria-pressed", b.dataset.l === l));
+  renderTicker(); renderChips(); renderCard();
+  if (!$("quiz").hidden && Q) renderQuiz();
+}
+$("langsel").addEventListener("change", e => setLang(e.target.value));
+$("t-langs").addEventListener("click", e => { const b = e.target.closest(".lg"); if (b) setLang(b.dataset.l); });
+
+/* ---------- top page ---------- */
+function renderTicker() {
+  const html = PHRASES.map((p, i) => `<button type="button" class="tk ${avail[i] ? "v" : ""}" data-i="${i}"><i>${i + 1}</i><b lang="ja">${esc(bare(p.jp))}</b><small>${esc(T(p.mean))}</small></button>`).join("");
+  $("t-track").innerHTML = html + html.replace(/<button /g, '<button tabindex="-1" aria-hidden="true" ');
+}
+function updateTopStats() {
+  $("t-np").textContent = PHRASES.length;
+  $("t-nv").textContent = PHRASES.filter((_, i) => avail[i]).length;
+}
+/* the top page always plays the どこ clip (owner's choice), even after more videos are added */
+const BG_VIDEO = "no11-doko.mp4";
+function nextBg() {
+  const v = $("bgv");
+  if (v.src || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  v.loop = true; v.src = BG_VIDEO; v.play().catch(() => {});
+}
+function showTop(on) {
+  $("top").hidden = !on; $("app").hidden = on;
+  const v = $("bgv");
+  if (on) { if (!v.src) nextBg(); else v.play().catch(() => {}); } else v.pause();
+  scrollTo(0, 0);
+}
+$("t-start").addEventListener("click", () => { setMode("learn"); showTop(false); });
+$("t-quiz").addEventListener("click", () => { setMode("quiz"); newQuiz(); showTop(false); });
+$("t-track").addEventListener("click", e => { const b = e.target.closest(".tk"); if (b) { setMode("learn"); go(+b.dataset.i); showTop(false); } });
+$("tohome").addEventListener("click", () => showTop(true));
+
+/* find out which MP4s are in the folder (on a web server; opened as a plain file, the player's own error decides).
+   One request at a time, and only a real "not found" counts as missing: a busy or refused answer leaves it to the player. */
+async function probeVideos() {
+  for (let i = 0; i < PHRASES.length; i++) {
+    const p = PHRASES[i];
+    if (!p.video) { avail[i] = false; continue; }
+    try {
+      const r = await fetch(p.video, { method: "HEAD", cache: "no-store" });
+      if (r.ok) avail[i] = true; else if (r.status === 404 || r.status === 410) avail[i] = false;
+    } catch (e) { /* unknown */ }
+  }
+  updateTopStats(); renderTicker(); renderChips(); renderCard();
+  if (!$("top").hidden && !$("bgv").src) nextBg();
+}
+
+/* ---------- start ---------- */
+applyToggles();
+setLang(lang);
+setMode(saved.mode === "quiz" ? "quiz" : "learn");
+updateTopStats();
+showTop(!EDIT);
+probeVideos();
+
+/* ---------- FREE download = install the PWA ---------- */
+let installEvt = null;
+const isStandalone = () => matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+addEventListener("beforeinstallprompt", e => { e.preventDefault(); installEvt = e; });
+addEventListener("appinstalled", () => { installEvt = null; $("t-dl").hidden = true; });
+if (isStandalone()) $("t-dl").hidden = true;
+function installSteps() {
+  const ua = navigator.userAgent, ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  const k = ios ? "ios" : /Android/.test(ua) ? "android" : "desktop";
+  return `<ol>${u(k).map(s => `<li>${s}</li>`).join("")}</ol>`;
+}
+$("t-dl").addEventListener("click", async () => {
+  if (installEvt) {
+    installEvt.prompt();
+    try { const r = await installEvt.userChoice; if (r.outcome === "accepted") $("t-dl").hidden = true; } catch (e) {}
+    installEvt = null; return;
+  }
+  $("t-steps").innerHTML = installSteps(); $("t-sheet").hidden = false; $("t-sheet-x").focus();
+});
+$("t-sheet-x").addEventListener("click", () => { $("t-sheet").hidden = true; });
+$("t-sheet").addEventListener("click", e => { if (e.target.id === "t-sheet") $("t-sheet").hidden = true; });
+addEventListener("keydown", e => { if (e.key === "Escape") $("t-sheet").hidden = true; });
+</script>
+
+<script>
+if ("serviceWorker" in navigator && location.protocol.startsWith("http")) addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+</script>
+</body></html>
