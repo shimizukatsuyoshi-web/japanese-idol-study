@@ -1705,8 +1705,9 @@ function updateTopStats() {
   $("t-np").textContent = PHRASES.length;
   $("t-nv").textContent = PHRASES.filter((_, i) => avail[i]).length;
 }
-/* the top page always plays the どこ clip (owner's choice), even after more videos are added */
-const BG_VIDEO = "no11-doko.mp4";
+/* the top page background clip (owner's choice). top-00034-omikoshi.mp4 = D:\00034 omikoshi.MTS converted to 720p.
+   Earlier: no11-doko.mp4, top-omikoshi.mp4, top-video.mp4 (00013.MTS) — the last two are kept in 待機中の動画. */
+const BG_VIDEO = "top-00034-omikoshi.mp4";
 function nextBg() {
   const v = $("bgv");
   if (v.src || matchMedia("(prefers-reduced-motion: reduce)").matches) return;

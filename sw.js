@@ -1,10 +1,10 @@
 /* JAPANESE IDOL STUDY service worker: keeps the app and its videos on the device so it opens offline.
    Bump VERSION whenever any file changes so phones pick up the new copy. */
-const VERSION = "v23";
+const VERSION = "v26";
 const CACHE = "nihongo-clip-note-" + VERSION;
 const FILES = [
   "./", "index.html", "manifest.webmanifest",
-  "icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png"
+  "icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png", "top-00034-omikoshi.mp4"
 ];
 /* videos are cached when they exist; a missing one doesn't stop the install */
 const VIDEOS = [
