@@ -65,7 +65,7 @@ body.nofuri rt{display:none}
 body.noro .ro{display:none}
 
 header{display:flex;flex-direction:column;gap:12px}
-.brand h1{font-family:var(--en);font-weight:800;font-size:1.9rem;line-height:1.1;margin:0;letter-spacing:-.01em;cursor:pointer}
+.brand h1{font-family:var(--ja);font-weight:700;font-size:1.9rem;line-height:1.2;margin:0;letter-spacing:.02em;cursor:pointer}
 .brand h1 span{color:var(--accent)}
 .beta{font-family:var(--en);font-style:normal;font-size:.75rem;font-weight:700;vertical-align:middle;border:1.5px solid var(--accent);color:var(--accent);border-radius:999px;padding:1px 10px;margin-left:6px;letter-spacing:.06em}
 .brand p{margin:4px 0 0;color:var(--muted);font-size:.88rem}
@@ -186,7 +186,18 @@ td.pos{color:var(--muted);font-size:.78rem;white-space:nowrap}
 
 /* ---------- top page ---------- */
 .top{position:relative;min-height:100svh;background:#0f1630;color:#f2f4ff;overflow:hidden;display:flex;flex-direction:column}
-.top .bgv{position:absolute;top:0;left:0;width:100%;height:100svh;object-fit:cover;object-position:50% 30%;opacity:.5}
+/* background clip: a band at the top showing the whole picture width (56.6vw = the clip's 640:362 shape), fading into the page.
+   The MP4 has black bars baked in (picture = 362 of 480 rows), so the video is drawn 132.6% tall and centred to crop them. */
+.top .bgwrap{position:absolute;top:0;left:0;width:100%;height:min(100svh,56.6vw);overflow:hidden;-webkit-mask-image:linear-gradient(#000 70%,transparent);mask-image:linear-gradient(#000 70%,transparent)}
+.top .bgv{position:absolute;left:0;top:-16.3%;width:100%;height:132.6%;object-fit:cover;object-position:50% 50%;opacity:.55}
+/* phones: the clip is not a background any more — a framed video under the logo, whole picture, full colour, no text on top */
+@media (max-width:640px){
+  .top > *{order:3}
+  .top .tbar{order:0}
+  .top .bgwrap{order:1;position:relative;height:auto;width:auto;aspect-ratio:640/362;margin:0 20px;border-radius:16px;-webkit-mask-image:none;mask-image:none;box-shadow:0 12px 30px -12px rgba(0,0,0,.7);border:1px solid rgba(255,255,255,.18)}
+  .top .bgv{opacity:1}
+  .top .hero{order:2;padding-top:20px}
+}
 .top::before{content:"";position:absolute;inset:0;background:
   radial-gradient(120% 80% at 85% 10%,rgba(210,69,43,.5),transparent 55%),
   radial-gradient(90% 70% at 0% 100%,rgba(52,90,190,.6),transparent 60%),
@@ -251,14 +262,13 @@ td.pos{color:var(--muted);font-size:.78rem;white-space:nowrap}
 .sheet h3{margin:0;font-size:1.15rem}.sheet p{margin:0;font-size:.92rem;color:#565c70}
 .sheet ol{margin:0;padding-left:1.3em;display:flex;flex-direction:column;gap:6px;font-size:.95rem}
 .sheet b{color:#d2452b}.sheet .close{border:0;border-radius:12px;padding:11px;background:#24407c;color:#fff;font:inherit;font-weight:700;cursor:pointer}
-@media (prefers-reduced-motion:reduce){.fdl .ic::after{animation:none;opacity:0}.ticker .track{animation:none;flex-wrap:wrap;width:auto;padding:0 16px}.top .bgv{display:none}}
+@media (prefers-reduced-motion:reduce){.fdl .ic::after{animation:none;opacity:0}.ticker .track{animation:none;flex-wrap:wrap;width:auto;padding:0 16px}.top .bgwrap{display:none}}
 </style>
 
 <section class="top" id="top" aria-label="JAPANESE IDOL STUDY">
-  <video class="bgv" id="bgv" muted playsinline autoplay preload="auto" aria-hidden="true"></video>
+  <div class="bgwrap" aria-hidden="true"><video class="bgv" id="bgv" muted playsinline autoplay preload="auto"></video></div>
   <div class="tbar">
     <div class="tlogo"><i lang="ja">あ</i>JAPANESE IDOL STUDY</div>
-    <span class="tpill">TEST VERSION</span>
   </div>
   <div class="hero">
     <span class="kicker"><span lang="ja">本物の日本語</span> · REAL JAPANESE, REAL CLIPS</span>
@@ -298,7 +308,7 @@ td.pos{color:var(--muted);font-size:.78rem;white-space:nowrap}
 <div class="wrap" id="app" hidden>
   <header>
     <div class="brand">
-      <h1 id="tohome">Japanese <span>Idol</span> Study<em class="beta">TEST</em></h1>
+      <h1 id="tohome" lang="ja" translate="no">日本語<span>勉強</span></h1>
       <p data-u="brandSub"></p>
     </div>
     <div class="tools">
