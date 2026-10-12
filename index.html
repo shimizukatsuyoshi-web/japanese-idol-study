@@ -201,7 +201,8 @@ td.pos{color:var(--muted);font-size:.78rem;white-space:nowrap}
 .hero{flex:1;display:flex;flex-direction:column;justify-content:center;gap:22px;padding:16px 20px 36px;max-width:1080px;width:100%;margin:0 auto;box-sizing:border-box}
 .kicker{font-size:.78rem;font-weight:700;letter-spacing:.2em;color:#ffb8a6;font-family:var(--en)}
 .kicker span{font-family:var(--ja);letter-spacing:.1em}
-.htitle{font-family:var(--en);font-weight:800;font-size:clamp(3rem,13vw,7.5rem);line-height:.9;letter-spacing:-.045em;margin:0}
+/* title sits about one line lower and ~40% smaller than the original, so more of the background clip shows above it */
+.htitle{font-family:var(--en);font-weight:800;font-size:clamp(1.75rem,7.8vw,4.4rem);line-height:.9;letter-spacing:-.045em;margin:.9em 0 0}
 .htitle span{display:block}
 .htitle .c{color:transparent;background:linear-gradient(95deg,#ff6a4d,#ffd36e);-webkit-background-clip:text;background-clip:text}
 .hlead{font-size:clamp(1.05rem,3.6vw,1.35rem);font-weight:700;margin:0;max-width:32em;line-height:1.6}
@@ -1705,9 +1706,9 @@ function updateTopStats() {
   $("t-np").textContent = PHRASES.length;
   $("t-nv").textContent = PHRASES.filter((_, i) => avail[i]).length;
 }
-/* the top page background clip (owner's choice). top-00034-omikoshi.mp4 = D:\00034 omikoshi.MTS converted to 720p.
-   Earlier: no11-doko.mp4, top-omikoshi.mp4, top-video.mp4 (00013.MTS) — the last two are kept in 待機中の動画. */
-const BG_VIDEO = "top-00034-omikoshi.mp4";
+/* the top page background clip (owner's choice). top-video.mp4 = D:\00013.MTS converted to 720p.
+   Earlier: no11-doko.mp4, top-omikoshi.mp4, top-00034-omikoshi.mp4 — the last two are kept in 待機中の動画. */
+const BG_VIDEO = "top-video.mp4";
 function nextBg() {
   const v = $("bgv");
   if (v.src || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
