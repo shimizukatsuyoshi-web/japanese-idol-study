@@ -207,11 +207,13 @@ td.pos{color:var(--muted);font-size:.78rem;white-space:nowrap}
 .htitle .c{color:transparent;background:linear-gradient(95deg,#ff6a4d,#ffd36e);-webkit-background-clip:text;background-clip:text}
 .hlead{font-size:clamp(1.05rem,3.6vw,1.35rem);font-weight:700;margin:0;max-width:32em;line-height:1.6}
 .hlead small{display:block;font-weight:400;font-size:.88em;color:#cdd3ee;margin-top:4px}
-.langs{display:flex;flex-direction:column;gap:8px}
-.langs > span{font-size:.75rem;color:#cdd3ee;font-weight:700;letter-spacing:.06em}
-.langs div{display:flex;flex-wrap:wrap;gap:8px}
-.lg{border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.06);color:#fff;border-radius:999px;padding:6px 14px;cursor:pointer}
-.lg[aria-pressed="true"]{background:#fff;color:#0f1630;border-color:#fff;font-weight:700}
+.langs{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.langs > span{font-family:var(--en);font-size:.78rem;color:#cdd3ee;font-weight:700;letter-spacing:.12em}
+.tsel{font:inherit;font-size:1rem;color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:9px 40px 9px 18px;cursor:pointer;min-width:220px;max-width:100%;-webkit-appearance:none;appearance:none;
+  background-image:linear-gradient(45deg,transparent 50%,#fff 50%),linear-gradient(135deg,#fff 50%,transparent 50%);background-position:calc(100% - 20px) 55%,calc(100% - 14px) 55%;background-size:6px 6px,6px 6px;background-repeat:no-repeat}
+.tsel option{color:#0f1630;background:#fff}
+.tsel:focus-visible{outline:2px solid #ffd36e;outline-offset:2px}
+[dir="rtl"] .tsel{padding:9px 18px 9px 40px;background-position:20px 55%,26px 55%}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
 .cta button{font:inherit;font-weight:700;border-radius:999px;padding:14px 28px;font-size:1.02rem;cursor:pointer;border:0;transition:transform .15s}
 .cta button:hover{transform:translateY(-2px)}
@@ -232,6 +234,33 @@ td.pos{color:var(--muted);font-size:.78rem;white-space:nowrap}
 .tk small{color:#cdd3ee;font-size:.78rem}
 .how{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:34px 20px 44px;max-width:1080px;width:100%;margin:0 auto;box-sizing:border-box}
 @media (max-width:640px){.how{grid-template-columns:1fr}}
+/* phones: title alone at the very top, the clip in the middle with nothing on it,
+   everything else in the lower part on the dark page colour, left-aligned in one tidy column */
+@media (max-width:640px){
+  /* clip fills the top 64% and fades out at its bottom edge (mask on the video itself, so it works whatever the layer order) */
+  .top .bgv{height:64svh;opacity:1;object-position:50% 50%;-webkit-mask-image:linear-gradient(180deg,#000 62%,transparent 100%);mask-image:linear-gradient(180deg,#000 62%,transparent 100%)}
+  .top::before{background:radial-gradient(90% 40% at 100% 100%,rgba(210,69,43,.32),transparent 70%)}
+  .top::after{display:none}
+  .tbar{display:none}
+  .hero{justify-content:flex-start;gap:14px;padding:18px 20px 28px}
+  /* the title moves to the top of the screen, large, on two lines: JAPANESE / IDOL STUDY */
+  .htitle{order:-1;font-size:min(12vw,3.4rem);line-height:.95;margin:0;letter-spacing:-.03em;white-space:nowrap;text-shadow:0 2px 14px rgba(0,0,0,.55)}
+  .htitle span{display:inline}
+  .htitle span:first-child{display:block}
+  .htitle span:nth-child(3){margin-left:.22em}
+  /* the rest starts just below the clip */
+  .kicker{margin-top:calc(64svh - 120px);font-size:.68rem;letter-spacing:.18em;display:flex;align-items:center;gap:8px}
+  .kicker::before{content:"";width:22px;height:2px;background:#ff8a65;flex:none}
+  .hlead{font-size:1rem;line-height:1.5}
+  .hlead small{display:none}
+  .langs{flex-direction:row;align-items:center;gap:10px;width:100%;box-sizing:border-box}
+  .langs > span{font-size:.68rem;flex:none}
+  .tsel{min-width:0;width:auto;flex:0 1 190px;padding:8px 36px 8px 14px;font-size:.95rem}
+  .stats{gap:12px 24px;width:100%}
+  .fdl{flex:1 1 100%;width:auto;max-width:100%;min-width:0;box-sizing:border-box}
+  .cta{gap:10px}
+  .cta button{padding:12px 22px;font-size:.95rem}
+}
 .how div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:18px}
 .how em{font-style:normal;font-family:var(--en);font-weight:800;font-size:.8rem;color:#ff9c86;letter-spacing:.16em}
 .how h3{margin:6px 0 4px;font-size:1.1rem}
@@ -258,13 +287,13 @@ td.pos{color:var(--muted);font-size:.78rem;white-space:nowrap}
 <section class="top" id="top" aria-label="JAPANESE IDOL STUDY">
   <video class="bgv" id="bgv" muted playsinline autoplay preload="auto" aria-hidden="true"></video>
   <div class="tbar">
-    <div class="tlogo"><i lang="ja">あ</i>JAPANESE IDOL STUDY</div>
+    <div class="tlogo" translate="no"><i lang="ja">あ</i>JAPANESE IDOL STUDY</div>
   </div>
   <div class="hero">
-    <span class="kicker"><span lang="ja">本物の日本語</span> · REAL JAPANESE, REAL CLIPS</span>
-    <h1 class="htitle"><span>Japanese</span><span class="c">Idol</span><span>Study.</span></h1>
+    <span class="kicker" translate="no"><span lang="ja">本物の日本語</span> · REAL JAPANESE, REAL CLIPS</span>
+    <h1 class="htitle" lang="en" translate="no"><span>JAPANESE</span><span class="c">IDOL</span><span>STUDY</span></h1>
     <p class="hlead"><span data-u="lead"></span><small data-u="leadSub"></small></p>
-    <div class="langs"><span data-u="chooseLang"></span><div id="t-langs"></div></div>
+    <label class="langs" for="t-langsel"><span lang="en" translate="no">🌐 SELECT LANGUAGE</span><select id="t-langsel" class="tsel"></select></label>
     <div class="cta">
       <button type="button" class="go" id="t-start" data-u="start"></button>
       <button type="button" class="ghost" id="t-quiz" data-u="tryQuiz"></button>
@@ -1683,19 +1712,18 @@ $("tg-ro").addEventListener("click", () => { saved.ro = saved.ro === false; save
 
 /* ---------- language ---------- */
 $("langsel").innerHTML = LANGS.map(([id, name]) => `<option value="${id}">${name}</option>`).join("");
-$("t-langs").innerHTML = LANGS.map(([id, name, h]) => `<button type="button" class="lg" data-l="${id}" lang="${h}">${name}</button>`).join("");
+$("t-langsel").innerHTML = LANGS.map(([id, name]) => `<option value="${id}">${name}</option>`).join("");
 function setLang(l) {
   lang = l; saved.lang = l; save();
   document.documentElement.lang = LANGS.find(x => x[0] === l)[2];
   document.documentElement.dir = l === "ar" ? "rtl" : "ltr";
   document.querySelectorAll("[data-u]").forEach(el => { el.textContent = u(el.dataset.u); });
-  $("langsel").value = l;
-  document.querySelectorAll(".lg").forEach(b => b.setAttribute("aria-pressed", b.dataset.l === l));
+  $("langsel").value = l; $("t-langsel").value = l;
   renderTicker(); renderChips(); renderCard();
   if (!$("quiz").hidden && Q) renderQuiz();
 }
 $("langsel").addEventListener("change", e => setLang(e.target.value));
-$("t-langs").addEventListener("click", e => { const b = e.target.closest(".lg"); if (b) setLang(b.dataset.l); });
+$("t-langsel").addEventListener("change", e => setLang(e.target.value));
 
 /* ---------- top page ---------- */
 function renderTicker() {
