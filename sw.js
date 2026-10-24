@@ -1,6 +1,6 @@
 /* JAPANESE IDOL STUDY service worker: keeps the app and its videos on the device so it opens offline.
    Bump VERSION whenever any file changes so phones pick up the new copy. */
-const VERSION = "v36";
+const VERSION = "v59";
 const CACHE = "nihongo-clip-note-" + VERSION;
 const FILES = [
   "./", "index.html", "manifest.webmanifest",
